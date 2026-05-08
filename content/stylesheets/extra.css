@@ -45,22 +45,22 @@
 }
 
 /* Mobile: smaller still */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 76.1875em) {
   .md-typeset {
-    font-size: 0.86rem;
-    line-height: 1.65;
+    font-size: 0.86rem !important;
+    line-height: 1.65 !important;
   }
 
   .md-typeset h1 {
-    font-size: 1.44rem;
+    font-size: 1.44rem !important;
   }
 
   .md-typeset h2 {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
 
   .md-typeset h3 {
-    font-size: 0.96rem;
+    font-size: 0.96rem !important;
   }
 
   .md-content__inner {
