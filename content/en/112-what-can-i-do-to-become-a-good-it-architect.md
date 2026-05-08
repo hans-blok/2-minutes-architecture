@@ -12,7 +12,7 @@ The more good IT people are able to translate technical issues: opportunities, t
 
 ## Stakeholders
 
-During the course 'IT architecture in practice' the teacher said the following. 'IT architecture often comes down to dealing with stakeholders. When I ask you a question and you have just dozed off, answer it, stakeholders. In many cases you will then have given the correct answer. Dealing with stakeholders is what makes the profession of architect significantly different from the profession of designer or software developer.
+During the course 'IT architecture in practice' the teacher said the following. 'IT architecture often comes down to dealing with stakeholders. When I ask you a question and you have just dozed off, answer "stakeholders". In many cases you will then have given the correct answer. Dealing with stakeholders is what makes the profession of architect significantly different from the profession of designer or software developer.
 
 ## A model
 
