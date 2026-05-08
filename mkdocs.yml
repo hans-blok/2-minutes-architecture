@@ -6,6 +6,8 @@ site_author: Hans Blok
 theme:
   name: material
   language: nl
+  favicon: assets/logo.PNG
+  custom_dir: overrides
   palette:
     scheme: default
     primary: indigo
@@ -15,6 +17,12 @@ theme:
     - navigation.top
 
 docs_dir: content
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  cname: www.2-minuten-it-architectuur.nl
 
 nav:
   - Nederlands:

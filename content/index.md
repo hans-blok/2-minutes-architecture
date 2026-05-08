@@ -1,3 +1,5 @@
+![Logo](assets/logo.PNG)
+
 # 2 Minuten IT-Architectuur
 
 Welkom bij de blogposts van Hans Blok over IT-architectuur. Kies een taal via de navigatie bovenaan.
