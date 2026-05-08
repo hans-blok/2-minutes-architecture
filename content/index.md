@@ -4,7 +4,7 @@
 
 ## Over de auteur
 
-Ik ben in 1995 afgestudeer als Algemeen Econoom. Dat merk je misschien wel als we het over IT hebben. Mijn interesse gaat namelijk verder dan technologie alleen: ik kijk graag naar wat IT daadwerkelijk betekent voor organisaties en de samenleving.
+Ik ben in 1995 afgestudeerd als Algemeen Econoom. Dat merk je misschien wel als we het over IT hebben. Mijn interesse gaat namelijk verder dan technologie alleen: ik kijk graag naar wat IT daadwerkelijk betekent voor organisaties en de samenleving.
 
 In de afgelopen dertig jaar heb ik ons vakgebied van bijna alle kanten mogen bekijken. Ik schreef code in COBOL, werkte veel met Oracle, was Database Administrator, en verdiepte me in testen en informatieanalyse. Sinds 2010 werk ik met veel plezier als IT-architect, waarbij ik organisaties begeleid in hun uitdagende transformaties naar service-georiënteerde IT-landschappen.
 

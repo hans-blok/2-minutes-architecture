@@ -9,8 +9,8 @@
 
 /* Body text: readable, calm */
 .md-typeset {
-  font-size: 1.05rem;
-  line-height: 1.85;
+  font-size: 0.9rem;
+  line-height: 1.75;
   max-width: 68ch;
 }
 
@@ -18,12 +18,12 @@
 .md-content__inner {
   max-width: 72ch;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.25rem;
 }
 
 /* Headings: authority without weight */
 .md-typeset h1 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.25em;
@@ -31,17 +31,37 @@
 }
 
 .md-typeset h2 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   border-bottom: none;
 }
 
 .md-typeset h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Mobile: smaller still */
+@media screen and (max-width: 600px) {
+  .md-typeset {
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.25rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.05rem;
+  }
+
+  .md-content__inner {
+    padding: 1.25rem 1rem;
+  }
 }
 
 /* Paragraph spacing */

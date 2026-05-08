@@ -18,6 +18,8 @@ theme:
 
 docs_dir: content
 
+copyright: (c) Hans Blok
+
 extra_css:
   - stylesheets/extra.css
 
