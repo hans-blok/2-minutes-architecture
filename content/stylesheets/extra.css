@@ -9,7 +9,7 @@
 
 /* Body text: readable, calm */
 .md-typeset {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.75;
   max-width: 68ch;
 }
@@ -46,25 +46,31 @@
 
 /* Mobile: smaller still */
 @media screen and (max-width: 76.1875em) {
-  .md-typeset {
-    font-size: 0.86rem !important;
-    line-height: 1.65 !important;
-  }
-
-  .md-typeset h1 {
-    font-size: 1.44rem !important;
-  }
-
-  .md-typeset h2 {
-    font-size: 1.1rem !important;
-  }
-
-  .md-typeset h3 {
-    font-size: 0.96rem !important;
-  }
-
   .md-content__inner {
     padding: 1.25rem 1rem;
+  }
+}
+
+/* Mobile nav */
+@media screen and (max-width: 59.9375em) {
+  /* Drawer menu background: pastel green */
+  .md-nav--primary .md-nav__title {
+    background-color: #b8ddb5 !important;
+    color: #2c2825 !important;
+  }
+
+  /* Nederlands (first section): pastel orange */
+  .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__link,
+  .md-nav--primary > .md-nav__list > .md-nav__item:first-child > label {
+    background-color: #f5c9a0 !important;
+    color: #2c2825 !important;
+  }
+
+  /* English (second section): pastel blue */
+  .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
+  .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > label {
+    background-color: #a0c8f0 !important;
+    color: #2c2825 !important;
   }
 }
 
