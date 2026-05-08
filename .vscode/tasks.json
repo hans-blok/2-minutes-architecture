@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "fnd.01 - ecosysteem-coordinator: aggregeer-tasks",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.ecosysteem-coordinator/runner/ecosysteem-coordinator.runner.py",
+        "aggregeer-tasks"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "DB: flyway clean",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "infra/docker-compose.yml",
+        "run",
+        "--rm",
+        "-e",
+        "FLYWAY_CLEAN_DISABLED=false",
+        "flyway",
+        "clean"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "DB: flyway migrate",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "infra/docker-compose.yml",
+        "run",
+        "--rm",
+        "flyway",
+        "migrate"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": []
+}

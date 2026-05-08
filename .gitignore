@@ -1,0 +1,249 @@
+# =====================================================
+# AGENT:
+# Doel: Repository schoon en reproduceerbaar houden op dev machines en CI.
+# Bereik: U mag ignore-patronen toevoegen/verwijderen; negeer geen source, docs of configs die versiebeheerd moeten worden.
+# Niet: Voeg geen tool-specifieke regels toe tenzij gerechtvaardigd door repo-inhoud.
+# Regels:
+#   - Voorkeuren voor algemene patronen boven machine-specifieke paden.
+#   - Nooit negeren: /docs, /src, /db/migrations (indien aanwezig)
+#   - Wel negeren: geheimen en lokale env-bestanden.
+# Uitvoer: Een leesbare, gegroepeerde .gitignore met korte sectiekoppen.
+# =====================================================
+# ===================================
+# Werkruimte Mappen (Runtime/Cache)
+# ===================================
+# Agent cache en synchronisatie
+entoli-agents/
+entoli-canon/
+
+# Logs van fetch-bewerkingen en agent runs
+logs/
+log/
+
+# Agent execution-bestanden (lokale runtime)
+executions/*.md
+!executions/README.md
+
+# Lokale instellingen (niet delen)
+settings.json
+
+# Tijdelijke bestanden en werkruimten
+temp/
+
+# Agent uitvoeringsinstructies (lokale runtime)
+agent-execution/*.md
+!agent-execution/README.md
+
+# Canon map (experimenteel/concept)
+canon/
+
+# ===================================
+# Python
+# ===================================
+# Byte-compiled / optimized / DLL bestanden
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtuele omgevingen
+venv/
+env/
+ENV/
+.venv/
+
+# Distributie / packaging
+*.egg-info/
+dist/
+build/
+
+# ===================================
+# Editor / IDE
+# ===================================
+# VS Code werkruimte bestanden (maar behoud instellingen/taken)
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===================================
+# Besturingssysteem Bestanden
+# ===================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ===================================
+# Git
+# ===================================
+*.orig
+*.rej
+*.patch
+
+# ===================================
+# Diversen
+# ===================================
+# Test artefacten
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Backup bestanden
+*.bak
+*.backup
+*~
+
+# Lock bestanden (optioneel - uitschakelen indien gewenst)
+# poetry.lock
+# Pipfile.lock
+# =====================================================
+# AGENT:
+# Purpose: Keep repository clean and reproducible across dev machines and CI.
+# Scope: You may add/remove ignore patterns; do not ignore source, docs, or configs that must be versioned.
+# Non-Goals: Do not add tool-specific rules unless justified by repo content.
+# Rules:
+#   - Prefer general patterns over machine-specific paths.
+#   - Never ignore: /docs, /src, /db/migrations (if present)
+#   - Do ignore secrets and local env files.
+# Output: A readable, grouped .gitignore with short section headers.
+# =====================================================
+# ===================================
+# Workspace Folders (Runtime/Cache)
+# ===================================
+# Agent cache en synchronisatie
+entoli-agents/
+
+concepts/
+
+# Logs van fetch operaties en agent runs
+logs/
+
+# own settings (lokale configuratie, niet delen)
+settings.json
+
+
+# Tijdelijke bestanden en workspaces
+temp/
+
+# Agent execution instructies (lokale runtime)
+agent-execution/*.md
+!agent-execution/README.md
+
+# Canon folder (experimenteel/draft)
+canon/
+
+# ===================================
+# Python
+# ===================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# ===================================
+# Editor / IDE
+# ===================================
+# VS Code workspace files (but keep settings/tasks)
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===================================
+# OS Files
+# ===================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ===================================
+# Git
+# ===================================
+*.orig
+*.rej
+*.patch
+
+# ===================================
+# Miscellaneous
+# ===================================
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Lock files (optioneel - uncommit indien gewenst)
+# poetry.lock
+# Pipfile.lock

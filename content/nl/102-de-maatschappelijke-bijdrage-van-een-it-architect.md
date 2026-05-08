@@ -1,0 +1,17 @@
+# De maatschappelijke bijdrage van een IT-architect
+
+**Datum:** 2024-04-18 09:16
+
+**Wat doe ik eigenlijk?**
+
+Het beste begin van het weekend bestaat voor mij uit een pittige zwemtraining bij de triatlonclub. Een kop koffie na de training met stevige koek doet wonderen na zo een training. Bij het clubgevoel hoort natuurlijk ook dat je elkaar beter leer kennen. “Hoi Hans, hoe is het met je? Kan je me uitleggen wat een IT-architect precies doet?” Marieke spreek ik wel vaker. Deze vraag kan je af doen met “Een IT-architect maakt het globale ontwerp voor een IT-landschap, hij tekent veel plaatjes en vergadert veel”. Maar ik wist dat ik bij Marieke, onderdeel van een managementteam van een groot ziekenhuis, hier mee niet weg zou komen. Ik realiseerde me dat ik niet goed op deze vraag was voorbereid. “Een IT-architect heeft kennis van de beschikbare technologieën in de IT. Daarmee geeft hij mede invulling aan de strategie en zorgt hij dat deze wordt uitgevoerd.”, antwoordde ik. Nog steeds een ontwijkend antwoord, denk ik, maar het gaf mij wel de kans om een tegenvraag te stellen. “Hoe gaan jullie om met de schaarste van personeel in de zorg, en verwachten jullie dat dat probleem groter wordt in de toekomst?” “Ja”, er is inderdaad een tekort aan artsen en verplegers, en vanwege de vergrijzing zal dat alleen maar groter worden. Maar we nemen nu al maatregelen”. Zo vertelde ze mij dat bij patiënten die te maken hebben met dementie een matje naast het bed wordt geplaatst. Wanneer de patient daar op gaat staan, gaat er een signaal af, zodat de verpleegster kan reageren. “Ah, zei ik, een mooie toepassing van Internet of Things”. Ze vertelde ook over een ander probleem dat ze hebben opgelost met betrekking tot het arbeidsintensieve traject van de nazorg. Voorheen was het protocol dat een patient elk half jaar langskomt voor een halfuur durend gesprek met de arts. De arts kan dan besluiten om maatregelen te nemen of niet. Nu krijgt de patient een tablet (geen pilletje maar het device) mee. De patient beantwoordt elke week enkele vragen en stuurt deze op. De verpleegster leest de antwoorden en besluit wel of niet de arts in te schakelen. 'Dat is een mooie oplossing”, zei ik. “Is het echt nodig dat de verpleegster dat leest en beoordeelt”, vroeg ik”. “Ja, natuurlijk.”, antwoordde ze. Ik probeerde haar uit te leggen dat het met de implementatie van regels mogelijk moet zijn om automatisch de beslissing te nemen de arts te benaderen of niet. En als er een samenwerking zou zijn met andere zorginstellingen komt veel data beschikbaar. Met de toepassing van big data en artificial intelligence kan kennis naar boven komen, die jullie nu nog niet hebben. “Ja, dat zou heel mooi zijn! Kan je me hier later meer over uitleggen, ik ga nu naar de looptraining.”
+
+**Ken de technologieën**
+
+Voor het vormgeven van een digitale transformatie kunnen verschillende technologieën worden ingezet. Deze kunnen ondernemingen een competitief voordeel geven. Ook kunnen ze bijdragen aan het oplossen van maatschappelijke problemen. Wil jij ook bijdragen?
+
+
+
+Bron: Digital Transformation Course, Arcitura.
+
+ook interessant: [health data space](https://amsterdameconomicboard.com/en/initiative/health-data-space-amsterdam/)
