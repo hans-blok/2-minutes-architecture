@@ -1,0 +1,21 @@
+execution_id: '20260508.0001'
+execution_digest: 892a486c9de8
+agent: documentatie-omvormer
+intent: genereer-publicatiestructuur
+timestamp: '2026-05-08 13:22:48'
+value_stream_fase: unknown
+bronhouding: nog te bepalen
+modus: handmatig
+bronnen:
+- bronpad: documentatie-omvormer.charter.md
+  type: charter
+  digest: —
+  reden_van_opname: agent-charter voor documentatie-omvormer
+  opnamevorm: volledig
+context_events:
+- event_type: token_measurement
+  timestamp: '2026-05-08T11:22:48Z'
+  meetwijze: schatting
+  bron: runner-tokenizer
+  detail: 'Preflight schatting: 3896 tokens'
+  input_tokens: 3896

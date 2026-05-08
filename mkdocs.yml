@@ -1,0 +1,51 @@
+site_name: 2 Minuten IT-Architectuur
+site_url: https://www.2-minuten-it-architectuur.nl/
+site_description: IT-architectuur blogs door Hans Blok
+site_author: Hans Blok
+
+theme:
+  name: material
+  language: nl
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.top
+
+docs_dir: content
+
+nav:
+  - Nederlands:
+    - De IT-architect die niet wiebelt: nl/100-de-it-architect-die-niet-wiebelt.md
+    - Met een pattern wordt het bijna onmogelijke mogelijk: nl/101-met-een-pattern-wordt-het-bijna-onmogelijke-mogelijk.md
+    - De maatschappelijke bijdrage van een IT-architect: nl/102-de-maatschappelijke-bijdrage-van-een-it-architect.md
+    - Agility maximalisatie: nl/103-agility-maximalisatie.md
+    - Wie krijgt de rol van transformer?: nl/104-wie-krijgt-de-rol-van-transformer.md
+    - Voel je je ook een slaaf van je agenda?: nl/105-voel-je-je-ook-een-slaaf-van-je-agenda.md
+    - Manage jij de beperkingen of managen de beperkingen jou?: nl/106-manage-jij-de-beperkingen-of-managen-de-beperkingen-jou.md
+    - Is Artificial Intelligence een hype?: nl/107-is-artificial-intelligence-een-hype.md
+    - Wanneer besluit ik het besluit te documenteren?: nl/108-wanneer-besluit-ik-het-besluit-te-documenteren.md
+    - Laten we alsjeblieft deployen: nl/109-laten-we-alsjeblieft-deployen.md
+    - Voorkom jij ook dat je dubbel bent verzekerd?: nl/110-voorkom-jij-ook-dat-je-dubbel-bent-verzekerd.md
+    - Snapt de business bij jou er ook weinig zo van?: nl/111-snapt-de-business-bij-jou-er-ook-weinig-zo-van.md
+    - Wat kan ik doen om een goede IT-architect te worden?: nl/112-wat-kan-ik-doen-om-een-goede-it-architect-te-worden.md
+    - Stilte graag: nl/113-stilte-graag.md
+    - Post-deterministische IT: nl/114-post-deterministische-it.md
+  - English:
+    - The IT architect who doesn't wobble: en/100-the-it-architect-who-doesnt-wobble.md
+    - With a pattern the almost impossible becomes possible: en/101-with-a-pattern-the-almost-impossible-becomes-possible.md
+    - The social contribution of an IT architect: en/102-the-social-contribution-of-an-it-architect.md
+    - Agility maximization: en/103-agility-maximization.md
+    - Who gets the role of transformer?: en/104-who-gets-the-role-of-transformer.md
+    - Do you also feel like a slave to your agenda?: en/105-do-you-also-feel-like-a-slave-to-your-agenda.md
+    - Do you manage the limitations or do the limitations manage you?: en/106-do-you-manage-the-limitations-or-do-the-limitations-manage-you.md
+    - Is Artificial Intelligence a hype?: en/107-is-artificial-intelligence-a-hype.md
+    - When do I decide to document the decision?: en/108-when-do-i-decide-to-document-the-decision.md
+    - Please let's deploy!: en/109-please-lets-deploy.md
+    - Do you also prevent yourself from being double insured?: en/110-do-you-also-prevent-yourself-from-being-double-insured.md
+    - Does your business also not understand much of this?: en/111-does-your-business-also-not-understand-much-of-this.md
+    - What can I do to become a good IT architect?: en/112-what-can-i-do-to-become-a-good-it-architect.md
+    - Silence please: en/113-silence-please.md
+    - Post-deterministic IT: en/114-post-deterministic-it.md

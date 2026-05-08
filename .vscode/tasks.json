@@ -2,6 +2,60 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "fnd.01 - documentatie-omvormer: genereer-publicatiestructuur",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.documentatie-omvormer/runner/documentatie-omvormer.runner.py",
+        "genereer-publicatiestructuur",
+        "--structuur-regels",
+        "${input:in_documentatie_omvormer_genereer_publicatiestructuur_structuur_regels}",
+        "--exclude-patterns",
+        "${input:in_documentatie_omvormer_genereer_publicatiestructuur_exclude_patterns}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "fnd.01 - documentatie-omvormer: genereer-navigatiebestand",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.documentatie-omvormer/runner/documentatie-omvormer.runner.py",
+        "genereer-navigatiebestand"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "fnd.01 - documentatie-omvormer: genereer-correcte-links",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.documentatie-omvormer/runner/documentatie-omvormer.runner.py",
+        "genereer-correcte-links",
+        "--docs-folder",
+        "${input:in_documentatie_omvormer_genereer_correcte_links_docs_folder}",
+        "--platform",
+        "${input:in_documentatie_omvormer_genereer_correcte_links_platform}",
+        "--base-url",
+        "${input:in_documentatie_omvormer_genereer_correcte_links_base_url}",
+        "--exclude-patterns",
+        "${input:in_documentatie_omvormer_genereer_correcte_links_exclude_patterns}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
       "label": "fnd.01 - ecosysteem-coordinator: aggregeer-tasks",
       "type": "process",
       "command": "python",
@@ -39,15 +93,105 @@
     {
       "label": "DB: flyway migrate",
       "type": "shell",
-      "command": "docker",
+      "command": "powershell",
       "args": [
-        "compose",
-        "-f",
-        "infra/docker-compose.yml",
-        "run",
-        "--rm",
-        "flyway",
-        "migrate"
+        "-Command",
+        "$logDir = 'logs'; if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir | Out-Null }; $logFile = \"$logDir/flyway-migrate-$(Get-Date -Format 'yyyyMMdd-HHmmss').log\"; Write-Host \"Log: $logFile\"; docker compose -f infra/docker-compose.yml run --rm flyway migrate 2>&1 | Tee-Object -FilePath $logFile; $rc = $LASTEXITCODE; if (Select-String -Path $logFile -Pattern 'ERROR|FAILED|Migration.*failed|Unable to' -Quiet) { Write-Host ''; Write-Host 'WAARSCHUWING: Fouten gevonden in Flyway output. Zie log: ' $logFile -ForegroundColor Red }; exit $rc"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "fnd.01 - uitvoerings-bemiddelaar: voer-uit",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.uitvoerings-bemiddelaar/runner/uitvoerings-bemiddelaar.runner.py",
+        "voer-uit"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "fnd.01 - uitvoerings-bemiddelaar: voer-uit (verbose)",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "../entoli-agents/artefacten/fnd/fnd.01.uitvoerings-bemiddelaar/runner/uitvoerings-bemiddelaar.runner.py",
+        "voer-uit",
+        "--verbose"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "knv.03 - zakelijk-redacteur: zet-om-naar-correcte-tekst",
+      "type": "process",
+      "command": "C:/git/entoli-agents/.venv/Scripts/python.exe",
+      "args": [
+        "../entoli-agents/artefacten/knv/knv.03.zakelijk-redacteur/runner/zakelijk-redacteur.runner.py",
+        "zet-om-naar-correcte-tekst",
+        "--brontekst",
+        "${input:in_zakelijk_redacteur_zet_om_naar_correcte_tekst_brontekst}",
+        "--doelgroep",
+        "${input:in_zakelijk_redacteur_zet_om_naar_correcte_tekst_doelgroep}",
+        "--stijlrichtlijnen",
+        "${input:in_zakelijk_redacteur_zet_om_naar_correcte_tekst_stijlrichtlijnen}",
+        "--behoud-structuur",
+        "${input:in_zakelijk_redacteur_zet_om_naar_correcte_tekst_behoud_structuur}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "knv.03 - zakelijk-redacteur: zet-om-naar-gestructureerd-document",
+      "type": "process",
+      "command": "C:/git/entoli-agents/.venv/Scripts/python.exe",
+      "args": [
+        "../entoli-agents/artefacten/knv/knv.03.zakelijk-redacteur/runner/zakelijk-redacteur.runner.py",
+        "zet-om-naar-gestructureerd-document",
+        "--brontekst",
+        "${input:in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_brontekst}",
+        "--doelgroep",
+        "${input:in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_doelgroep}",
+        "--stijlrichtlijnen",
+        "${input:in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_stijlrichtlijnen}",
+        "--gewenste-diepte",
+        "${input:in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_gewenste_diepte}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "knv.03 - zakelijk-redacteur: zet-om-naar-zakelijke-tekst",
+      "type": "process",
+      "command": "C:/git/entoli-agents/.venv/Scripts/python.exe",
+      "args": [
+        "../entoli-agents/artefacten/knv/knv.03.zakelijk-redacteur/runner/zakelijk-redacteur.runner.py",
+        "zet-om-naar-zakelijke-tekst",
+        "--brontekst",
+        "${input:in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_brontekst}",
+        "--doelgroep",
+        "${input:in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_doelgroep}",
+        "--stijlrichtlijnen",
+        "${input:in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_stijlrichtlijnen}",
+        "--structuurvoorkeur",
+        "${input:in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_structuurvoorkeur}"
       ],
       "problemMatcher": [],
       "presentation": {
@@ -56,5 +200,126 @@
       }
     }
   ],
-  "inputs": []
+  "inputs": [
+    {
+      "id": "agentName",
+      "type": "promptString",
+      "description": "Agent naam (bijv. capability-architect)"
+    },
+    {
+      "id": "intentName",
+      "type": "promptString",
+      "description": "Intent naam"
+    },
+    {
+      "id": "targetAgentName",
+      "type": "promptString",
+      "description": "Naam van de doelAgent"
+    },
+    {
+      "id": "valueStreamFase",
+      "type": "promptString",
+      "description": "Value stream fase (bijv. aeo.02)"
+    },
+    {
+      "id": "korteBeschrijving",
+      "type": "promptString",
+      "description": "Korte beschrijving van de agent capability"
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_publicatiestructuur_structuur_regels",
+      "type": "promptString",
+      "description": "Waarde voor 'structuur_regels' (genereer-publicatiestructuur) (Optioneel)"
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_publicatiestructuur_exclude_patterns",
+      "type": "promptString",
+      "description": "Waarde voor 'exclude_patterns' (genereer-publicatiestructuur) (Optioneel)"
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_correcte_links_docs_folder",
+      "type": "promptString",
+      "description": "Waarde voor 'docs_folder' (genereer-correcte-links)"
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_correcte_links_platform",
+      "type": "pickString",
+      "description": "Waarde voor 'platform' (genereer-correcte-links)",
+      "options": [
+        "github",
+        "gitlab",
+        "mkdocs"
+      ]
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_correcte_links_base_url",
+      "type": "promptString",
+      "description": "Waarde voor 'base_url' (genereer-correcte-links) (Optioneel)"
+    },
+    {
+      "id": "in_documentatie_omvormer_genereer_correcte_links_exclude_patterns",
+      "type": "promptString",
+      "description": "Waarde voor 'exclude_patterns' (genereer-correcte-links) (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_correcte_tekst_brontekst",
+      "type": "promptString",
+      "description": "Relatief pad naar de brontekst (bijv. content/nl/mijn-tekst.md)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_correcte_tekst_doelgroep",
+      "type": "promptString",
+      "description": "Indicatie van de beoogde lezersgroep"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_correcte_tekst_stijlrichtlijnen",
+      "type": "promptString",
+      "description": "Specifieke taalvoorkeuren of terminologielijst (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_correcte_tekst_behoud_structuur",
+      "type": "promptString",
+      "description": "Indicatie of de oorspronkelijke structuur (koppen, alinea's) behouden moet blijven (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_brontekst",
+      "type": "promptString",
+      "description": "Relatief pad naar de brontekst (bijv. content/nl/mijn-tekst.md)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_doelgroep",
+      "type": "promptString",
+      "description": "Indicatie van de beoogde lezers"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_stijlrichtlijnen",
+      "type": "promptString",
+      "description": "Eventuele specifieke structuurvoorkeuren of terminologielijsten (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_gestructureerd_document_gewenste_diepte",
+      "type": "promptString",
+      "description": "Aantal structuurniveaus voor koppen (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_brontekst",
+      "type": "promptString",
+      "description": "Relatief pad naar de brontekst (bijv. content/nl/mijn-tekst.md)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_doelgroep",
+      "type": "promptString",
+      "description": "Expliciete indicatie van de beoogde lezers"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_stijlrichtlijnen",
+      "type": "promptString",
+      "description": "Specifieke terminologie, afkortingen of huisstijlregels die gehandhaafd moeten worden (Optioneel)"
+    },
+    {
+      "id": "in_zakelijk_redacteur_zet_om_naar_zakelijke_tekst_structuurvoorkeur",
+      "type": "promptString",
+      "description": "Gewenste documentstructuur zoals kopniveaus of sectievolgordes (Optioneel)"
+    }
+  ]
 }

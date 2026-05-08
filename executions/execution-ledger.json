@@ -1,0 +1,128 @@
+[
+  {
+    "execution_id": "20260508.0201",
+    "timestamp": "2026-05-08T11:22:48Z",
+    "agent": "documentatie-omvormer",
+    "intent": "genereer-publicatiestructuur",
+    "execution_file": "executions/exec-20260508.0001/20260508.0001.prompt-instruction.md",
+    "digest": "892a486c9de8",
+    "status": "completed"
+  },
+  {
+    "execution_id": "20260508.0202",
+    "timestamp": "2026-05-08T12:17:44Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-correcte-tekst",
+    "execution_file": "executions/exec-20260508.0002/20260508.0002.prompt-instruction.md",
+    "digest": "b263d85a504e",
+    "status": "50"
+  },
+  {
+    "execution_id": "20260508.0203",
+    "timestamp": "2026-05-08T12:20:24Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-correcte-tekst",
+    "execution_file": "executions/exec-20260508.0203/20260508.0203.prompt-instruction.md",
+    "digest": "b263d85a504e",
+    "status": "50"
+  },
+  {
+    "execution_id": "20260508.0204",
+    "timestamp": "2026-05-08T13:46:29Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-20260508.0204/20260508.0204.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "50"
+  },
+  {
+    "execution_id": "20260508.0205",
+    "timestamp": "2026-05-08T14:18:28Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-20260508.0205/20260508.0205.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "completed"
+  },
+  {
+    "execution_id": "2arch-20260508.0001",
+    "timestamp": "2026-05-08T14:20:27Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-2arch-20260508.0001/2arch-20260508.0001.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "50"
+  },
+  {
+    "execution_id": "2arc-20260508.0001",
+    "timestamp": "2026-05-08T14:21:17Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-2arc-20260508.0001/2arc-20260508.0001.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "50"
+  },
+  {
+    "execution_id": "arc-20260508.0001",
+    "timestamp": "2026-05-08T14:21:32Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-arc-20260508.0001/arc-20260508.0001.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "completed"
+  },
+  {
+    "execution_id": "arc-20260508.0002",
+    "timestamp": "2026-05-08T14:21:41Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-arc-20260508.0002/arc-20260508.0002.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "completed"
+  },
+  {
+    "execution_id": "tarc-20260508.0001",
+    "timestamp": "2026-05-08T14:22:25Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-tarc-20260508.0001/tarc-20260508.0001.prompt-instruction.md",
+    "digest": "9dec35a1b6f4",
+    "status": "completed"
+  },
+  {
+    "execution_id": "tarc-20260508.0002",
+    "timestamp": "2026-05-08T14:30:02Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-tarc-20260508.0002/tarc-20260508.0002.prompt-instruction.md",
+    "digest": "00d542476637",
+    "status": "completed"
+  },
+  {
+    "execution_id": "tarc-20260508.0003",
+    "timestamp": "2026-05-08T14:43:10Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-gestructureerd-document",
+    "execution_file": "executions/exec-tarc-20260508.0003/tarc-20260508.0003.prompt-instruction.md",
+    "digest": "00d542476637",
+    "status": "completed"
+  },
+  {
+    "execution_id": "tarc-20260508.0004",
+    "timestamp": "2026-05-08T14:53:28Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-correcte-tekst",
+    "execution_file": "executions/exec-tarc-20260508.0004/tarc-20260508.0004.prompt-instruction.md",
+    "digest": "dd92ab314a46",
+    "status": "completed"
+  },
+  {
+    "execution_id": "tarc-20260508.0005",
+    "timestamp": "2026-05-08T15:24:27Z",
+    "agent": "zakelijk-redacteur",
+    "intent": "zet-om-naar-correcte-tekst",
+    "execution_file": "executions/exec-tarc-20260508.0005/tarc-20260508.0005.prompt-instruction.md",
+    "digest": "4803f812b93f",
+    "status": "completed"
+  }
+]

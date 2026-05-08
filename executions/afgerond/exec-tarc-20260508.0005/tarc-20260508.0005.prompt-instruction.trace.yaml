@@ -1,0 +1,46 @@
+execution_id: tarc-20260508.0005
+execution_digest: 4803f812b93f
+agent: zakelijk-redacteur
+intent: zet-om-naar-correcte-tekst
+timestamp: '2026-05-08 17:24:27'
+value_stream_fase: knv.03
+bronhouding: Input-gebonden
+modus: handmatig
+bronnen:
+- bronpad: zakelijk-redacteur.charter.md
+  type: charter
+  digest: —
+  reden_van_opname: agent-charter voor zakelijk-redacteur
+  opnamevorm: volledig
+- bronpad: ontologie.compact.md
+  type: ontologie
+  digest: —
+  reden_van_opname: altijd opgenomen
+  opnamevorm: volledig
+- bronpad: rules.bronhouding.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.traceability.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.templategebruik.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: BRONTEKST
+  type: input
+  digest: —
+  reden_van_opname: werkbron (opgegeven input)
+  opnamevorm: volledig
+context_events:
+- event_type: token_measurement
+  timestamp: '2026-05-08T15:24:27Z'
+  meetwijze: schatting
+  bron: runner-tokenizer
+  detail: 'Preflight schatting: 8377 tokens'
+  input_tokens: 8377

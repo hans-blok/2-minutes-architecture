@@ -1,0 +1,46 @@
+execution_id: arc-20260508.0002
+execution_digest: 9dec35a1b6f4
+agent: zakelijk-redacteur
+intent: zet-om-naar-gestructureerd-document
+timestamp: '2026-05-08 16:21:40'
+value_stream_fase: knv.03
+bronhouding: Input-gebonden
+modus: handmatig
+bronnen:
+- bronpad: zakelijk-redacteur.charter.md
+  type: charter
+  digest: —
+  reden_van_opname: agent-charter voor zakelijk-redacteur
+  opnamevorm: volledig
+- bronpad: ontologie.compact.md
+  type: ontologie
+  digest: —
+  reden_van_opname: altijd opgenomen
+  opnamevorm: volledig
+- bronpad: rules.bronhouding.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.traceability.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.templategebruik.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: entoli-model.md
+  type: graph
+  digest: —
+  reden_van_opname: intent-sleutelwoord in zet-om-naar-gestructureerd-document
+  opnamevorm: volledig
+context_events:
+- event_type: token_measurement
+  timestamp: '2026-05-08T14:21:40Z'
+  meetwijze: schatting
+  bron: runner-tokenizer
+  detail: 'Preflight schatting: 10529 tokens'
+  input_tokens: 10529

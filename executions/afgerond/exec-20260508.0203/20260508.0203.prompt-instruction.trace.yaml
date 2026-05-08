@@ -1,0 +1,51 @@
+execution_id: '20260508.0203'
+execution_digest: b263d85a504e
+agent: zakelijk-redacteur
+intent: zet-om-naar-correcte-tekst
+timestamp: '2026-05-08 14:20:24'
+value_stream_fase: knv.03
+bronhouding: Input-gebonden
+modus: handmatig
+bronnen:
+- bronpad: zakelijk-redacteur.charter.md
+  type: charter
+  digest: —
+  reden_van_opname: agent-charter voor zakelijk-redacteur
+  opnamevorm: volledig
+- bronpad: ontologie.compact.md
+  type: ontologie
+  digest: —
+  reden_van_opname: altijd opgenomen
+  opnamevorm: volledig
+- bronpad: rules.bronhouding.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.traceability.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.handoff.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.templategebruik.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+- bronpad: rules.workspace-beheer.yaml
+  type: rules
+  digest: —
+  reden_van_opname: value_stream=knv.03
+  opnamevorm: gefilterd
+context_events:
+- event_type: token_measurement
+  timestamp: '2026-05-08T12:20:24Z'
+  meetwijze: schatting
+  bron: runner-tokenizer
+  detail: 'Preflight schatting: 11867 tokens'
+  input_tokens: 11867

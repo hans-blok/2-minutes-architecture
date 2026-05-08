@@ -1,7 +1,8 @@
 ---
+workspace-code: TARC
 workspace: 2-minutes-architecture
 value_stream: KNV
-value_stream-fasen: ["KNV.01", "KNV.02", "KNV.03", "KNV.04"]
+value_stream-fasen: ["knv.01", "knv.02", "knv.03", "knv.04"]
 canon_github_url: https://github.com/hans-blok/entoli-canon.git
 ---
 
