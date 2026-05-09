@@ -32,7 +32,7 @@ And then it worked. The money is available to continue with the target architect
 
 Personality and IQ are more or less fixed. However, emotional intelligence can be improved and will help you inspire, motivate and lead teams. [Gemma Leigh Roberts' course has given me a lot of insight](https://www.lynda.com/Leadership-Management-tutorials/Developing-Your-Emotional-Intelligence/570966-2.html) (1).
 
-I was lucky enough to be advised to read Victor Grgic's article on 'The Serving Architect', [a must-read for every IT architect working in an Agile environment](http://www.raamstijn.nl/eenblogjeom/index.php/informatiemanagement/4689-dienende-architecten-volgens-viktor-grgic) (2). Unfortunately the full article has been removed. Send a message when you have it available!
+I was lucky enough to be advised to read Victor Grgic's article on 'The Serving Architect', a must-read for every IT architect working in an Agile environment (2). Unfortunately the full article has been removed. Send a message when you have it available!
 
 And finally, you definitely don't want to miss the [cartoon](https://www.youtube.com/watch?v=psAXMqxwol) (2) by David Marquet. He brings it all back to giving intention and offering clarity. You could end up working for one of the best IT departments ever, implementing your architecture.
 

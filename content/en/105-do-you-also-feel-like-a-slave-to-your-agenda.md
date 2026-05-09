@@ -14,8 +14,6 @@ We actually start at 4.10 pm; he also has a packed agenda. He brought the report
 
 A year later I started working for a new client. The problems and challenges in this environment are similar; here too the challenge of realizing APIs on a monolithic system and a few services. And here too all different data models for the messages. One thing is significantly different. My agenda is almost empty. Fortunately, I can discuss the problem I see at the coffee machine. This time I'm taking a different approach. I study the patterns, I watch how others define the problem and explain the solution. I then create presentations that are easy to understand. I can regularly work on this for a long time undisturbed. Three months later the architects agreed to my proposal. Another two weeks later, I present our ideas to the entire department in a large room. The role that I believe is so necessary will be a fact from then on.
 
-[caption id="" align="alignnone" width="473"] The Earth is round [/caption]
-
 ## Management vs leadership
 
 What is your relationship like? Your agenda provides a good indication.

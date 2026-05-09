@@ -43,4 +43,4 @@ More information:
 * [Messaging Patterns Overview - Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/patterns/messaging/)
 * [Enterprise Patterns](https://martinfowler.com/articles/enterprisePatterns.html)
 * SOA Design Patterns, 2008, Thomas Erl.
-* [Marble Solitaire - You tube](https://www.google.com/search?q=youtube+marble+solitaire)
+* [Marble Solitaire - You tube](https://www.youtube.com/watch?v=chYawhwnX6Q)

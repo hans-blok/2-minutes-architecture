@@ -14,8 +14,6 @@ Om 16.10 uur beginnen we daadwerkelijk; ook hij heeft een overvolle agenda. Hij 
 
 Een jaar later ben ik gaan werken voor een nieuwe opdrachtgever. De problemen en uitdagingen in deze omgeving zijn vergelijkbaar; ook hier de uitdaging om API's te realiseren op een monolithisch systeem en enkele services. En ook hier allemaal verschillende datamodellen voor de berichten. Eén ding is significant anders. Mij agenda is vrijwel leeg. Ik kan gelukkig bij het koffie-apparaat het probleem dat ik zie, bespreken. Dit keer pak ik het anders aan. Ik bestudeer de patterns, ik kijk hoe anderen het probleem definiëren en de oplossing uitleggen. Ik maak vervolgens presentaties die eenvoudig zijn te begrijpen. Ik kan regelmatig een lange tijd ongestoord hier aan werken. Drie maanden later zijn de architecten akkoord met mijn voorstel. Weer twee weken later, presenteer ik onze ideeën aan de hele afdeling in een grote zaal. De rol die volgens mij zo nodig is, is vanaf dan een feit.
 
-[caption id="" align="alignnone" width="473"] De aarde is rond [/caption]
-
 ## Management vs leiderschap
 
 Hoe is bij jou de verhouding? Je agenda biedt een goede indicatie.

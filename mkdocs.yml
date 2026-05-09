@@ -28,6 +28,7 @@ extra:
 
 nav:
   - Nederlands:
+    - Overzicht: nl/index.md
     - De IT-architect die niet wiebelt: nl/100-de-it-architect-die-niet-wiebelt.md
     - Met een pattern wordt het bijna onmogelijke mogelijk: nl/101-met-een-pattern-wordt-het-bijna-onmogelijke-mogelijk.md
     - De maatschappelijke bijdrage van een IT-architect: nl/102-de-maatschappelijke-bijdrage-van-een-it-architect.md
@@ -44,6 +45,7 @@ nav:
     - Stilte graag: nl/113-stilte-graag.md
     - Post-deterministische IT: nl/114-post-deterministische-it.md
   - English:
+    - Overview: en/index.md
     - The IT architect who doesn't wobble: en/100-the-it-architect-who-doesnt-wobble.md
     - With a pattern the almost impossible becomes possible: en/101-with-a-pattern-the-almost-impossible-becomes-possible.md
     - The social contribution of an IT architect: en/102-the-social-contribution-of-an-it-architect.md
@@ -59,3 +61,10 @@ nav:
     - What can I do to become a good IT architect?: en/112-what-can-i-do-to-become-a-good-it-architect.md
     - Silence please: en/113-silence-please.md
     - Post-deterministic IT: en/114-post-deterministic-it.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

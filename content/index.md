@@ -1,19 +1,34 @@
-![Logo](assets/logo.PNG)
 
-# 2 Minuten IT-Architectuur
+<div style="font-size: 2rem; margin-bottom: 20px; text-decoration: none;" markdown="1">
+[:nl:](#2-minuten-it-architectuur)
+</div>
 
-## Over de auteur
+## 2 Minuten IT-Architectuur
 
-Ik ben in 1995 afgestudeerd als Algemeen Econoom. Dat merk je misschien wel als we het over IT hebben. Mijn interesse gaat namelijk verder dan technologie alleen: ik kijk graag naar wat IT daadwerkelijk betekent voor organisaties en de samenleving.
+### Vertaler tussen toekomst en werkelijkheid
 
-In de afgelopen dertig jaar heb ik ons vakgebied van bijna alle kanten mogen bekijken. Ik schreef code in COBOL, werkte veel met Oracle, was Database Administrator, en verdiepte me in testen en informatieanalyse. Sinds 2010 werk ik met veel plezier als IT-architect, waarbij ik organisaties begeleid in hun uitdagende transformaties naar service-georiënteerde IT-landschappen.
+De IT-architect is een unieke kruising tussen techneut, diplomaat en filosoof. Als bruggenbouwer spreekt hij zowel de taal van complexe technologie (zoals API's en cloud) als die van de bestuurskamer, en vertaalt hij deze naar een werkbare strategie.
 
-De blogs op deze site zijn door mij geschreven als korte essays. Je hebt ze in twee minuten gelezen en ze geven je een persoonlijk inkijkje in hoe IT-architectuur er in de dagelijkse praktijk écht uitziet. Veel leesplezier!
+Door structuur in chaos te brengen, complexe zaken helder te verwoorden, uiteenlopende belangen te verenigen, altijd de rust te bewaren, helpt hij of zij organisaties zichzelf te transformeren. Een onmisbare gids tussen techniek, visie en de harde realiteit.
 
----
+### Naar de blogs
 
+- [Nederlands](nl/index.md)
 
-## Naar de blogs
+----
 
-- [Nederlands](nl/100-de-it-architect-die-niet-wiebelt.md)
-- [English](en/100-the-it-architect-who-doesnt-wobble.md)
+<div style="font-size: 2rem; margin-bottom: 20px; text-decoration: none;" markdown="1">
+[:gb:](#2-minute-it-architecture)
+</div>
+
+## 2 Minute IT Architecture
+
+### Translator between future and reality
+
+The IT architect is a unique crossbreed between engineer, diplomat, and philosopher. As a bridge builder, he speaks both the language of complex technology (such as APIs and cloud) and that of the boardroom, translating these into a workable strategy.
+
+By bringing structure to chaos, articulating complex matters clearly, uniting diverse interests, and always staying calm, he helps organizations transform themselves. An indispensable guide between technology, vision, and hard reality.
+
+### To the blogs
+
+- [English](en/index.md)

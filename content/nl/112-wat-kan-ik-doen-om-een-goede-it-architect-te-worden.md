@@ -32,7 +32,7 @@ En dan is het gelukt. Het geld is beschikbaar om verder te gaan met de doelarchi
 
 Persoonlijkheid en IQ zijn min of meer vaststaand. Emotionele intelligentie kan echter worden verbeterd en zal je helpen door teams te inspireren, te motiveren en te leiden. [De cursus van Gemma Leigh Roberts heeft me veel inzicht gegeven](https://www.lynda.com/Leadership-Management-tutorials/Developing-Your-Emotional-Intelligence/570966-2.html) (1).
 
-Ik had het geluk dat ik het advies kreeg om het artikel van Victor Grgic over 'De Dienende Architect' te lezen, [een must-read voor elke IT-architect die in een Agile-omgeving werkt](http://www.raamstijn.nl/eenblogjeom/index.php/informatiemanagement/4689-dienende-architecten-volgens-viktor-grgic) (2). Het volledige artikel is helaas verwijderd. Stuur een bericht als je het tot je beschikking hebt!
+Ik had het geluk dat ik het advies kreeg om het artikel van Victor Grgic over 'De Dienende Architect' te lezen, een must-read voor elke IT-architect die in een Agile-omgeving werkt (2). Het volledige artikel is helaas verwijderd. Stuur een bericht als je het tot je beschikking hebt!
 
 En tot slot wil je zeker niet de [cartoon](https://www.youtube.com/watch?v=psAXMqxwol) (2) van David Marquet missen. Hij brengt het allemaal terug tot het geven van intentie en het bieden van duidelijkheid. Je zou uiteindelijk wel eens voor een van de beste IT-afdelingen ooit kunnen werken, waar je jouw architectuur implementeert.
 

@@ -45,4 +45,4 @@ Meer informatie:
 * [Messaging Patterns Overview - Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/patterns/messaging/)
 * [Enterprise Patterns](https://martinfowler.com/articles/enterprisePatterns.html)
 * SOA Design Patterns, 2008, Thomas Erl.
-* [Marble Solitaire - You tube](https://www.google.com/search?q=youtube+marble+solitaire&sca_esv=ed467975128c7ac9&rlz=1C1CHBD_nlNL969NL970&sxsrf=ACQVn0-kTP0V8wJka9FfqPweQ7bliIhSFg%3A1708010302806&ei=PivOZZ3OMOOsi-gPwdmn0AQ&oq=you+tube+solitaire+marble&gs_lp=Egxnd3Mtd2l6LXNlcnAiGXlvdSB0dWJlIHNvbGl0YWlyZSBtYXJibGUqAggAMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNIg0JQ8QJY3CtwAXgBkAEAmAGNAqABpgqqAQUyLjIuM7gBAcgBAPgBAcICChAAGEcY1gQYsAPCAgcQABiABBgNwgIGEAAYHhgNwgIKEAAYFhgeGA8YCsICCBAAGAgYHhgNiAYBkAYI&sclient=gws-wiz-serp#fpstate=ive&vld=cid:0d8b20c2,vid:chYawhwnX6Q,st:0 "https://www.google.com/search?q=youtube+marble+solitaire")
+* [Marble Solitaire - You tube](https://www.youtube.com/watch?v=chYawhwnX6Q)
