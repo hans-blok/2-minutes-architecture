@@ -1,7 +1,19 @@
+<h1 hidden> </h1>
 
-<div style="font-size: 2rem; margin-bottom: 20px; text-decoration: none;" markdown="1">
-[:nl:](#2-minuten-it-architectuur)
+<div style="display: flex; align-items: center; gap: 2rem;" markdown="1">
+  <img src="assets/avatar.png" alt="Hans Blok" style="width: 120px; border-radius: 50%;">
+  <div markdown="1">
+
+Hans Blok, Wijk bij Duurstede  
+:material-phone: +31 6 3045 18 22  
+:material-email: hans.blok@the-future-group.com
+
+  </div>
 </div>
+
+## :flag_nl: 2 Minuten IT-Architectuur
+
+
 ## De IT-architect
 ### Vertaler tussen toekomst en werkelijkheid
 
@@ -11,9 +23,7 @@ Door structuur in chaos te brengen, complexe zaken helder te verwoorden, uiteenl
 
 - [Lees de blogs](nl/index.md)
 ----
-<div style="font-size: 2rem; margin-bottom: 20px; text-decoration: none;" markdown="1">
-[:gb:](#2-minute-it-architecture)
-</div>
+## :flag_gb: 2 Minute IT-Architecture
 ## The IT-architect
 ### Translator between future and reality
 
