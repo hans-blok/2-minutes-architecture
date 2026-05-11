@@ -61,6 +61,7 @@ nav:
     - What can I do to become a good IT architect?: en/112-what-can-i-do-to-become-a-good-it-architect.md
     - Silence please: en/113-silence-please.md
     - Post-deterministic IT: en/114-post-deterministic-it.md
+  - Over de auteur: over-de-auteur.md
 
 markdown_extensions:
   - attr_list

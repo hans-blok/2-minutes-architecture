@@ -1,15 +1,3 @@
-# Over de auteur, Hans Blok
-
-<div class="author-block" style="margin-bottom: 2rem;">
-  <img src="../assets/avatar.png" alt="Hans Blok" style="width: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem;" class="author-avatar">
-  <div class="author-bio">
-    <p>Ik ben opgeleid als algemeen econoom in de jaren 90. Mijn interesse gaat verder dan technologie alleen: ik kijk graag naar wat IT betekent voor organisaties en de samenleving.</p>
-    <p>In dertig jaar heb ik het vak van IT-specialist van alle kanten gezien: COBOL, Oracle, DBA, testen, informatieanalyse. Sinds 2010 werk ik als IT-architect en begeleid ik organisaties bij transformaties naar service-georiënteerde IT-landschappen.</p>
-    <p>De blogs op deze site zijn korte essays. Je leest ze in twee minuten. Ze geven inzicht in hoe IT-architectuur er in de praktijk uitziet.</p>
-  </div>
-</div>
-
----
 
 ## Blogs
 

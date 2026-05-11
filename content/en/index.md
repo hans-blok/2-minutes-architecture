@@ -1,15 +1,3 @@
-# About the author
-
-<div class="author-block" style="margin-bottom: 2rem;">
-  <img src="../assets/avatar.png" alt="Hans Blok" style="width: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem;" class="author-avatar">
-  <div class="author-bio">
-    <p>I was trained as a general economist in the 1990s. My interest goes beyond technology alone: I like to explore what IT means for organizations and society.</p>
-    <p>Over the past thirty years, I have experienced the IT profession from many different angles: COBOL, Oracle, DBA work, testing, and information analysis. Since 2010, I have worked as an IT architect, guiding organizations through transformations toward service-oriented IT landscapes.</p>
-    <p>The blogs on this site are short essays. You can read them in two minutes. They offer insight into what IT architecture looks like in practice.</p>
-  </div>
-</div>
-
----
 
 ## Blogs
 

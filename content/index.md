@@ -1,17 +1,5 @@
 <h1 hidden> </h1>
 
-<div style="display: flex; align-items: center; gap: 2rem;" markdown="1">
-  <img src="assets/avatar.png" alt="Hans Blok" style="width: 120px; border-radius: 50%;">
-  <div markdown="1" style="font-size: 0.6rem;">
-
-Hans Blok  
-Wijk bij Duurstede  
-:material-phone: +31 6 3045 18 22  
-:material-email: hans.blok@the-future-group.com
-
-  </div>
-</div>
-
 ## :flag_nl: 2 Minuten IT-Architectuur
 
 
