@@ -1,4 +1,4 @@
-# De Vibe Architect: snelheid zonder grip te verliezen
+# De Vibe Architect: snelheid met duidelijke grenzen
 
 **Datum:** 2026-07-08
 
@@ -8,7 +8,7 @@ Vibe coding laat zien dat A.I. het mogelijk maakt om sneller van idee naar werke
 
 Daarom zie ik de Vibe Architect niet als iemand die A.I. vervangt, maar als iemand die A.I. bewust inzet binnen duidelijke grenzen. De architect gebruikt A.I. om te verkennen en te versnellen, maar blijft zelf verantwoordelijk voor de duiding, de afweging en de uiteindelijke beslissing. Zodra iets effect krijgt buiten de verkenningsfase, moet het herleidbaar zijn, beargumenteerd worden en passen binnen de afspraken die de organisatie heeft gemaakt. Snelheid is nuttig, maar alleen als die snelheid niet ten koste gaat van begrip.
 
-Dat raakt ook aan de verhouding tussen vrijheid en begrenzing. Entoli is in dat opzicht een bruikbare metafoor: een contract-gedreven, agent-gebaseerde manier van werken waarin A.I. niet losjes op gevoel opereert, maar binnen expliciete kaders. Dat betekent niet dat er geen ruimte meer is voor experiment of creativiteit. Het betekent wel dat het moment waarop een verkenning verandert in een besluit scherp zichtbaar moet zijn. In de vrije fase mag je snel denken; in de gebonden fase moet je precies zijn.
+Dat raakt ook aan de verhouding tussen vrijheid en begrenzing. Denk aan een agent-ecosysteem waarin A.I. niet losjes op gevoel opereert, maar zijn antwoorden genereert binnen expliciete constraints die richting, veiligheid en verantwoordelijkheid afdwingen. Dat betekent niet dat er geen ruimte meer is voor experiment of creativiteit. Het betekent wel dat het moment waarop een verkenning verandert in een besluit scherp zichtbaar moet zijn. In de vrije fase mag je snel denken; in de gebonden fase moet je precies zijn.
 
 Daarmee wordt de Vibe Architect iemand die beide kanten van het vak serieus neemt. Aan de ene kant is er de ruimte om met A.I. sneller tot nieuwe inzichten te komen. Aan de andere kant is er de plicht om bias, privacy, transparantie en verklaarbaarheid niet weg te poetsen met een indrukwekkende uitkomst. Juist omdat A.I. overtuigend kan klinken, moet de architect extra scherp blijven op wat er werkelijk onder de motorkap gebeurt.
 
