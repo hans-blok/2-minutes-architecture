@@ -3,6 +3,7 @@
 
 | Datum | Titel |
 |---|---|
+| 2026 jul | [De Vibe Architect: snelheid zonder grip te verliezen](115-de-vibe-architect.md) |
 | 2026 jan | [Post-deterministische IT](114-post-deterministische-it.md) |
 | 2024 dec | [Stilte graag](113-stilte-graag.md) |
 | 2024 okt | [Wat kan ik doen om een goede IT-architect te worden?](112-wat-kan-ik-doen-om-een-goede-it-architect-te-worden.md) |

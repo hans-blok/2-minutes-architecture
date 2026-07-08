@@ -1,0 +1,15 @@
+# De Vibe Architect: snelheid zonder grip te verliezen
+
+**Datum:** 2026-07-08
+
+De term Vibe Architect klinkt speels, bijna lichtvoetig. Dat is precies waarom hij interessant is. In een wereld waarin A.I. steeds vaker meedoet in het denkwerk, ontstaat er ruimte voor een architect die sneller kan verkennen, associëren en itereren dan we tot nu toe gewend waren. Maar diezelfde snelheid roept ook meteen een belangrijke spanning op: hoe voorkom je dat gemak verandert in gemakzucht?
+
+Vibe coding laat zien dat A.I. het mogelijk maakt om sneller van idee naar werkend resultaat te komen. Voor architectuurwerk is dat aantrekkelijk, omdat je sneller alternatieven kunt verkennen, verbanden kunt leggen en concepten kunt toetsen. Tegelijkertijd zit daar ook het risico in. Wie te veel leunt op de suggestieve kwaliteit van een antwoord, kan ongemerkt de diepgang verliezen die juist nodig is om een goede architectuurbeslissing te nemen. In een gemeentelijke context is dat risico extra groot, omdat zorgvuldigheid, traceerbaarheid en verantwoording geen luxe zijn maar randvoorwaarden.
+
+Daarom zie ik de Vibe Architect niet als iemand die A.I. vervangt, maar als iemand die A.I. bewust inzet binnen duidelijke grenzen. De architect gebruikt A.I. om te verkennen en te versnellen, maar blijft zelf verantwoordelijk voor de duiding, de afweging en de uiteindelijke beslissing. Zodra iets effect krijgt buiten de verkenningsfase, moet het herleidbaar zijn, beargumenteerd worden en passen binnen de afspraken die de organisatie heeft gemaakt. Snelheid is nuttig, maar alleen als die snelheid niet ten koste gaat van begrip.
+
+Dat raakt ook aan de verhouding tussen vrijheid en begrenzing. Entoli is in dat opzicht een bruikbare metafoor: een contract-gedreven, agent-gebaseerde manier van werken waarin A.I. niet losjes op gevoel opereert, maar binnen expliciete kaders. Dat betekent niet dat er geen ruimte meer is voor experiment of creativiteit. Het betekent wel dat het moment waarop een verkenning verandert in een besluit scherp zichtbaar moet zijn. In de vrije fase mag je snel denken; in de gebonden fase moet je precies zijn.
+
+Daarmee wordt de Vibe Architect iemand die beide kanten van het vak serieus neemt. Aan de ene kant is er de ruimte om met A.I. sneller tot nieuwe inzichten te komen. Aan de andere kant is er de plicht om bias, privacy, transparantie en verklaarbaarheid niet weg te poetsen met een indrukwekkende uitkomst. Juist omdat A.I. overtuigend kan klinken, moet de architect extra scherp blijven op wat er werkelijk onder de motorkap gebeurt.
+
+Mijn conclusie is dat de Vibe Architect alleen geloofwaardig is als de rol expliciet het spanningsveld tussen snelheid en zorgvuldigheid omarmt. Niet door dat spanningsveld te ontkennen, maar door het bewust te organiseren. Dan wordt vibe geen synoniem voor oppervlakkigheid, maar voor versneld denken binnen heldere grenzen. En precies daar ligt volgens mij de waarde van deze nieuwe rol.

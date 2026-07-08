@@ -3,6 +3,7 @@
 
 | Date | Title |
 |---|---|
+| 2026 jul | [The Vibe Architect: speed without losing control](115-the-vibe-architect.md) |
 | 2026 jan | [Post-deterministic IT](114-post-deterministic-it.md) |
 | 2024 dec | [Silence please](113-silence-please.md) |
 | 2024 oct | [What can I do to become a good IT architect?](112-what-can-i-do-to-become-a-good-it-architect.md) |

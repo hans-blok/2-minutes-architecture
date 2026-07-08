@@ -1,0 +1,15 @@
+# The Vibe Architect: speed without losing control
+
+**Date:** 2026-07-08
+
+The term Vibe Architect sounds playful, almost lighthearted. That is exactly why it is interesting. In a world where A.I. is increasingly part of the thinking process, there is room for an architect who can explore, associate, and iterate faster than we have been used to so far. But that same speed immediately raises an important tension: how do you prevent convenience from turning into carelessness?
+
+Vibe coding shows that A.I. makes it possible to move faster from idea to working result. That is attractive for architecture work, because you can explore alternatives more quickly, connect ideas, and test concepts earlier. At the same time, there is a real risk. If you lean too heavily on the persuasive quality of an answer, you can lose the depth that is needed to make a sound architectural decision. In a municipal context that risk is even greater, because care, traceability, and accountability are not luxuries; they are conditions of the job.
+
+That is why I do not see the Vibe Architect as someone who replaces A.I., but as someone who uses A.I. deliberately within clear boundaries. The architect uses A.I. to explore and accelerate, but remains responsible for interpretation, judgement, and the final decision. Once something starts to have effects beyond the exploratory phase, it must be traceable, defensible, and aligned with the agreements the organization has made. Speed is useful, but only if it does not come at the expense of understanding.
+
+That also speaks to the balance between freedom and constraint. Entoli is a useful metaphor here: a contract-driven, agent-based way of working in which A.I. does not operate loosely on feeling, but within explicit boundaries. That does not mean there is no room left for experimentation or creativity. It does mean that the moment when an exploration becomes a decision must be clearly visible. In the open phase you may think quickly; in the bound phase you must be precise.
+
+This makes the Vibe Architect someone who takes both sides of the profession seriously. On the one hand, there is room to use A.I. to reach new insights faster. On the other hand, there is the duty not to smooth over bias, privacy, transparency, and explainability with an impressive-looking outcome. Precisely because A.I. can sound convincing, the architect must stay extra alert to what is actually happening underneath the surface.
+
+My conclusion is that the Vibe Architect is only credible if the role explicitly embraces the tension between speed and care. Not by denying that tension, but by organizing it consciously. Then vibe stops being a synonym for superficiality and becomes accelerated thinking within clear boundaries. And that, in my view, is exactly where the value of this new role lies.
