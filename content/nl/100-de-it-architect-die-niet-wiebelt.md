@@ -8,23 +8,23 @@
 
 Waar we elkaar voorheen nauwelijks lieten uitpraten, vielen nu lange stiltes. We hadden van het management de opdracht gekregen om ons werk te evalueren. Een jaar eerder waren we begonnen met het inrichten van IT-architectuur binnen een organisatie met een IT-afdeling bestaande uit ontwerpers, testers, ontwikkelaars en infrastructuurspecialisten. Gewapend met kennis uit het boek *DYA – Dynamische Architectuur: stap voor stap naar professionele enterprise-architectuur* en de cursus *IT-architectuur in de praktijk* was ons team zeer enthousiast aan de slag gegaan met het opstellen en uitvoeren van een 100-dagenplan.
 
-We startten met een sessie met het management. Die waren eenvoudig te overtuigen van het nut van IT-architectuur — logisch, want zij hadden ons immers de opdracht gegeven. De projectmanagers lieten zich minder gemakkelijk overtuigen. Zij gaven aan dat zij voornamelijk stuurden op tijd en geld en dat sturing op kwaliteit ontbrak. Ze waren bereid dat te veranderen: voortaan zou vóór de start van een project een projectstartarchitectuur (PSA) worden opgeleverd. In de praktijk kon de klant echter vaak niet wachten, waardoor het opstellen van de PSA er telkens bij inschoot.
+We startten met een sessie met het management. Die waren eenvoudig te overtuigen van het nut van IT-architectuur, en dat was logisch: zij hadden ons immers de opdracht gegeven. De projectmanagers lieten zich minder gemakkelijk overtuigen. Zij gaven aan dat zij voornamelijk stuurden op tijd en geld en dat sturing op kwaliteit ontbrak. Ze waren bereid dat te veranderen: voortaan zou vóór de start van een project een projectstartarchitectuur (PSA) worden opgeleverd. In de praktijk kon de klant echter vaak niet wachten, waardoor het opstellen van de PSA er telkens bij inschoot.
 
 En zelfs wanneer in de PSA duidelijk was vastgelegd dat een interface op basis van het doelgegevensmodel zou worden beschreven en vervolgens vertaald, betekende dat niet automatisch dat een ontwerper dit ook zo uitwerkte. Een ontwerper gaf mij ooit het antwoord: "Ja, dat is een mooie oplossing die in de PSA staat beschreven, maar ik wist niet dat ik die ook echt moest toepassen."
 
-We werkten hard en beschikten gezamenlijk over veel kennis — kennis van het IT-landschap en van de relevante technologieën. In de avonduren bestudeerde ik patterns en de verschillende methoden van de IT-architect. Maar waarom werkte dit dan niet?
+We werkten hard en beschikten gezamenlijk over veel kennis: kennis van het IT-landschap en van de relevante technologieën. In de avonduren bestudeerde ik patterns en de verschillende methoden van de IT-architect. Maar waarom werkte dit dan niet?
 
 ---
 
 ## Probleem
 
-Wanneer we nadenken over wat een goede architect moet weten en kunnen, denken we in eerste instantie aan kennis van methoden en een overzicht van beschikbare technologieën en patterns, en aan het vermogen deze goed toe te passen. Maar hoe goed de ideeën en oplossingen van een IT-architect ook zijn: wanneer hij of zij de stakeholders niet weet te overtuigen, is het harde werken vrijwel voor niets. IT-architectuur krijgt dan een slechte naam en het management gaat twijfelen of schaarse resources nog aan architectuur besteed moeten worden. De architect zit in dat geval op een kruk met slechts één poot — en zelfs met twee poten zou de kruk omvallen.
+Wanneer we nadenken over wat een goede architect moet weten en kunnen, denken we in eerste instantie aan kennis van methoden en een overzicht van beschikbare technologieën en patterns, en aan het vermogen deze goed toe te passen. Maar hoe goed de ideeën en oplossingen van een IT-architect ook zijn: wanneer hij of zij de stakeholders niet weet te overtuigen, is het harde werken vrijwel voor niets. IT-architectuur krijgt dan een slechte naam en het management gaat twijfelen of schaarse resources nog aan architectuur besteed moeten worden. De architect zit in dat geval op een kruk met slechts één poot. Zelfs met twee poten zou de kruk omvallen.
 
 ---
 
 ## Oplossing
 
-Als IT-architect zorg je ervoor dat de mensen om je heen op je kunnen rekenen. Je moet de technologieën en patterns kennen om de juiste besluiten te kunnen nemen voor de organisatie waarvoor je werkt. Daarnaast moet je de mensen om je heen kunnen overtuigen — en in het bijzonder degene die beslist over de inzet van mensen en budgetten. Maar ook wanneer dat is gelukt, ben je er nog niet: je moet de teams die de oplossingen realiseren, motiveren, ondersteunen en waar nodig bijsturen. Kortom: je moet technisch leiderschap tonen.
+Als IT-architect zorg je ervoor dat de mensen om je heen op je kunnen rekenen. Je moet de technologieën en patterns kennen om de juiste besluiten te kunnen nemen voor de organisatie waarvoor je werkt. Daarnaast moet je de mensen om je heen kunnen overtuigen, en in het bijzonder degene die beslist over de inzet van mensen en budgetten. Maar ook wanneer dat is gelukt, ben je er nog niet: je moet de teams die de oplossingen realiseren, motiveren, ondersteunen en waar nodig bijsturen. Kortom: je moet technisch leiderschap tonen.
 
 ---
 

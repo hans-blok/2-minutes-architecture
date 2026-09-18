@@ -8,7 +8,7 @@ Maandagochtend. Ik ben iets later op kantoor dan ik mezelf had voorgenomen. Over
 
 Mijn agenda meldt dat ik om vier uur een overleg heb met een manager die een week eerder, tijdens een medewerkerssessie, aankondigde dat data management de komende maanden "ingericht" zal worden. Mijn doel is helder: hem overtuigen dat er een extra rol nodig is. We hebben een canoniek API-datamodel nodig voor de uitwisseling van berichten met klanten. En belangrijker nog: iemand die dit model beheert, bewaakt en publiceert. Die ochtend heb ik het innovatieteam beloofd dit te gaan regelen.
 
-Om 16.10 uur beginnen we daadwerkelijk; ook hij heeft een overvolle agenda. Hij heeft de manager van reporting meegenomen — mooi, ik heb aandacht. Ik leg uit waarom deze nieuwe rol essentieel is. Aan de overkant van de tafel zie ik vooral onbegrip. Het voelt alsof ik moet uitleggen dat de aarde rond is en niet plat. Maar ik merk al snel: als je op dat niveau moet beginnen, kom je niet verder.
+Om 16.10 uur beginnen we daadwerkelijk; ook hij heeft een overvolle agenda. Hij heeft de manager van reporting meegenomen. Mooi, ik heb aandacht. Ik leg uit waarom deze nieuwe rol essentieel is. Aan de overkant van de tafel zie ik vooral onbegrip. Het voelt alsof ik moet uitleggen dat de aarde rond is en niet plat. Maar ik merk al snel: als je op dat niveau moet beginnen, kom je niet verder.
 
 ## Een nieuwe start
 
