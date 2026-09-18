@@ -8,7 +8,7 @@ In architectuurplaten kom ik namen tegen als dataservice, businessservice, API-s
 
 Een beperkte, expliciete indeling van servicetypen helpt dat gesprek vooruit. De SOA-literatuur biedt er een die al twintig jaar meegaat: de service layers die Thomas Erl beschrijft. Niet als formele standaard, en het is ook geen onderdeel van DDD. Wel een bruikbaar vertrekpunt, omdat de vier categorieën over verantwoordelijkheid gaan en niet over techniek.
 
-![Overzicht van de vier servicetypen van Thomas Erl: Orchestration, Entity, Task en Utility Service, met voorbeelden uit een gemeentelijke context](../assets/blog-116-services-by-Thomas-Erl.png)
+![Overzicht van de vier servicetypen van Thomas Erl: Orchestration, Task, Entity en Utility Service, met voorbeelden uit een gemeentelijke context](../assets/blog-116-services-by-Thomas-Erl.png)
 
 Een **Orchestration Service** voegt een bovenliggend abstractieniveau toe. Deze service bepaalt de volgorde waarin andere services worden aangeroepen en bevat de scenario-specifieke logica van het proces, zodat de onderliggende services die niet hoeven te kennen. Denk aan Behandelen bijstandsaanvraag.
 
