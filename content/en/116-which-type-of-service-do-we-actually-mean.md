@@ -16,10 +16,21 @@ A particular variant of this is the **Orchestrated Task Service**. That is a Tas
 
 Outside the domain, finally, sits the **Utility Service**: functionality that does not derive from the business domain, such as sending notifications, logging or converting to PDF. Reusable across the entire landscape, but you will not find that logic in a business model or a case type.
 
+There is room to play with the names, and the literature does exactly that. The same four models each carry a handful of alternative labels:
+
+| Service type | Also known as |
+|---|---|
+| Entity Service | entity-centric business service, business entity service |
+| Task Service | task-centric business service, business process service |
+| Orchestrated Task Service | process service, business process service, orchestration service |
+| Utility Service | application service, infrastructure service, technology service |
+
+Look at business process service: that term appears in two rows at once. Anyone using it without saying what they mean leaves it open whether this is a task or a process hosted in an orchestration platform. That is precisely where the confusion this article is about begins. Which label you pick matters less than picking one and recording what you mean by it.
+
 These four do not all sit at the same level, and that is not sloppiness. Entity and Task are two ways of setting the functional boundary of a service: around an entity or around a task. Orchestrated Task is an implementation variant of Task. Utility stands apart because the logic originates outside the domain. Name that, and the borderline cases — is Schedule appointment a task or an entity? — stay a conversation about the design instead of about the classification.
 
 Does a classification from the SOA era remain useful? For the purpose I describe here, it does. The underlying question, which responsibility belongs to this service, has not changed since we started talking about microservices and APIs. What an organisation adopts from it is its own choice: four categories, three, or a classification of its own that fits the domain better.
 
 More important than which limited classification we choose is that we explicitly agree what our service types mean, and record that where architects can find it. Better naming does not start with inventing yet another service type, but with jointly establishing what we mean by the ones we already have.
 
-Sources: [Concept: The Concept of Service Layers](https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html) (SAVARA/JBoss) and Thomas Erl, Service Models (task services and orchestrated task services).
+Sources: [Concept: The Concept of Service Layers](https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html) (SAVARA/JBoss) and [Service Models](https://patterns.arcitura.com/soa-patterns/basics/soamethodology/entity_services) (Arcitura Patterns), both based on Thomas Erl.

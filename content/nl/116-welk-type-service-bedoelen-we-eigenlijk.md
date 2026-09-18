@@ -18,10 +18,21 @@ Een bijzondere variant daarvan is de **Orchestrated Task Service**. Dat is een T
 
 Buiten het domein staat ten slotte de **Utility Service**: functionaliteit die niet uit het bedrijfsdomein voortkomt, zoals versturen van notificaties, loggen of converteren naar PDF. Herbruikbaar over het hele landschap, maar je vindt de logica niet terug in een bedrijfsmodel of zaaktype.
 
+Met de namen valt te spelen, en dat gebeurt ook volop. Dezelfde vier modellen dragen in de literatuur elk een handvol andere etiketten:
+
+| Servicetype | Ook bekend als |
+|---|---|
+| Entity Service | entity-centric business service, business entity service |
+| Task Service | task-centric business service, business process service |
+| Orchestrated Task Service | process service, business process service, orchestration service |
+| Utility Service | application service, infrastructure service, technology service |
+
+Kijk naar business process service: die term staat in twee rijen tegelijk. Wie hem gebruikt zonder erbij te zeggen wat hij bedoelt, laat in het midden of het om een taak gaat of om een proces in een orkestratieplatform. Precies daar ontstaat de spraakverwarring waar deze blog over gaat. Welk etiket je kiest is minder belangrijk dan dat je er één kiest en vastlegt wat je ermee bedoelt.
+
 Deze vier staan niet allemaal op hetzelfde niveau, en dat is geen slordigheid. Entity en Task zijn twee manieren om de functionele grens van een service te bepalen: rond een entiteit of rond een taak. Orchestrated Task is een uitvoeringsvariant van Task. Utility onderscheidt zich doordat de logica buiten het domein ontstaat. Benoem je dat, dan blijven grensgevallen — is Plan afspraak nu een taak of een entiteit? — een gesprek over het ontwerp in plaats van over de indeling.
 
 Blijft zo'n indeling uit de SOA-tijd bruikbaar? Voor het doel dat ik hier beschrijf wel. De onderliggende vraag, welke verantwoordelijkheid hoort bij deze service, is niet veranderd sinds we het over microservices en API's zijn gaan hebben. Wat een organisatie ervan overneemt is haar eigen keuze: vier categorieën, drie, of een eigen indeling die beter bij het domein past.
 
 Belangrijker dan welke beperkte classificatie we kiezen, is dat we expliciet afspreken wat onze servicetypen betekenen en dat vastleggen waar architecten het kunnen terugvinden. Betere naamgeving begint niet bij het bedenken van nóg een servicetype, maar bij het samen vaststellen wat we met de bestaande bedoelen.
 
-Bronnen: [Concept: The Concept of Service Layers](https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html) (SAVARA/JBoss) en Thomas Erl, Service Models (task services en orchestrated task services).
+Bronnen: [Concept: The Concept of Service Layers](https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html) (SAVARA/JBoss) en [Service Models](https://patterns.arcitura.com/soa-patterns/basics/soamethodology/entity_services) (Arcitura Patterns), beide gebaseerd op Thomas Erl.

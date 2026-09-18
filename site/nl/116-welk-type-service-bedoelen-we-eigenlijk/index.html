@@ -1484,10 +1484,38 @@
 <p>Niet alle logica past in zo'n context. Zodra een stuk verwerking meerdere entiteitsdomeinen overspant, hoort het bij geen van die entiteiten meer thuis. Bereken recht op bijstand combineert gegevens over Persoon, Inkomen en Zaak, rekent en toetst, en is daarmee een bovenliggende taak. Daarvoor maken we een <strong>Task Service</strong>: zijn functionele grens wordt bepaald door die taak en niet door een entiteit. Zo'n service is minder herbruikbaar dan een Entity Service, en fungeert doorgaans als de controller die de meer procesonafhankelijke services samenstelt.</p>
 <p>Een bijzondere variant daarvan is de <strong>Orchestrated Task Service</strong>. Dat is een Task Service waarvan het onderliggende proces als procesdefinitie in een orkestratieplatform is ondergebracht, bijvoorbeeld Behandelen bijstandsaanvraag. Functioneel is het hetzelfde idee — een taak die andere services aanstuurt — maar de ontwerpkenmerken verschillen door die techniek, en daarom krijgt hij een eigen etiket. Je komt hem ook tegen als processervice of orchestration service, wat meteen laat zien hoe snel de spraakverwarring ontstaat.</p>
 <p>Buiten het domein staat ten slotte de <strong>Utility Service</strong>: functionaliteit die niet uit het bedrijfsdomein voortkomt, zoals versturen van notificaties, loggen of converteren naar PDF. Herbruikbaar over het hele landschap, maar je vindt de logica niet terug in een bedrijfsmodel of zaaktype.</p>
+<p>Met de namen valt te spelen, en dat gebeurt ook volop. Dezelfde vier modellen dragen in de literatuur elk een handvol andere etiketten:</p>
+<table>
+<thead>
+<tr>
+<th>Servicetype</th>
+<th>Ook bekend als</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity Service</td>
+<td>entity-centric business service, business entity service</td>
+</tr>
+<tr>
+<td>Task Service</td>
+<td>task-centric business service, business process service</td>
+</tr>
+<tr>
+<td>Orchestrated Task Service</td>
+<td>process service, business process service, orchestration service</td>
+</tr>
+<tr>
+<td>Utility Service</td>
+<td>application service, infrastructure service, technology service</td>
+</tr>
+</tbody>
+</table>
+<p>Kijk naar business process service: die term staat in twee rijen tegelijk. Wie hem gebruikt zonder erbij te zeggen wat hij bedoelt, laat in het midden of het om een taak gaat of om een proces in een orkestratieplatform. Precies daar ontstaat de spraakverwarring waar deze blog over gaat. Welk etiket je kiest is minder belangrijk dan dat je er één kiest en vastlegt wat je ermee bedoelt.</p>
 <p>Deze vier staan niet allemaal op hetzelfde niveau, en dat is geen slordigheid. Entity en Task zijn twee manieren om de functionele grens van een service te bepalen: rond een entiteit of rond een taak. Orchestrated Task is een uitvoeringsvariant van Task. Utility onderscheidt zich doordat de logica buiten het domein ontstaat. Benoem je dat, dan blijven grensgevallen — is Plan afspraak nu een taak of een entiteit? — een gesprek over het ontwerp in plaats van over de indeling.</p>
 <p>Blijft zo'n indeling uit de SOA-tijd bruikbaar? Voor het doel dat ik hier beschrijf wel. De onderliggende vraag, welke verantwoordelijkheid hoort bij deze service, is niet veranderd sinds we het over microservices en API's zijn gaan hebben. Wat een organisatie ervan overneemt is haar eigen keuze: vier categorieën, drie, of een eigen indeling die beter bij het domein past.</p>
 <p>Belangrijker dan welke beperkte classificatie we kiezen, is dat we expliciet afspreken wat onze servicetypen betekenen en dat vastleggen waar architecten het kunnen terugvinden. Betere naamgeving begint niet bij het bedenken van nóg een servicetype, maar bij het samen vaststellen wat we met de bestaande bedoelen.</p>
-<p>Bronnen: <a href="https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html">Concept: The Concept of Service Layers</a> (SAVARA/JBoss) en Thomas Erl, Service Models (task services en orchestrated task services).</p>
+<p>Bronnen: <a href="https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html">Concept: The Concept of Service Layers</a> (SAVARA/JBoss) en <a href="https://patterns.arcitura.com/soa-patterns/basics/soamethodology/entity_services">Service Models</a> (Arcitura Patterns), beide gebaseerd op Thomas Erl.</p>
 
 
 
