@@ -3,6 +3,7 @@
 
 | Datum | Titel |
 |---|---|
+| 2026 sep | [Welk type service bedoelen we eigenlijk?](116-welk-type-service-bedoelen-we-eigenlijk.md) |
 | 2026 jul | [De Vibe Architect: snelheid met duidelijke grenzen](115-de-vibe-architect.md) |
 | 2026 jan | [Post-deterministische IT](114-post-deterministische-it.md) |
 | 2024 dec | [Stilte graag](113-stilte-graag.md) |

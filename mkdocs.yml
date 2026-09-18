@@ -44,6 +44,8 @@ nav:
     - Wat kan ik doen om een goede IT-architect te worden?: nl/112-wat-kan-ik-doen-om-een-goede-it-architect-te-worden.md
     - Stilte graag: nl/113-stilte-graag.md
     - Post-deterministische IT: nl/114-post-deterministische-it.md
+    - "De Vibe Architect: snelheid met duidelijke grenzen": nl/115-de-vibe-architect.md
+    - Welk type service bedoelen we eigenlijk?: nl/116-welk-type-service-bedoelen-we-eigenlijk.md
   - English:
     - Overview: en/index.md
     - The IT architect who doesn't wobble: en/100-the-it-architect-who-doesnt-wobble.md
@@ -61,6 +63,8 @@ nav:
     - What can I do to become a good IT architect?: en/112-what-can-i-do-to-become-a-good-it-architect.md
     - Silence please: en/113-silence-please.md
     - Post-deterministic IT: en/114-post-deterministic-it.md
+    - "The Vibe Architect: speed with clear boundaries": en/115-the-vibe-architect.md
+    - Which type of service do we actually mean?: en/116-which-type-of-service-do-we-actually-mean.md
   - Over de auteur: over-de-auteur.md
 
 markdown_extensions:

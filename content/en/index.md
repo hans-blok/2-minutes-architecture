@@ -3,6 +3,7 @@
 
 | Date | Title |
 |---|---|
+| 2026 sep | [Which type of service do we actually mean?](116-which-type-of-service-do-we-actually-mean.md) |
 | 2026 jul | [The Vibe Architect: speed with clear boundaries](115-the-vibe-architect.md) |
 | 2026 jan | [Post-deterministic IT](114-post-deterministic-it.md) |
 | 2024 dec | [Silence please](113-silence-please.md) |
