@@ -1,6 +1,10 @@
-# Stilte graag
+---
+date: 2024-12-19
+topic: "Samenwerking"
+description: "Een discussie die net bij de kern komt en dan ontspoort. Over de kracht van stilte en de juiste vraag."
+---
 
-**Datum:** 2024-12-19 12:34
+# Stilte graag
 
 Herken je dit? Je zit in een overleg. De discussie is complex, maar je voelt aan alles: we zijn heel dichtbij het vinden van de oplossing. En dan gebeurt het. Iemand roeptoetert een vraag die totaal uit de lucht komt vallen, en plotseling neemt de discussie een compleet andere wending. Op zo'n moment denk ik vaak: ‘Heeft die persoon wel geluisterd? Of vindt hij het gewoon leuk om de boel in de war te schoppen?’ Maar soms vraag ik me ook af: ligt het aan mij? Ben ik onvoldoende in staat om de discussie te sturen?
 

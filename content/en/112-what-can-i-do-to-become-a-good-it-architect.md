@@ -1,6 +1,10 @@
-# What can I do to become a good IT architect?
+---
+date: 2024-10-17
+topic: "Craft and role"
+description: "Engineers who want to become architects ask for advice. Which skills really count, and is it meetings all day?"
+---
 
-**Date:** 2024-10-17 17:49
+# What can I do to become a good IT architect?
 
 ## Do you recommend me to become an architect?
 

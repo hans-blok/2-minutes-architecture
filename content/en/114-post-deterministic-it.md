@@ -1,6 +1,10 @@
-# Post-deterministic IT
+---
+date: 2026-01-04
+topic: "Artificial Intelligence"
+description: "Thirty years in IT, and still the paradigm shifts. What changes when the computer is no longer always right."
+---
 
-**Date:** 2026-01-04 09:27
+# Post-deterministic IT
 
 ## Thirty Years of IT: Knowledge and Ignorance
 

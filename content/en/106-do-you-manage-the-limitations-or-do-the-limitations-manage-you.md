@@ -1,6 +1,10 @@
-# Do you manage the limitations or do the limitations manage you?
+---
+date: 2024-05-16
+topic: "Organisation"
+description: "Six teams working hard and a dashboard that disappoints. What a scout camp from The Goal teaches about constraints."
+---
 
-**Date:** 2024-05-16 13:02
+# Do you manage the limitations or do the limitations manage you?
 
 ## Lots of work done, little results
 

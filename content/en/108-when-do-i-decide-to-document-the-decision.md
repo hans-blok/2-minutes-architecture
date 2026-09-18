@@ -1,6 +1,10 @@
-# When do I decide to document the decision?
+---
+date: 2024-07-04
+topic: "Decision making"
+description: "Excessive complexity is the punishment for organisations unable to make decisions. On when to record a decision."
+---
 
-**Date:** 2024-07-04 09:05
+# When do I decide to document the decision?
 
 My favorite book on architecture is 'Software Architect Elevator' by Gregor Hohpe. His special view on architectural issues, combined with a healthy dose of German humor, made me buy and read the book. While I often quickly work my way through the foreword, this was not the case for the foreword in this book, written by an experienced Chief Architect of the Boston Consulting Group. *I believe that architects make two things that are of vital importance and in short supply: they make sense and they make* *decisions**. Whenever architects help their organizations understand a world that is increasingly difficult to grasp, figure out what* *decisions* *need to be taken, and help take those decisions in a rational way at the right time, then they have had a good day at the office.*
 

@@ -1,8 +1,10 @@
-# De IT-architect die niet wiebelt
-
-**Datum:** 29 februari 2024
-
 ---
+date: 2024-02-29
+topic: "Vak en rol"
+description: "Een team vol kennis en methoden, en toch werkte het niet. Waarom technisch leiderschap de derde poot onder de kruk is."
+---
+
+# De IT-architect die niet wiebelt
 
 ## Waarom lukt het ons niet?
 

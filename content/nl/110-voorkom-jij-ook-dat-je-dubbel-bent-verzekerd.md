@@ -1,6 +1,10 @@
-# Voorkom jij ook dat je dubbel bent verzekerd?
+---
+date: 2024-09-06
+topic: "Services en API's"
+description: "Skiën zonder dubbel verzekerd te zijn. Over het formeel inrichten van API-beheer zodra het aantal API's groeit."
+---
 
-**Datum:** 2024-09-06 19:19
+# Voorkom jij ook dat je dubbel bent verzekerd?
 
 ## Leuk skiën, maar niet ongevaarlijk
 

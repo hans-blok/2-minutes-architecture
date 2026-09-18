@@ -1,6 +1,10 @@
-# Who gets the role of transformer?
+---
+date: 2024-05-06
+topic: "Organisation"
+description: "Renovating an old farmhouse shows who makes the difference in a transformation, and which role that takes."
+---
 
-**Date:** 2024-05-06 06:28
+# Who gets the role of transformer?
 
 ## A new 'house'
 

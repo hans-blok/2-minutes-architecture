@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="IT-architectuur blogs door Hans Blok">
+        <meta name="description" content="Thirty years in IT, and still the paradigm shifts. What changes when the computer is no longer always right.">
       
       
         <meta name="author" content="Hans Blok">
@@ -47,15 +47,9 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?h=e427e08b">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -68,10 +62,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -122,7 +118,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Donkere weergave"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Donkere weergave" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Lichte weergave"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Lichte weergave" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -150,6 +172,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -180,6 +204,25 @@
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
       
         
   
@@ -281,6 +324,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -293,10 +363,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -314,8 +384,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -859,10 +929,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -880,8 +950,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1651,18 +1721,19 @@
 
 
 
-<h1 id="post-deterministic-it">Post-deterministic IT</h1>
-<p><strong>Date:</strong> 2026-01-04 09:27</p>
-<h2 id="thirty-years-of-it-knowledge-and-ignorance">Thirty Years of IT: Knowledge and Ignorance</h2>
+<h1 id="post-deterministic-it">Post-deterministic IT<a class="headerlink" href="#post-deterministic-it" title="Link naar deze sectie">&para;</a></h1>
+<p class="article-meta"><time datetime="2026-01-04">January 4, 2026</time><span class="article-meta__topic">Artificial Intelligence</span><span>2 min read</span></p>
+
+<h2 id="thirty-years-of-it-knowledge-and-ignorance">Thirty Years of IT: Knowledge and Ignorance<a class="headerlink" href="#thirty-years-of-it-knowledge-and-ignorance" title="Link naar deze sectie">&para;</a></h2>
 <p>I have been working in IT for thirty years now. I have seen almost all common courses and movements: from ITIL to SAFe for Architects, from SQL to system architecture. But a mountain of knowledge is now accompanied by a sea of ignorance. A paradigm is shifting before my eyes. I notice that I suddenly find myself in a different world, for which there are hardly any books or articles that provide guidance. What do I spend my free time on these days? Building an agent ecosystem.</p>
-<h2 id="the-computer-is-always-right">"The Computer Is Always Right"</h2>
+<h2 id="the-computer-is-always-right">"The Computer Is Always Right"<a class="headerlink" href="#the-computer-is-always-right" title="Link naar deze sectie">&para;</a></h2>
 <p>During my first computer science class, a teacher said, "The computer is always right." That statement has always stuck with me. She helped analyze and solve numerous problems. Yet the computer sometimes seems to have a mind of its own and we speak of <em>he</em> to indicate this. We all know these kinds of statements:</p>
 <ul>
 <li>It's slow today <em>-</em> I restarted it, but it keeps acting up</li>
 <li>It worked fine yesterday</li>
 </ul>
 <p>That kind of behavior almost always turns out to be due to carelessness: incorrect initialization, incomplete error handling, implicit assumptions. I call that <strong>unintentional non-determinism</strong>, in plain English: a bug.</p>
-<h2 id="the-paradigm-shift">The Paradigm Shift</h2>
+<h2 id="the-paradigm-shift">The Paradigm Shift<a class="headerlink" href="#the-paradigm-shift" title="Link naar deze sectie">&para;</a></h2>
 <p>Since I started working with agents, I see a paradigm shift developing. Not primarily because we work faster, although nowadays I create a conceptual data model in half a day that previously took months and with a better result on many points (not all).</p>
 <p>The real shift is elsewhere. We are increasingly building systems that <strong>interpret</strong> instead of <strong>execute</strong>. Systems that derive meaning, weigh intentions and take context into account.</p>
 <p>That will not happen anytime soon in applications for internet banking or calculating energy bills. There, determinism remains essential.</p>
@@ -1672,19 +1743,19 @@
 <li>Analyzes files</li>
 <li>Assesses mortgage applications</li>
 </ul>
-<h2 id="the-foundation-is-shifting">The Foundation is Shifting</h2>
+<h2 id="the-foundation-is-shifting">The Foundation is Shifting<a class="headerlink" href="#the-foundation-is-shifting" title="Link naar deze sectie">&para;</a></h2>
 <p>For years our starting point was clear:</p>
 <p><em>code + rules + data = predictable behavior</em></p>
 <p>That foundation is shifting.
 Not because developers have become sloppier.
 Not because testing is inadequate.
 But because <strong>interpretation</strong> becomes an explicit part of our systems.</p>
-<h2 id="new-architecture-questions">New Architecture Questions</h2>
+<h2 id="new-architecture-questions">New Architecture Questions<a class="headerlink" href="#new-architecture-questions" title="Link naar deze sectie">&para;</a></h2>
 <p>The counterpart of deterministic software is probabilistic software. Architecture will become less and less about recording everything and more and more about where uncertainty is allowed to exist and where not.</p>
 <p>My belief: in the coming years, <strong>consciously placing probability</strong> will become an important skill for architects.
 Not everything that can be probabilized is allowed to be so.
 But pretending that everything remains deterministic is no longer an option.</p>
-<h2 id="giving-language-to-change">Giving Language to Change</h2>
+<h2 id="giving-language-to-change">Giving Language to Change<a class="headerlink" href="#giving-language-to-change" title="Link naar deze sectie">&para;</a></h2>
 <p>What architects face here is new. I didn't see this from a book, article or in a webinar. I see it happening before my eyes. This post is a first, tentative attempt to give language to that change, so that we can talk about it with the stakeholders with whom we make strategic choices.</p>
 <p>https://www.linkedin.com/pulse/post-deterministic-why-architects-need-embrace-systems-hans-blok-ii4ae</p>
 
@@ -1693,6 +1764,9 @@ But pretending that everything remains deterministic is no longer an option.</p>
 
 
 
+
+  
+  
 
 
 
@@ -1717,6 +1791,46 @@ But pretending that everything remains deterministic is no longer an option.</p>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../113-silence-please/" class="md-footer__link md-footer__link--prev" aria-label="Vorige: Silence please">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Vorige
+              </span>
+              <div class="md-ellipsis">
+                Silence please
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../115-the-vibe-architect/" class="md-footer__link md-footer__link--next" aria-label="Volgende: The Vibe Architect: speed with clear boundaries">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Volgende
+              </span>
+              <div class="md-ellipsis">
+                The Vibe Architect: speed with clear boundaries
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1724,12 +1838,6 @@ But pretending that everything remains deterministic is no longer an option.</p>
     <div class="md-copyright__highlight">
       (c) Hans Blok
     </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -1742,11 +1850,13 @@ But pretending that everything remains deterministic is no longer an option.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
     
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.footer", "navigation.instant", "navigation.instant.progress", "toc.follow", "content.code.copy", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

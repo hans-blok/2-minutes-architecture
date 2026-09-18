@@ -1,6 +1,10 @@
-# Does your business also not understand much of this?
+---
+date: 2024-09-19
+topic: "Collaboration"
+description: "Involving the business rarely works when things get hard. What Amazon shows about who should be making the decisions."
+---
 
-**Date:** 2024-09-19 14:50
+# Does your business also not understand much of this?
 
 ## Why do we see the business so rarely?
 

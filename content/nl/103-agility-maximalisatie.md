@@ -1,6 +1,10 @@
-# Agility maximalisatie
+---
+date: 2024-04-25
+topic: "Organisatie"
+description: "Bedrijven streven naar winstmaximalisatie, leerde ik ooit. Waarom wendbaarheid inmiddels een net zo harde doelstelling is."
+---
 
-**Datum:** 2024-04-25 10:30
+# Agility maximalisatie
 
 ## Vroeger, toen alles nog eenvoudig was
 

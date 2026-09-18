@@ -1,6 +1,10 @@
-# De Vibe Architect: snelheid met duidelijke grenzen
+---
+date: 2026-07-08
+topic: "Artificial Intelligence"
+description: "A.I. maakt verkennen sneller dan ooit. Hoe blijft de architect verantwoordelijk voor wat er daarna wordt besloten?"
+---
 
-**Datum:** 2026-07-08
+# De Vibe Architect: snelheid met duidelijke grenzen
 
 De term Vibe Architect klinkt speels, bijna lichtvoetig. Dat is precies waarom hij interessant is. In een wereld waarin A.I. steeds vaker meedoet in het denkwerk, ontstaat er ruimte voor een architect die sneller kan verkennen, associëren en itereren dan we tot nu toe gewend waren. Maar diezelfde snelheid roept ook meteen een belangrijke spanning op: hoe voorkom je dat gemak verandert in gemakzucht?
 

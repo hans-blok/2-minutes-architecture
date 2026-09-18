@@ -1,6 +1,10 @@
-# The social contribution of an IT architect
+---
+date: 2024-04-18
+topic: "Craft and role"
+description: "A question over coffee after swimming practice: what does an IT architect actually do, and what does society get out of it?"
+---
 
-**Date:** 2024-04-18 09:16
+# The social contribution of an IT architect
 
 ## What am I actually doing?
 

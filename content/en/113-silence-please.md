@@ -1,6 +1,10 @@
-# Silence please
+---
+date: 2024-12-19
+topic: "Collaboration"
+description: "A discussion that gets close to the heart of it and then derails. On the power of silence and the right question."
+---
 
-**Date:** 2024-12-19 12:34
+# Silence please
 
 Do you recognize this? You are in a meeting. The discussion is complex, but you can sense everything: we are very close to finding a solution. And then it happens. Someone honks a question that comes completely out of the blue, and suddenly the discussion takes a completely different turn. At such a moment I often think: 'Did that person listen? Or does he just like to stir things up?' But sometimes I also wonder: is it just me? Am I insufficiently able to direct the discussion?
 

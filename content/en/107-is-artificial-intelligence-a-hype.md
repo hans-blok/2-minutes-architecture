@@ -1,6 +1,10 @@
-# Is Artificial Intelligence a hype?
+---
+date: 2024-06-21
+topic: "Artificial Intelligence"
+description: "Nvidia, LinkedIn and inflated claims. Is AI a hype, and how do you tell marketing from actual technology?"
+---
 
-**Date:** 2024-06-21 10:07
+# Is Artificial Intelligence a hype?
 
 ## AI in the media
 

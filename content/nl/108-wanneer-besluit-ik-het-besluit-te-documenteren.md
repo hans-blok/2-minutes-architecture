@@ -1,6 +1,10 @@
-# Wanneer besluit ik het besluit te documenteren?
+---
+date: 2024-07-04
+topic: "Besluitvorming"
+description: "Overmatige complexiteit is de straf voor organisaties die geen besluiten nemen. Over het moment waarop je een besluit vastlegt."
+---
 
-**Datum:** 2024-07-04 09:05
+# Wanneer besluit ik het besluit te documenteren?
 
 Mijn favoriete boek over architectuur is 'Software Architect Elevator' van Gregor Hohpe. Zijn bijzondere kijk op architectuurvraagstukken, gecombineerd met een gezonde dosis Duitse humor, deed mij het boek kopen en lezen. Waar ik me vaak snel door het voorwoord heen werk, gold dit niet voor het voorwoord in dit boek, geschreven door een ervaren Chief Architect van de Boston Consulting Group. *I believe that architects make two thing that are of vital importance and in short supply: they make sense and they make* *decisions**. Whenever architects help their organizations understand a world that is increasingly difficult to grasp, figure out what* *decisions* *need to be taken, and help take those decisions in a rational way at the right time, then they have had a good day at the office.*
 

@@ -1,6 +1,10 @@
-# Agility maximization
+---
+date: 2024-04-25
+topic: "Organisation"
+description: "Companies aim to maximise profit, I was once taught. Why agility has become an equally hard objective."
+---
 
-**Date:** 2024-04-25 10:30
+# Agility maximization
 
 ## Back in the day, when everything was simple
 

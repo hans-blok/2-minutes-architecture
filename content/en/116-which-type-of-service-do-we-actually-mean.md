@@ -1,6 +1,10 @@
-# Which type of service do we actually mean?
+---
+date: 2026-09-18
+topic: "Services and APIs"
+description: "Architects aim for a Ubiquitous Language, yet call services all sorts of things. Four categories as a shared language."
+---
 
-**Date:** 2026-09-18
+# Which type of service do we actually mean?
 
 Within a domain we aim for a Ubiquitous Language: the idea from Domain-Driven Design that everyone uses the same words for the same concepts. We do not always apply that discipline to our own professional vocabulary. Do architects speak the same language when they talk about services?
 

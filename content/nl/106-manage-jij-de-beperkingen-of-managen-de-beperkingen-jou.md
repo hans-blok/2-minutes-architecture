@@ -1,6 +1,10 @@
-# Manage jij de beperkingen of managen de beperkingen jou?
+---
+date: 2024-05-16
+topic: "Organisatie"
+description: "Zes teams die hard werken en een dashboard dat tegenvalt. Wat een padvinderskamp uit Het doel leert over beperkingen."
+---
 
-**Datum:** 2024-05-16 13:02
+# Manage jij de beperkingen of managen de beperkingen jou?
 
 ## Veel werk verzet, weinig resultaat
 

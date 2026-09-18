@@ -1,6 +1,10 @@
-# The Vibe Architect: speed with clear boundaries
+---
+date: 2026-07-08
+topic: "Artificial Intelligence"
+description: "A.I. makes exploration faster than ever. How does the architect stay responsible for what is decided next?"
+---
 
-**Date:** 2026-07-08
+# The Vibe Architect: speed with clear boundaries
 
 The term Vibe Architect sounds playful, almost lighthearted. That is exactly why it is interesting. In a world where A.I. is increasingly part of the thinking process, there is room for an architect who can explore, associate, and iterate faster than we have been used to so far. But that same speed immediately raises an important tension: how do you prevent convenience from turning into carelessness?
 

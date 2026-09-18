@@ -1,6 +1,10 @@
-# Post-deterministische IT
+---
+date: 2026-01-04
+topic: "Artificial Intelligence"
+description: "Dertig jaar IT, en toch schuift het paradigma. Wat er verandert als de computer niet langer altijd gelijk heeft."
+---
 
-**Datum:** 2026-01-04 09:27
+# Post-deterministische IT
 
 ## Dertig Jaar IT: Kennis en Onwetendheid
 

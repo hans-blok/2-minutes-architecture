@@ -1,6 +1,10 @@
-# Voel je je ook een slaaf van je agenda?
+---
+date: 2024-05-10
+topic: "Samenwerking"
+description: "Van vergadering naar vergadering, en aan het eind van de dag toch niets bereikt. Over sturen op je agenda in plaats van andersom."
+---
 
-**Datum:** 2024-05-10 16:19
+# Voel je je ook een slaaf van je agenda?
 
 ## Van maandagochtend tot vrijdagmiddag
 

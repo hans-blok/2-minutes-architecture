@@ -1,6 +1,10 @@
-# Welk type service bedoelen we eigenlijk?
+---
+date: 2026-09-18
+topic: "Services en API's"
+description: "Architecten streven naar een Ubiquitous Language, maar noemen services van alles. Vier categorieën als gedeelde taal."
+---
 
-**Datum:** 2026-09-18
+# Welk type service bedoelen we eigenlijk?
 
 Binnen een domein streven we naar een Ubiquitous Language: het idee uit Domain-Driven Design dat iedereen dezelfde woorden gebruikt voor dezelfde begrippen. Voor onze eigen vaktaal nemen we die discipline er niet altijd bij. Spreken architecten dezelfde taal als ze het over services hebben?
 

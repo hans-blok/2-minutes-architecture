@@ -1,6 +1,10 @@
-# De maatschappelijke bijdrage van een IT-architect
+---
+date: 2024-04-18
+topic: "Vak en rol"
+description: "Een vraag bij de koffie na de zwemtraining: wat doet een IT-architect eigenlijk, en wat levert dat de samenleving op?"
+---
 
-**Datum:** 2024-04-18 09:16
+# De maatschappelijke bijdrage van een IT-architect
 
 ## Wat doe ik eigenlijk?
 

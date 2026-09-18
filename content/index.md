@@ -1,23 +1,23 @@
-<h1 hidden> </h1>
+---
+description: "Korte essays over IT-architectuur in de praktijk, door Hans Blok. Elk artikel leest u in ongeveer twee minuten."
+---
 
-## :flag_nl: 2 Minuten IT-Architectuur
+# 2 Minuten IT-Architectuur
 
+<p class="page-intro">Korte essays over IT-architectuur in de praktijk, geschreven door Hans Blok. Over het vak van de architect, over besluiten nemen, over services en API's, en over wat A.I. met ons werk doet. Elk artikel leest u in ongeveer twee minuten.</p>
 
-## De IT-architect
-### Vertaler tussen toekomst en werkelijkheid
+De IT-architect is een kruising tussen techneut, diplomaat en filosoof. Als bruggenbouwer spreekt hij zowel de taal van complexe technologie als die van de bestuurskamer, en vertaalt hij die naar een werkbare strategie. Door structuur in chaos te brengen, complexe zaken helder te verwoorden en uiteenlopende belangen te verenigen, helpt hij organisaties zichzelf te transformeren.
 
-De IT-architect is een unieke kruising tussen techneut, diplomaat en filosoof. Als bruggenbouwer spreekt hij zowel de taal van complexe technologie (zoals API's en cloud) als die van de bestuurskamer, en vertaalt hij deze naar een werkbare strategie.
+## Recente artikelen
 
-Door structuur in chaos te brengen, complexe zaken helder te verwoorden, uiteenlopende belangen te verenigen, altijd de rust te bewaren, helpt hij of zij organisaties zichzelf te transformeren. Een onmisbare gids tussen techniek, visie en de harde realiteit.
+{{ artikelkaarten:nl:4 }}
 
-- [Lees de blogs](nl/index.md)
-----
-## :flag_gb: 2 Minute IT-Architecture
-## The IT-architect
-### Translator between future and reality
+[Alle Nederlandse blogs](nl/index.md){ .md-button } [Over de auteur](over-de-auteur.md){ .md-button }
 
-The IT architect is a unique crossbreed between engineer, diplomat, and philosopher. As a bridge builder, he speaks both the language of complex technology (such as APIs and cloud) and that of the boardroom, translating these into a workable strategy.
+## In English
 
-By bringing structure to chaos, articulating complex matters clearly, uniting diverse interests, and always staying calm, he helps organizations transform themselves. An indispensable guide between technology, vision, and hard reality.
+<p class="page-intro">Short essays on IT architecture in practice. The IT architect is a crossbreed between engineer, diplomat and philosopher, translating between complex technology and the boardroom.</p>
 
-- [Read the blogs](en/index.md)
+{{ artikelkaarten:en:4 }}
+
+[All English blogs](en/index.md){ .md-button }

@@ -1,6 +1,10 @@
-# With a pattern the almost impossible becomes possible
+---
+date: 2024-03-22
+topic: "Patterns"
+description: "A puzzle with 33 marbles shows what a pattern does: it makes a proven solution reusable."
+---
 
-**Date:** 2024-03-22 22:01
+# With a pattern the almost impossible becomes possible
 
 ## How does she do that?
 

@@ -1,6 +1,10 @@
-# Do you also prevent yourself from being double insured?
+---
+date: 2024-09-06
+topic: "Services and APIs"
+description: "Skiing without double insurance. On formalising API management once the number of APIs starts to grow."
+---
 
-**Date:** 2024-09-06 19:19
+# Do you also prevent yourself from being double insured?
 
 ## Fun skiing, but not without danger
 

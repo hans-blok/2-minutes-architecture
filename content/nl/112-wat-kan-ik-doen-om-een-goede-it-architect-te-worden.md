@@ -1,6 +1,10 @@
-# Wat kan ik doen om een goede IT-architect te worden?
+---
+date: 2024-10-17
+topic: "Vak en rol"
+description: "Engineers die architect willen worden vragen om advies. Welke vaardigheden tellen echt, en vergader je dan de hele dag?"
+---
 
-**Datum:** 2024-10-17 17:49
+# Wat kan ik doen om een goede IT-architect te worden?
 
 ## Raad je me aan om architect te worden?
 

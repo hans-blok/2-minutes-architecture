@@ -6,15 +6,34 @@ site_author: Hans Blok
 theme:
   name: material
   language: nl
+  font: false
   favicon: assets/logo.PNG
   custom_dir: overrides
   palette:
-    scheme: default
-    primary: indigo
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Donkere weergave
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Lichte weergave
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.follow
+    - content.code.copy
+    - search.highlight
+    - search.suggest
 
 docs_dir: content
 
@@ -27,6 +46,7 @@ extra:
   cname: www.2-minuten-it-architectuur.nl
 
 nav:
+  - Home: index.md
   - Nederlands:
     - Overzicht: nl/index.md
     - De IT-architect die niet wiebelt: nl/100-de-it-architect-die-niet-wiebelt.md
@@ -67,9 +87,31 @@ nav:
     - Which type of service do we actually mean?: en/116-which-type-of-service-do-we-actually-mean.md
   - Over de auteur: over-de-auteur.md
 
+plugins:
+  - search:
+      lang:
+        - nl
+        - en
+
+hooks:
+  - hooks/site_hooks.py
+
 markdown_extensions:
+  - abbr
+  - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link naar deze sectie
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

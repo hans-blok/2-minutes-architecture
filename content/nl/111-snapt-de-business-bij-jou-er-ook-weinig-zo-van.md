@@ -1,6 +1,10 @@
-# Snapt de business bij jou er ook weinig zo van?
+---
+date: 2024-09-19
+topic: "Samenwerking"
+description: "De business betrekken lukt zelden als het moeilijk wordt. Wat Amazon laat zien over wie de besluiten hoort te nemen."
+---
 
-**Datum:** 2024-09-19 14:50
+# Snapt de business bij jou er ook weinig zo van?
 
 ## Waarom zien we de business zo zelden?
 

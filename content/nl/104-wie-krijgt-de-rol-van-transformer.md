@@ -1,6 +1,10 @@
-# Wie krijgt de rol van transformer?
+---
+date: 2024-05-06
+topic: "Organisatie"
+description: "Een verbouwing van een oude boerderij laat zien wie in een transformatie het verschil maakt, en welke rol daarbij hoort."
+---
 
-**Datum:** 2024-05-06 06:28
+# Wie krijgt de rol van transformer?
 
 ## Een nieuw 'huis'
 

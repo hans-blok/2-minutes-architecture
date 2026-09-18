@@ -1,6 +1,10 @@
-# Please let's deploy!
+---
+date: 2024-09-05
+topic: "Delivery"
+description: "A screen nobody uses yet, and still deployed to production. What DORA says about small steps and frequent deployment."
+---
 
-**Date:** 2024-09-05 16:00
+# Please let's deploy!
 
 ## Please let's deploy to production
 

@@ -1,6 +1,10 @@
-# The IT architect who doesn't wobble
+---
+date: 2024-02-29
+topic: "Craft and role"
+description: "A team full of knowledge and methods, and still it did not work. Why technical leadership is the third leg under the stool."
+---
 
-**Date:** 2024-02-29 08:03
+# The IT architect who doesn't wobble
 
 **Why can't we do it?**
 

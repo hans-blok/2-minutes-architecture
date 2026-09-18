@@ -1,6 +1,10 @@
-# Do you also feel like a slave to your agenda?
+---
+date: 2024-05-10
+topic: "Collaboration"
+description: "From meeting to meeting, and nothing achieved by the end of the day. On steering your agenda instead of the other way round."
+---
 
-**Date:** 2024-05-10 16:19
+# Do you also feel like a slave to your agenda?
 
 ## From Monday morning to Friday afternoon
 

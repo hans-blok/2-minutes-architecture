@@ -1,6 +1,10 @@
-# Laten we alsjeblieft deployen!
+---
+date: 2024-09-05
+topic: "Levering"
+description: "Een scherm dat nog niemand gebruikt en toch naar productie. Wat DORA zegt over kleine stappen en vaak deployen."
+---
 
-**Datum:** 2024-09-05 16:00
+# Laten we alsjeblieft deployen!
 
 ## Laten we alsjeblieft deployen naar productie
 
