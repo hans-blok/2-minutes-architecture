@@ -3,7 +3,7 @@
 Verzorgt vier dingen, zonder extra afhankelijkheden:
 
 1. metaregel onder de artikeltitel: publicatiedatum, onderwerp en leestijd;
-2. artikelkaarten op de overzichtspagina's via de placeholder {{ artikelkaarten }};
+2. artikellijsten en kerncijfers via {{ artikellijst }} en {{ kerncijfers }};
 3. lazy loading en async decoding voor afbeeldingen in de artikelen;
 4. cache busting: aan extra_css en extra_javascript wordt een content hash
    gehangen, zodat een nieuwe deployment nooit oude CSS bij nieuwe HTML serveert.
@@ -30,7 +30,8 @@ _ARTICLE = re.compile(r"^1\d\d-")
 _FRONTMATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.S)
 _TITLE = re.compile(r"^#\s+(.+)$", re.M)
 _IMG = re.compile(r"<img(?![^>]*\bloading=)")
-_CARDS = re.compile(r"\{\{\s*artikelkaarten(?::(nl|en))?(?::(\d+))?\s*\}\}")
+_LIST = re.compile(r"\{\{\s*artikellijst(?::(nl|en))?(?::(\d+))?\s*\}\}")
+_FACTS = re.compile(r"\{\{\s*kerncijfers(?::(nl|en))?\s*\}\}")
 
 
 def _lang(page):
@@ -87,7 +88,7 @@ def _read_article(path):
     return meta
 
 
-def _cards(docs_dir, lang, limit=None, prefix=""):
+def _articles(docs_dir, lang, limit=None, prefix=""):
     directory = os.path.join(docs_dir, lang)
     articles = []
     for name in os.listdir(directory):
@@ -99,28 +100,64 @@ def _cards(docs_dir, lang, limit=None, prefix=""):
     articles.sort(key=lambda a: _parse_date(a.get("date", "")) or (0, 0, 0), reverse=True)
     if limit:
         articles = articles[:limit]
+    return articles
 
-    out = ['<ul class="card-grid">']
-    for article in articles:
-        out.append('<li class="card">')
+
+def _post_list(docs_dir, lang, limit=None, prefix=""):
+    """Verticale lijst: links de datum, rechts titel, samenvatting en meta."""
+    out = ['<ol class="post-list">']
+    for article in _articles(docs_dir, lang, limit, prefix):
+        date = article.get("date", "")
+        out.append('<li class="post">')
         out.append(
-            '<a class="card__link" href="%s"><h3 class="card__title">%s</h3></a>'
+            '<div class="post__date"><time datetime="%s">%s</time></div>'
+            % (date, _format_date(date, lang, short=True))
+        )
+        out.append('<div class="post__body">')
+        out.append(
+            '<h3 class="post__title"><a href="%s">%s</a></h3>'
             % (article["href"], article["title"])
         )
         if article.get("description"):
-            out.append('<p class="card__text">%s</p>' % article["description"])
-        meta_bits = []
+            out.append('<p class="post__text">%s</p>' % article["description"])
+        meta = []
         if article.get("topic"):
-            meta_bits.append('<span class="card__topic">%s</span>' % article["topic"])
-        if article.get("date"):
-            meta_bits.append(
-                '<time datetime="%s">%s</time>'
-                % (article["date"], _format_date(article["date"], lang, short=True))
-            )
-        meta_bits.append("<span>%s</span>" % _reading_time(article["body"], lang))
-        out.append('<p class="card__meta">%s</p>' % "".join(meta_bits))
+            meta.append('<span class="post__topic">%s</span>' % article["topic"])
+        meta.append("<span>%s</span>" % _reading_time(article["body"], lang))
+        out.append('<p class="post__meta">%s</p>' % "".join(meta))
+        out.append("</div>")
         out.append("</li>")
-    out.append("</ul>")
+    out.append("</ol>")
+    return "\n".join(out)
+
+
+def _facts(docs_dir, lang):
+    """Feitenregel onder de introductie: de omvang van de verzameling."""
+    articles = _articles(docs_dir, lang)
+    topics = sorted({a["topic"] for a in articles if a.get("topic")})
+    minutes = [int(_reading_time(a["body"], lang).split()[0]) for a in articles]
+    average = int(round(sum(minutes) / float(len(minutes)))) if minutes else 0
+    latest = _format_date(articles[0]["date"], lang, short=True) if articles else ""
+
+    if lang == "en":
+        rows = [
+            ("Articles", str(len(articles))),
+            ("Topics", str(len(topics))),
+            ("Reading time", "%d min on average" % average),
+            ("Most recent", latest),
+        ]
+    else:
+        rows = [
+            ("Artikelen", str(len(articles))),
+            ("Onderwerpen", str(len(topics))),
+            ("Leestijd", "gemiddeld %d min" % average),
+            ("Laatste artikel", latest),
+        ]
+
+    out = ['<dl class="facts">']
+    for label, value in rows:
+        out.append('<div class="facts__item"><dt>%s</dt><dd>%s</dd></div>' % (label, value))
+    out.append("</dl>")
     return "\n".join(out)
 
 
@@ -147,16 +184,21 @@ def on_config(config):
 
 def on_page_markdown(markdown, page, config, files):
     lang = _lang(page)
+    depth = page.file.src_uri.count("/")
 
-    def expand(match):
-        card_lang = match.group(1) or lang
+    def expand_list(match):
+        list_lang = match.group(1) or lang
         limit = int(match.group(2)) if match.group(2) else None
-        # Kaarten verwijzen relatief, zodat ze vanaf elke pagina kloppen.
-        depth = page.file.src_uri.count("/")
-        prefix = "../" * depth + card_lang + "/"
-        return _cards(config["docs_dir"], card_lang, limit, prefix)
+        # Verwijzingen zijn relatief, zodat ze vanaf elke pagina kloppen.
+        prefix = "../" * depth + list_lang + "/"
+        return _post_list(config["docs_dir"], list_lang, limit, prefix)
 
-    markdown = _CARDS.sub(expand, markdown)
+    markdown = _LIST.sub(expand_list, markdown)
+
+    def expand_facts(match):
+        return _facts(config["docs_dir"], match.group(1) or lang)
+
+    markdown = _FACTS.sub(expand_facts, markdown)
 
     if _ARTICLE.match(os.path.basename(page.file.src_uri)):
         bits = []

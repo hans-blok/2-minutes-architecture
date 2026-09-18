@@ -2,22 +2,30 @@
 description: "Korte essays over IT-architectuur in de praktijk, door Hans Blok. Elk artikel leest u in ongeveer twee minuten."
 ---
 
+<p class="kicker">Blogs over IT-architectuur</p>
+
 # 2 Minuten IT-Architectuur
 
-<p class="page-intro">Korte essays over IT-architectuur in de praktijk, geschreven door Hans Blok. Over het vak van de architect, over besluiten nemen, over services en API's, en over wat A.I. met ons werk doet. Elk artikel leest u in ongeveer twee minuten.</p>
+<p class="lead">Korte essays over het vak van de architect: over besluiten nemen, over samenwerken met de business, over services en API's, en over wat A.I. met ons werk doet. Elk artikel leest u in ongeveer twee minuten.</p>
 
-De IT-architect is een kruising tussen techneut, diplomaat en filosoof. Als bruggenbouwer spreekt hij zowel de taal van complexe technologie als die van de bestuurskamer, en vertaalt hij die naar een werkbare strategie. Door structuur in chaos te brengen, complexe zaken helder te verwoorden en uiteenlopende belangen te verenigen, helpt hij organisaties zichzelf te transformeren.
+{{ kerncijfers:nl }}
 
 ## Recente artikelen
 
-{{ artikelkaarten:nl:4 }}
+{{ artikellijst:nl:4 }}
 
-[Alle Nederlandse blogs](nl/index.md){ .md-button } [Over de auteur](over-de-auteur.md){ .md-button }
+[Alle Nederlandse artikelen](nl/index.md){ .more }
 
 ## In English
 
-<p class="page-intro">Short essays on IT architecture in practice. The IT architect is a crossbreed between engineer, diplomat and philosopher, translating between complex technology and the boardroom.</p>
+<p class="lead lead--small">The same essays in English. On the craft of the architect, on decisions, on services, and on what A.I. is doing to our work.</p>
 
-{{ artikelkaarten:en:4 }}
+{{ artikellijst:en:3 }}
 
-[All English blogs](en/index.md){ .md-button }
+[All English articles](en/index.md){ .more }
+
+## Over de auteur
+
+Hans Blok is IT-architect en begeleidt organisaties bij transformaties naar service-georiënteerde IT-landschappen. De IT-architect is wat hem betreft een kruising tussen techneut, diplomaat en filosoof: iemand die zowel de taal van complexe technologie spreekt als die van de bestuurskamer, en die structuur aanbrengt waar het rommelig is.
+
+[Meer over Hans Blok](over-de-auteur.md){ .more }

@@ -7,17 +7,19 @@
 /* ---------- 1. Design tokens ---------- */
 
 :root {
-  /* Kleur: een rustig palet van salie, inkt en papier */
-  --tfa-sage-700: #3f5a43;
-  --tfa-sage-600: #4f7054;
+  /* Kleur: warm papier met inkt, salie als ingetogen accent */
+  --tfa-sage-700: #3d5a42;
+  --tfa-sage-600: #4c6d51;
   --tfa-sage-500: #6b8c6e;
-  --tfa-sage-100: #e7eee8;
-  --tfa-ink: #22262a;
-  --tfa-ink-soft: #4a5259;
-  --tfa-ink-faint: #656d74;
-  --tfa-line: #dfe3e0;
-  --tfa-surface: #ffffff;
-  --tfa-surface-alt: #f6f7f5;
+  --tfa-sage-100: #e5eae2;
+  --tfa-ink: #2b2926;
+  --tfa-ink-soft: #55524c;
+  --tfa-ink-faint: #736f68;
+  --tfa-line: #e3ded4;
+  --tfa-line-soft: #ece7dd;
+  --tfa-paper: #faf7f1;
+  --tfa-surface: #faf7f1;
+  --tfa-surface-alt: #f3efe6;
 
   /* Typografische schaal, vloeiend tussen 320 px en 1200 px */
   --tfa-step--1: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem);
@@ -41,6 +43,7 @@
   --md-primary-fg-color--dark: var(--tfa-sage-700);
   --md-accent-fg-color: var(--tfa-sage-700);
   --md-default-fg-color: var(--tfa-ink);
+  --md-default-bg-color: var(--tfa-paper);
   --md-typeset-a-color: var(--tfa-sage-700);
 }
 
@@ -50,11 +53,13 @@
   --tfa-ink: #e6e9e6;
   --tfa-ink-soft: #c3c9c4;
   --tfa-ink-faint: #a8b0aa;
-  --tfa-line: #3a4148;
-  --tfa-surface: #1f2429;
-  --tfa-surface-alt: #262c32;
+  --tfa-line: #3a3f3c;
+  --tfa-line-soft: #323734;
+  --tfa-paper: #1c1f1d;
+  --tfa-surface: #1c1f1d;
+  --tfa-surface-alt: #24282a;
 
-  --md-default-bg-color: #191d21;
+  --md-default-bg-color: var(--tfa-paper);
   --md-default-fg-color: var(--tfa-ink);
   --md-typeset-a-color: var(--tfa-sage-600);
   --md-accent-fg-color: var(--tfa-sage-600);
@@ -105,6 +110,15 @@ html {
   padding-top: var(--tfa-space-1);
   border-top: 1px solid var(--tfa-line);
   text-wrap: balance;
+}
+
+/* Na de feitenregel of een lijst staat al een lijn; geen tweede erbij. */
+.md-typeset .facts + h2,
+.md-typeset .post-list + h2,
+.md-typeset .kicker + h1 + .lead + h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: var(--tfa-space-4);
 }
 
 .md-typeset h3 {
@@ -196,89 +210,213 @@ html {
   color: var(--tfa-sage-600);
 }
 
-/* ---------- 4. Kaarten voor de overzichtspagina's ---------- */
+/* ---------- 4. Editorial opmaak van de overzichtspagina's ---------- */
 
-.md-typeset ul.card-grid {
-  list-style: none;
-  margin: var(--tfa-space-3) 0 0;
-  padding: 0;
-  display: grid;
-  gap: var(--tfa-space-2);
-  grid-template-columns: 1fr;
+/* Bovenregel boven de titel: klein, gespatieerd, in accentkleur */
+.md-typeset .kicker {
+  font-size: var(--tfa-step--1);
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tfa-sage-600);
+  margin: 0 0 var(--tfa-space-1);
   max-width: none;
 }
 
-@media screen and (min-width: 48em) {
-  .md-typeset ul.card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--tfa-space-2) var(--tfa-space-3);
+.md-typeset .lead {
+  font-size: var(--tfa-step-1);
+  line-height: 1.5;
+  color: var(--tfa-ink-soft);
+  max-width: 44ch;
+  margin: 0 0 var(--tfa-space-4);
+}
+
+.md-typeset .lead--small {
+  font-size: var(--tfa-step-0);
+  margin-bottom: var(--tfa-space-3);
+}
+
+/* Feitenregel: informatie gegroepeerd door ruimte, niet door kaders */
+.md-typeset .facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--tfa-space-3) var(--tfa-space-2);
+  margin: 0 0 var(--tfa-space-4);
+  padding: var(--tfa-space-3) 0;
+  border-top: 1px solid var(--tfa-line);
+  border-bottom: 1px solid var(--tfa-line);
+}
+
+@media screen and (min-width: 40em) {
+  .md-typeset .facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
-.md-typeset li.card {
-  max-width: none;
+.md-typeset .facts dt {
+  font-size: var(--tfa-step--1);
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tfa-ink-faint);
+  margin: 0 0 0.35rem;
+}
+
+.md-typeset .facts dd {
+  font-size: var(--tfa-step-0);
+  color: var(--tfa-ink);
   margin: 0;
-  padding: var(--tfa-space-2);
-  background: var(--tfa-surface);
-  border: 1px solid var(--tfa-line);
-  border-left: 3px solid var(--tfa-sage-500);
-  border-radius: var(--tfa-radius);
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
 }
 
-.md-typeset li.card:hover {
-  background: var(--tfa-surface-alt);
+/* Artikellijst: datum links, inhoud rechts, één doorlopende lijn */
+.md-typeset ol.post-list {
+  list-style: none;
+  margin: 0 0 var(--tfa-space-4);
+  padding: 0;
+  max-width: none;
+  counter-reset: none;
 }
 
-.md-typeset .card__link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  min-height: 44px;
+.md-typeset ol.post-list > li.post {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
 
-.md-typeset .card__title {
+.md-typeset ol.post-list > li.post::before {
+  content: none;
+}
+
+.md-typeset .post__date {
+  font-size: var(--tfa-step--1);
+  color: var(--tfa-ink-faint);
+  text-align: right;
+  padding: var(--tfa-space-3) var(--tfa-space-3) 0 0;
+  white-space: nowrap;
+}
+
+.md-typeset .post__body {
+  position: relative;
+  padding: var(--tfa-space-3) 0 var(--tfa-space-3) var(--tfa-space-3);
+  border-left: 1px solid var(--tfa-line);
+}
+
+/* Het stipje op de lijn, op de hoogte van de titel */
+.md-typeset .post__body::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: calc(var(--tfa-space-3) + 0.6em);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tfa-paper);
+  border: 1px solid var(--tfa-sage-500);
+}
+
+/* Hairline tussen de items, alleen aan de kant van de inhoud */
+.md-typeset ol.post-list > li.post + li.post .post__body,
+.md-typeset ol.post-list > li.post + li.post .post__date {
+  border-top: 1px solid var(--tfa-line-soft);
+}
+
+.md-typeset .post__title {
   font-size: var(--tfa-step-1);
   line-height: 1.3;
   font-weight: 600;
-  margin: 0;
-  color: var(--md-typeset-a-color);
+  margin: 0 0 0.3rem;
 }
 
-.md-typeset .card__text {
-  font-size: var(--tfa-step--1);
+.md-typeset .post__title a {
+  color: var(--tfa-ink);
+  text-decoration: none;
+}
+
+.md-typeset .post__title a:hover,
+.md-typeset .post__title a:focus-visible {
+  color: var(--tfa-sage-700);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.md-typeset .post__text {
+  font-size: var(--tfa-step-0);
   line-height: 1.55;
   color: var(--tfa-ink-soft);
-  margin: 0;
-  max-width: none;
+  margin: 0 0 0.4rem;
+  max-width: 54ch;
 }
 
-.md-typeset .card__meta {
+.md-typeset .post__meta {
   font-size: var(--tfa-step--1);
   color: var(--tfa-ink-faint);
-  margin: auto 0 0;
-  padding-top: 0.35rem;
+  margin: 0;
   max-width: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 0.1rem 0.85rem;
 }
 
-.card__topic {
+.post__topic {
+  color: var(--tfa-sage-700);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .post__topic,
+[data-md-color-scheme="slate"] .md-typeset .kicker {
+  color: var(--tfa-sage-500);
+}
+
+/* Smalle schermen: datum boven de titel, geen tijdlijn */
+@media screen and (max-width: 33.75em) {
+  .md-typeset ol.post-list > li.post {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .post__date {
+    text-align: left;
+    padding: var(--tfa-space-3) 0 0.35rem;
+  }
+
+  .md-typeset .post__body {
+    border-left: none;
+    padding: 0 0 var(--tfa-space-3);
+  }
+
+  .md-typeset .post__body::before {
+    content: none;
+  }
+
+  .md-typeset ol.post-list > li.post + li.post .post__body {
+    border-top: none;
+  }
+}
+
+/* Doorverwijzing onder een blok, geen knop */
+.md-typeset a.more {
+  display: inline-block;
+  font-size: var(--tfa-step-0);
   font-weight: 600;
   color: var(--tfa-sage-700);
+  text-decoration: none;
+  margin: 0 0 var(--tfa-space-4);
+  padding: 0.35rem 0;
 }
 
-[data-md-color-scheme="slate"] .card__topic {
-  color: var(--tfa-sage-600);
+.md-typeset a.more::after {
+  content: " \203A";
+  font-weight: 400;
 }
 
-/* Geen scheidingsstippen op de kaarten: bij afbreken zou er een losse stip
-   aan het begin van een regel belanden. Ruimte doet hier hetzelfde werk. */
-.md-typeset .card__meta {
-  gap: 0.1rem 0.9rem;
+.md-typeset a.more:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.more {
+  color: var(--tfa-sage-500);
 }
 
 /* ---------- 5. Tabellen, code, afbeeldingen, citaten ---------- */
@@ -381,43 +519,67 @@ html {
 
 /* ---------- 6. Header, navigatie en footer ---------- */
 
-[data-md-color-scheme="slate"] .md-header,
-[data-md-color-scheme="slate"] .md-tabs {
-  background-color: #262c32;
-}
-
-[data-md-color-scheme="slate"] .md-footer {
-  background: #20252a;
-}
-
+/* Header en tabbalk staan op hetzelfde papier als de pagina:
+   een dunne lijn scheidt ze, het groen is alleen accent. */
 .md-header {
-  background-color: var(--tfa-sage-600);
+  background-color: var(--tfa-paper);
+  color: var(--tfa-ink);
   box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid var(--tfa-line);
 }
 
 .md-header__title {
-  font-weight: 600;
+  font-weight: 650;
   font-size: var(--tfa-step-0);
+  letter-spacing: -0.01em;
+  color: var(--tfa-ink);
+}
+
+.md-header__button {
+  color: var(--tfa-ink-soft);
+}
+
+.md-search__form {
+  background-color: var(--tfa-surface-alt);
+  box-shadow: none;
+}
+
+.md-search__form:hover {
+  background-color: var(--tfa-line-soft);
+}
+
+.md-search__input,
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--tfa-ink-soft);
 }
 
 .md-tabs {
-  background-color: var(--tfa-sage-600);
+  background-color: var(--tfa-paper);
+  color: var(--tfa-ink-soft);
+  border-bottom: 1px solid var(--tfa-line);
 }
 
 .md-tabs__link {
   font-size: var(--tfa-step--1);
   font-weight: 500;
-  opacity: 0.82;
+  color: var(--tfa-ink-soft);
+  opacity: 1;
   display: inline-flex;
   align-items: center;
   min-height: 2.4rem;
+  border-bottom: 2px solid transparent;
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover,
 .md-tabs__link:focus {
-  opacity: 1;
+  color: var(--tfa-ink);
+}
+
+.md-tabs__link--active {
+  font-weight: 650;
+  border-bottom-color: var(--tfa-sage-600);
 }
 
 .md-nav {
@@ -467,21 +629,34 @@ html {
 }
 
 .md-footer {
-  background: var(--tfa-sage-700);
+  background: var(--tfa-surface-alt);
+  color: var(--tfa-ink);
+  border-top: 1px solid var(--tfa-line);
+}
+
+.md-footer__link {
+  color: var(--tfa-ink);
+  opacity: 1;
+}
+
+.md-footer__direction {
+  color: var(--tfa-ink-faint);
 }
 
 .md-footer-meta {
-  background: rgba(0, 0, 0, 0.32);
+  background: transparent;
+  border-top: 1px solid var(--tfa-line);
   font-size: var(--tfa-step--1);
 }
 
 .md-copyright {
   width: 100%;
   padding: var(--tfa-space-1) 0;
+  color: var(--tfa-ink-faint);
 }
 
 .md-copyright__highlight {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--tfa-ink-faint);
 }
 
 .md-footer__link {
@@ -508,6 +683,11 @@ html {
 
 [data-md-color-scheme="slate"] :where(a, button, input, summary):focus-visible {
   outline-color: var(--tfa-sage-600);
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--tfa-paper);
 }
 
 .md-skip:focus {

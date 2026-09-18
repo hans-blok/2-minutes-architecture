@@ -19,7 +19,7 @@ mkdocs build --strict
 | `content/nl/`, `content/en/` | de artikelen, één bestand per blog |
 | `content/index.md` | homepage |
 | `content/stylesheets/extra.css` | alle vormgeving: design tokens, typografie en componenten |
-| `hooks/site_hooks.py` | buildhooks voor metaregel, artikelkaarten, lazy loading en cache busting |
+| `hooks/site_hooks.py` | buildhooks voor metaregel, artikellijst, kerncijfers, lazy loading en cache busting |
 | `overrides/` | themasjablonen boven op Material for MkDocs |
 | `site/` | gegenereerde site, wordt meegecommit |
 
@@ -39,7 +39,12 @@ description: "Eén zin die het artikel samenvat, ook gebruikt als meta descripti
 Eerste alinea.
 ```
 
-De publicatiedatum, het onderwerp en de geschatte leestijd komen automatisch onder de titel te staan. Het artikel verschijnt vanzelf als kaart op de overzichtspagina, gesorteerd op datum; daarvoor hoeft alleen de `nav` in `mkdocs.yml` te worden bijgewerkt.
+De publicatiedatum, het onderwerp en de geschatte leestijd komen automatisch onder de titel te staan. Het artikel verschijnt vanzelf in de lijst op de homepage en de overzichtspagina, gesorteerd op datum; daarvoor hoeft alleen de `nav` in `mkdocs.yml` te worden bijgewerkt.
+
+Op een overzichtspagina roepen twee placeholders die opbouw aan:
+
+- `{{ artikellijst }}` voor de lijst, met `{{ artikellijst:nl:4 }}` voor een taal en een maximum;
+- `{{ kerncijfers }}` voor de feitenregel met aantal artikelen, onderwerpen en gemiddelde leestijd.
 
 ## Caching
 
