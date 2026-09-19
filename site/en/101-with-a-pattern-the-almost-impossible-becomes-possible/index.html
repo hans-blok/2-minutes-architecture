@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +57,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -90,18 +90,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Open menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="../" class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link"
+           href="../">Articles</a>
+      
+        <a class="site-nav__link"
+           href="../topics/">Topics</a>
+      
+        <a class="site-nav__link"
+           href="../../over-de-auteur/">About the author</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -189,6 +205,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="../">Articles</a>
+      
+        <a href="../topics/">Topics</a>
+      
+        <a href="../../over-de-auteur/">About the author</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -204,7 +230,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -230,6 +258,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -241,10 +296,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -262,8 +317,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -773,10 +828,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -794,8 +849,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -820,6 +875,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     
@@ -1481,6 +1564,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1596,11 +1681,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
 
 <h1 id="with-a-pattern-the-almost-impossible-becomes-possible">With a pattern the almost impossible becomes possible</h1>
-<p class="article-meta"><time datetime="2024-03-22">March 22, 2024</time><span class="article-meta__topic">Patterns</span><span>4 min read</span></p>
+<p class="article-meta"><time datetime="2024-03-22">March 22, 2024</time><span class="article-meta__topic">Integration and patterns</span><span>4 min read</span></p>
 
 <h2 id="how-does-she-do-that">How does she do that?</h2>
 <p>It was early January. Together with my girlfriend I stayed in a beautiful castle somewhere in Flanders. December was the wettest on record and January thought 'I can do better'; rain was forecast for the whole day. We decided to stay in the castle for the time being. We would kill time with games, among other things. There was a beautiful billiard table in the front room. With a father as a pub owner, I used to play this a lot. My girlfriend chose a different pastime. The day before we had seen a nice copy of the game solitaire in the games cupboard. With this game the idea is to remove the marbles from the board from a starting position until there is one marble left. It is especially clever when this last marble is in the middle of the board. I have also played this game often in the past. I don't remember ever finishing it. I wished her good luck, and got to work with the cue and billiard balls.</p>
@@ -1640,6 +1727,8 @@
 
 
 
+  
+
 
 
                 
@@ -1661,6 +1750,8 @@
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

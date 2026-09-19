@@ -1,6 +1,6 @@
 ---
 date: 2024-03-22
-topic: "Patterns"
+topic: "Integration and patterns"
 description: "A puzzle with 33 marbles shows what a pattern does: it makes a proven solution reusable."
 ---
 

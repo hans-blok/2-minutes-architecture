@@ -1,6 +1,6 @@
 ---
 date: 2026-09-18
-topic: "Services and APIs"
+topic: "Applications and services"
 description: "Architects aim for a Ubiquitous Language, yet call services all sorts of things. Four categories as a shared language."
 ---
 

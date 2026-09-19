@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +57,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -90,18 +90,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Open menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="../" class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link"
+           href="../">Articles</a>
+      
+        <a class="site-nav__link"
+           href="../topics/">Topics</a>
+      
+        <a class="site-nav__link"
+           href="../../over-de-auteur/">About the author</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -189,6 +205,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="../">Articles</a>
+      
+        <a href="../topics/">Topics</a>
+      
+        <a href="../../over-de-auteur/">About the author</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -204,7 +230,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -230,6 +258,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -241,10 +296,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -262,8 +317,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -773,10 +828,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -794,8 +849,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -820,6 +875,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     
@@ -1361,6 +1444,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1385,11 +1470,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
 
 <h1 id="which-type-of-service-do-we-actually-mean">Which type of service do we actually mean?</h1>
-<p class="article-meta"><time datetime="2026-09-18">September 18, 2026</time><span class="article-meta__topic">Services and APIs</span><span>4 min read</span></p>
+<p class="article-meta"><time datetime="2026-09-18">September 18, 2026</time><span class="article-meta__topic">Applications and services</span><span>4 min read</span></p>
 
 <p>Within a domain we aim for a Ubiquitous Language: the idea from Domain-Driven Design that everyone uses the same words for the same concepts. We do not always apply that discipline to our own professional vocabulary. Do architects speak the same language when they talk about services?</p>
 <p>In architecture diagrams I come across names such as data service, business service, API service, process service, integration service and technical service. A name like that usually says something about the technology or about the position in the landscape, and little about the responsibility. On top of that, different concepts get mixed up. An API is the contract through which you call a service, not a kind of service. Two architects can agree on the same diagram and still have something different in mind.</p>
@@ -1430,6 +1517,11 @@
 <p>Does a classification from the SOA era remain useful? For the purpose I describe here, it does. The underlying question, which responsibility belongs to this service, has not changed since we started talking about microservices and APIs. What an organisation adopts from it is its own choice: four categories, three, or a classification of its own that fits the domain better.</p>
 <p>More important than which limited classification we choose is that we explicitly agree what our service types mean, and record that where architects can find it. Better naming does not start with inventing yet another service type, but with jointly establishing what we mean by the ones we already have.</p>
 <p>Sources: <a href="https://docs.jboss.org/savara/methodology/1.0-M1/jboss_soa_plugin/guidances/concepts/concept_service_layers_742015EF.html">Concept: The Concept of Service Layers</a> (SAVARA/JBoss) and <a href="https://patterns.arcitura.com/soa-patterns/basics/soamethodology/entity_services">Service Models</a> (Arcitura Patterns), both based on Thomas Erl.</p>
+<nav class="related" aria-label="Related articles">
+<p class="related__title">Related articles</p>
+<ul class="related__list">
+<li><a href="../110-do-you-also-prevent-yourself-from-being-double-insured/">Do you also prevent yourself from being double insured?<span class="related__meta">3 min read</span></a></li>
+</ul></nav>
 
 
 
@@ -1442,6 +1534,8 @@
 
 
 
+
+  
 
 
 
@@ -1464,6 +1558,8 @@
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

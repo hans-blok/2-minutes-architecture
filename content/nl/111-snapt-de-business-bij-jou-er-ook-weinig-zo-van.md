@@ -1,6 +1,6 @@
 ---
 date: 2024-09-19
-topic: "Samenwerking"
+topic: "Samenwerking met de business"
 description: "De business betrekken lukt zelden als het moeilijk wordt. Wat Amazon laat zien over wie de besluiten hoort te nemen."
 ---
 

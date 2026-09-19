@@ -1,6 +1,6 @@
 ---
 date: 2024-05-06
-topic: "Organisatie"
+topic: "Strategie en organisatie"
 description: "Een verbouwing van een oude boerderij laat zien wie in een transformatie het verschil maakt, en welke rol daarbij hoort."
 ---
 

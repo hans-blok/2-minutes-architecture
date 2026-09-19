@@ -1,6 +1,6 @@
 ---
 date: 2024-09-05
-topic: "Delivery"
+topic: "Practices and decisions"
 description: "A screen nobody uses yet, and still deployed to production. What DORA says about small steps and frequent deployment."
 ---
 

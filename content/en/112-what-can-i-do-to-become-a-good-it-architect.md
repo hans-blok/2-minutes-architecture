@@ -1,6 +1,6 @@
 ---
 date: 2024-10-17
-topic: "Craft and role"
+topic: "The architect's role"
 description: "Engineers who want to become architects ask for advice. Which skills really count, and is it meetings all day?"
 ---
 

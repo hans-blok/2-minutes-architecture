@@ -1,6 +1,6 @@
 ---
 date: 2024-04-18
-topic: "Craft and role"
+topic: "The architect's role"
 description: "A question over coffee after swimming practice: what does an IT architect actually do, and what does society get out of it?"
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2024-05-16
-topic: "Organisatie"
+topic: "Strategie en organisatie"
 description: "Zes teams die hard werken en een dashboard dat tegenvalt. Wat een padvinderskamp uit Het doel leert over beperkingen."
 ---
 

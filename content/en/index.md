@@ -1,22 +1,29 @@
 ---
-description: "Short essays on IT architecture in practice, by Hans Blok. Each article takes about two minutes to read."
-hide:
-  - navigation
-
+description: "Clear writing on IT architecture, readable in a couple of minutes. Short essays by Hans Blok."
 ---
 
-<p class="kicker">Blogs on IT architecture</p>
+<p class="kicker">2 Minute IT Architecture</p>
 
-# 2 Minute IT Architecture
+# Clear writing on IT architecture, readable in a couple of minutes
 
-<p class="lead">Short essays on the craft of the architect: on making decisions, on working with the business, on services and APIs, and on what A.I. is doing to our work. Each article takes about two minutes to read.</p>
+<p class="lead">Short essays on the craft of the architect: on services and integration, on making decisions, on working with the business, and on what A.I. is doing to our work. Written by Hans Blok, IT architect.</p>
 
-## Articles
+{{ uitgelicht:en }}
 
-{{ artikellijst:en }}
+## Architecture domains
 
-## About the author
+<p class="lead">Seven domains the articles are grouped by. Pick one to read on.</p>
 
-Hans Blok is an IT architect who guides organisations through transformations toward service-oriented IT landscapes. To him the IT architect is a crossbreed between engineer, diplomat and philosopher: someone who speaks both the language of complex technology and that of the boardroom, and who brings structure where things are messy.
+{{ domeinen:en }}
 
-[More about Hans Blok](../over-de-auteur.md){ .more }
+## Recent articles
+
+{{ artikelraster:en:6:1 }}
+
+[All articles by domain](topics.md){ .more }
+
+## About this site
+
+This site collects short pieces on IT architecture as it looks in practice: at municipalities and other organisations, between technology and governance. No methodology and no product story, but observations from thirty years in IT, in pieces you can read between two meetings.
+
+[More about the author](../over-de-auteur.md){ .more }

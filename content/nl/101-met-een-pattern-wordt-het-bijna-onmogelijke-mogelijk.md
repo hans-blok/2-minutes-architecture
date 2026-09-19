@@ -1,6 +1,6 @@
 ---
 date: 2024-03-22
-topic: "Patterns"
+topic: "Integratie en patterns"
 description: "Een puzzel met 33 knikkers laat zien wat een pattern doet: een beproefde oplossing herbruikbaar maken."
 ---
 

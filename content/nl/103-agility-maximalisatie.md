@@ -1,6 +1,6 @@
 ---
 date: 2024-04-25
-topic: "Organisatie"
+topic: "Strategie en organisatie"
 description: "Bedrijven streven naar winstmaximalisatie, leerde ik ooit. Waarom wendbaarheid inmiddels een net zo harde doelstelling is."
 ---
 

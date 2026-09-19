@@ -1,6 +1,6 @@
 ---
 date: 2026-01-04
-topic: "Artificial Intelligence"
+topic: "Technologie en A.I."
 description: "Dertig jaar IT, en toch schuift het paradigma. Wat er verandert als de computer niet langer altijd gelijk heeft."
 ---
 

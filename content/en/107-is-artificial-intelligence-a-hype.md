@@ -1,6 +1,6 @@
 ---
 date: 2024-06-21
-topic: "Artificial Intelligence"
+topic: "Technology and A.I."
 description: "Nvidia, LinkedIn and inflated claims. Is AI a hype, and how do you tell marketing from actual technology?"
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2026-07-08
-topic: "Artificial Intelligence"
+topic: "Technologie en A.I."
 description: "A.I. maakt verkennen sneller dan ooit. Hoe blijft de architect verantwoordelijk voor wat er daarna wordt besloten?"
 ---
 

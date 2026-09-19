@@ -1,6 +1,6 @@
 ---
 date: 2024-12-19
-topic: "Collaboration"
+topic: "Working with the business"
 description: "A discussion that gets close to the heart of it and then derails. On the power of silence and the right question."
 ---
 

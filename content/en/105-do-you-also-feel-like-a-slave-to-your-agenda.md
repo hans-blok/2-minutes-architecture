@@ -1,6 +1,6 @@
 ---
 date: 2024-05-10
-topic: "Collaboration"
+topic: "Working with the business"
 description: "From meeting to meeting, and nothing achieved by the end of the day. On steering your agenda instead of the other way round."
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2024-12-19
-topic: "Samenwerking"
+topic: "Samenwerking met de business"
 description: "Een discussie die net bij de kern komt en dan ontspoort. Over de kracht van stilte en de juiste vraag."
 ---
 

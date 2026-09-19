@@ -1,6 +1,6 @@
 ---
 date: 2024-04-25
-topic: "Organisation"
+topic: "Strategy and organisation"
 description: "Companies aim to maximise profit, I was once taught. Why agility has become an equally hard objective."
 ---
 

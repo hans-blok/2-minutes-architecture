@@ -43,7 +43,7 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="/stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -79,18 +79,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Menu openen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="/." class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img class="brand__mark" src="/assets/logo-mark.png" alt="" width="32" height="32">
+      <img class="brand__mark" src="/assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link"
+           href="/.">Artikelen</a>
+      
+        <a class="site-nav__link"
+           href="/onderwerpen/">Onderwerpen</a>
+      
+        <a class="site-nav__link"
+           href="/over-de-auteur/">Over de auteur</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -178,6 +194,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="/.">Artikelen</a>
+      
+        <a href="/onderwerpen/">Onderwerpen</a>
+      
+        <a href="/over-de-auteur/">Over de auteur</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -219,6 +245,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="/onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -230,10 +283,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -251,8 +304,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -762,10 +815,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -783,8 +836,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -809,6 +862,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/en/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     

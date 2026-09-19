@@ -1,6 +1,6 @@
 ---
 date: 2024-09-06
-topic: "Services and APIs"
+topic: "Applications and services"
 description: "Skiing without double insurance. On formalising API management once the number of APIs starts to grow."
 ---
 

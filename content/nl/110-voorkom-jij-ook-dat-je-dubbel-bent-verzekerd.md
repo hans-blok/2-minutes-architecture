@@ -1,6 +1,6 @@
 ---
 date: 2024-09-06
-topic: "Services en API's"
+topic: "Applicaties en services"
 description: "Skiën zonder dubbel verzekerd te zijn. Over het formeel inrichten van API-beheer zodra het aantal API's groeit."
 ---
 

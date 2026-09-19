@@ -1,6 +1,6 @@
 ---
 date: 2024-05-06
-topic: "Organisation"
+topic: "Strategy and organisation"
 description: "Renovating an old farmhouse shows who makes the difference in a transformation, and which role that takes."
 ---
 

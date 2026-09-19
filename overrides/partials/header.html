@@ -1,23 +1,35 @@
 {#-
-  Eigen kopbalk: merkteken en naam vormen samen de weg terug naar de homepage.
-  Rechts staan drie even zware bedieningselementen: taal, weergave en zoeken.
+  Eigen kopbalk: merkteken en naam vormen de weg terug naar de homepage van de
+  huidige taal. Daarnaast een rustige horizontale navigatie, en rechts drie
+  even zware bedieningselementen: taal, weergave en zoeken. Op smalle schermen
+  schuift de navigatie in een uitklapmenu.
 -#}
 {% set is_english = page and page.file.src_uri.startswith("en/") %}
 {% set home = ("en/" if is_english else ".") | url %}
 {% set other = ("." if is_english else "en/") | url %}
+{% set menu = config.extra.menu.en if is_english else config.extra.menu.nl %}
+{% set here = page.file.src_uri if page else "" %}
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
-    <label class="md-header__button md-icon" for="__drawer">
-      {% set icon = config.theme.icon.menu or "material/menu" %}
-      {% include ".icons/" ~ icon ~ ".svg" %}
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="{{ 'Open menu' if is_english else 'Menu openen' }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="{{ home }}" class="brand" aria-label="{{ config.site_name }}">
-      <img class="brand__mark" src="{{ 'assets/logo-mark.png' | url }}" alt="" width="32" height="32">
+      <img class="brand__mark" src="{{ 'assets/logo-mark.png' | url }}" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">{{ config.site_name }}</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      {% for item in menu %}
+        <a class="site-nav__link{{ ' site-nav__link--active' if here == item.src }}"
+           href="{{ item.path | url }}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -50,5 +62,11 @@
         {% include "partials/search.html" %}
       {% endif %}
     {% endif %}
+
+    <div class="menu-panel">
+      {% for item in menu %}
+        <a href="{{ item.path | url }}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
   </nav>
 </header>

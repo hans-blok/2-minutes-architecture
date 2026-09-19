@@ -1,6 +1,6 @@
 ---
 date: 2024-04-18
-topic: "Vak en rol"
+topic: "Rol van de architect"
 description: "Een vraag bij de koffie na de zwemtraining: wat doet een IT-architect eigenlijk, en wat levert dat de samenleving op?"
 ---
 

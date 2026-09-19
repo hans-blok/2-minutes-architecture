@@ -1,6 +1,6 @@
 ---
 date: 2024-02-29
-topic: "Vak en rol"
+topic: "Rol van de architect"
 description: "Een team vol kennis en methoden, en toch werkte het niet. Waarom technisch leiderschap de derde poot onder de kruk is."
 ---
 

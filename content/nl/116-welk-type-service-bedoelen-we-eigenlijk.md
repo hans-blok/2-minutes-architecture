@@ -1,6 +1,6 @@
 ---
 date: 2026-09-18
-topic: "Services en API's"
+topic: "Applicaties en services"
 description: "Architecten streven naar een Ubiquitous Language, maar noemen services van alles. Vier categorieën als gedeelde taal."
 ---
 

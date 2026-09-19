@@ -20,7 +20,8 @@ mkdocs build --strict
 | `content/index.md` | homepage |
 | `content/stylesheets/extra.css` | alle vormgeving: design tokens, typografie en componenten |
 | `hooks/site_hooks.py` | buildhooks voor metaregel, artikellijst, kerncijfers, lazy loading en cache busting |
-| `overrides/partials/header.html` | eigen kopbalk met merkteken, sitenaam en taalknop |
+| `overrides/partials/header.html` | eigen kopbalk met merkteken, navigatie en taalknop |
+| `content/assets/architecture-pattern.svg` | decoratieve achtergrondstructuur in de zijmarges |
 | `docs/assets/` | bronbestanden van logo en taalvlaggen (niet meegebouwd) |
 | `content/assets/` | de versies die de site gebruikt, afgeleid van `docs/assets/` |
 | `site/` | gegenereerde site, wordt meegecommit |
@@ -43,9 +44,13 @@ Eerste alinea.
 
 De publicatiedatum, het onderwerp en de geschatte leestijd komen automatisch onder de titel te staan. Het artikel verschijnt vanzelf in de lijst op de homepage en de overzichtspagina, gesorteerd op datum; daarvoor hoeft alleen de `nav` in `mkdocs.yml` te worden bijgewerkt.
 
-Op een overzichtspagina roepen twee placeholders die opbouw aan:
+Op een overzichtspagina roepen placeholders de opbouw aan:
 
-- `{{ artikellijst }}` voor de lijst, met `{{ artikellijst:nl:4 }}` voor een taal en een maximum;
+- `{{ uitgelicht }}` voor het nieuwste artikel;
+- `{{ domeinen }}` voor de kaarten per architectuurdomein;
+- `{{ artikelraster:nl:6:1 }}` voor het artikelraster (taal, aantal, hoeveel er worden overgeslagen);
+- `{{ perdomein }}` voor alle artikelen geordend per domein;
+- `{{ artikellijst }}` voor een eenvoudige chronologische lijst.
 Talen: de homepage op `/` is Nederlands, die op `/en/` Engels. De taalknop in de kopbalk verwijst naar de andere versie; de zijbalk toont alleen de artikelen van de taal die de bezoeker leest. Het thema draait in het Nederlands, dus de themalabels op Engelse pagina's worden in `hooks/site_hooks.py` vertaald.
 
 ## Caching
@@ -56,6 +61,7 @@ Omdat de headers vastliggen, is cache busting via bestandsnamen geregeld:
 
 - **Themabestanden** van Material for MkDocs krijgen bij elke build een content hash in de bestandsnaam (`assets/javascripts/bundle.<hash>.min.js`).
 - **Eigen CSS en JavaScript** krijgen in `hooks/site_hooks.py` (`on_config`) een sha256-hash van acht tekens als queryparameter: `stylesheets/extra.css?h=9eb16f45`. Verandert de inhoud van het bestand, dan verandert de URL en haalt de browser de nieuwe versie op. Verandert er niets, dan blijft de gecachte versie geldig.
+- **De achtergrond-SVG** krijgt dezelfde behandeling. De URL staat als custom property (`--tfa-pattern`) in de pagina zelf, omdat een relatieve `url()` in een stylesheet vanuit de map van die stylesheet wordt opgelost.
 
 Handmatige versienummers zijn daarmee nergens nodig. Nieuwe HTML kan nooit met oude CSS worden gecombineerd, omdat de HTML zelf de gehashte URL bevat.
 

@@ -1,6 +1,6 @@
 ---
 date: 2024-07-04
-topic: "Besluitvorming"
+topic: "Werkwijzen en besluitvorming"
 description: "Overmatige complexiteit is de straf voor organisaties die geen besluiten nemen. Over het moment waarop je een besluit vastlegt."
 ---
 

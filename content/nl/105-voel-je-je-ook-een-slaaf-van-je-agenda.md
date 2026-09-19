@@ -1,6 +1,6 @@
 ---
 date: 2024-05-10
-topic: "Samenwerking"
+topic: "Samenwerking met de business"
 description: "Van vergadering naar vergadering, en aan het eind van de dag toch niets bereikt. Over sturen op je agenda in plaats van andersom."
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2024-02-29
-topic: "Craft and role"
+topic: "The architect's role"
 description: "A team full of knowledge and methods, and still it did not work. Why technical leadership is the third leg under the stool."
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2024-07-04
-topic: "Decision making"
+topic: "Practices and decisions"
 description: "Excessive complexity is the punishment for organisations unable to make decisions. On when to record a decision."
 ---
 

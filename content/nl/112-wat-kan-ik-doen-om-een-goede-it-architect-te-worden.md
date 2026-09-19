@@ -1,6 +1,6 @@
 ---
 date: 2024-10-17
-topic: "Vak en rol"
+topic: "Rol van de architect"
 description: "Engineers die architect willen worden vragen om advies. Welke vaardigheden tellen echt, en vergader je dan de hele dag?"
 ---
 

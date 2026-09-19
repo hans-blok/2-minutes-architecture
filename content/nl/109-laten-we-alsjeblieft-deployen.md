@@ -1,6 +1,6 @@
 ---
 date: 2024-09-05
-topic: "Levering"
+topic: "Werkwijzen en besluitvorming"
 description: "Een scherm dat nog niemand gebruikt en toch naar productie. Wat DORA zegt over kleine stappen en vaak deployen."
 ---
 

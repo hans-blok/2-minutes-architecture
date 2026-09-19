@@ -1,6 +1,6 @@
 ---
 date: 2026-01-04
-topic: "Artificial Intelligence"
+topic: "Technology and A.I."
 description: "Thirty years in IT, and still the paradigm shifts. What changes when the computer is no longer always right."
 ---
 

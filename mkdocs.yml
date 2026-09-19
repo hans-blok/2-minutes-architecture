@@ -42,8 +42,31 @@ extra_css:
 
 extra:
   cname: www.2-minuten-it-architectuur.nl
+  # src is het bronbestand (voor de actieve staat), path het pad op de site.
+  menu:
+    nl:
+      - title: Artikelen
+        src: index.md
+        path: .
+      - title: Onderwerpen
+        src: onderwerpen.md
+        path: onderwerpen/
+      - title: Over de auteur
+        src: over-de-auteur.md
+        path: over-de-auteur/
+    en:
+      - title: Articles
+        src: en/index.md
+        path: en/
+      - title: Topics
+        src: en/topics.md
+        path: en/topics/
+      - title: About the author
+        src: over-de-auteur.md
+        path: over-de-auteur/
 
 nav:
+  - Onderwerpen: onderwerpen.md
   - Nederlands:
     - De IT-architect die niet wiebelt: nl/100-de-it-architect-die-niet-wiebelt.md
     - Met een pattern wordt het bijna onmogelijke mogelijk: nl/101-met-een-pattern-wordt-het-bijna-onmogelijke-mogelijk.md
@@ -64,6 +87,7 @@ nav:
     - Welk type service bedoelen we eigenlijk?: nl/116-welk-type-service-bedoelen-we-eigenlijk.md
   - English:
     - Blogs: en/index.md
+    - Topics: en/topics.md
     - The IT architect who doesn't wobble: en/100-the-it-architect-who-doesnt-wobble.md
     - With a pattern the almost impossible becomes possible: en/101-with-a-pattern-the-almost-impossible-becomes-possible.md
     - The social contribution of an IT architect: en/102-the-social-contribution-of-an-it-architect.md

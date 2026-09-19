@@ -1,6 +1,6 @@
 ---
 date: 2026-07-08
-topic: "Artificial Intelligence"
+topic: "Technology and A.I."
 description: "A.I. makes exploration faster than ever. How does the architect stay responsible for what is decided next?"
 ---
 

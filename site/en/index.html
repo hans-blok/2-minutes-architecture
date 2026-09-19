@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Short essays on IT architecture in practice, by Hans Blok. Each article takes about two minutes to read.">
+        <meta name="description" content="Clear writing on IT architecture, readable in a couple of minutes. Short essays by Hans Blok.">
       
       
         <meta name="author" content="Hans Blok">
@@ -18,7 +18,7 @@
         <link rel="prev" href="../nl/116-welk-type-service-bedoelen-we-eigenlijk/">
       
       
-        <link rel="next" href="100-the-it-architect-who-doesnt-wobble/">
+        <link rel="next" href="topics/">
       
       
         
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="../stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +57,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-minute-it-architecture" class="md-skip">
+        <a href="#clear-writing-on-it-architecture-readable-in-a-couple-of-minutes" class="md-skip">
           Skip to content
         </a>
       
@@ -90,18 +90,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Open menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="./" class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="../assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="../assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link site-nav__link--active"
+           href="./">Articles</a>
+      
+        <a class="site-nav__link"
+           href="topics/">Topics</a>
+      
+        <a class="site-nav__link"
+           href="../over-de-auteur/">About the author</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -189,6 +205,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="./">Articles</a>
+      
+        <a href="topics/">Topics</a>
+      
+        <a href="../over-de-auteur/">About the author</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -232,6 +258,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -243,10 +296,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -264,8 +317,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -775,10 +828,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -796,8 +849,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -874,10 +927,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#articles" class="md-nav__link">
+  <a href="#architecture-domains" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Articles
+        Architecture domains
       
     </span>
   </a>
@@ -885,10 +938,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-the-author" class="md-nav__link">
+  <a href="#recent-articles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About the author
+        Recent articles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About this site
       
     </span>
   </a>
@@ -899,6 +963,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1443,10 +1535,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#articles" class="md-nav__link">
+  <a href="#architecture-domains" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Articles
+        Architecture domains
       
     </span>
   </a>
@@ -1454,10 +1546,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-the-author" class="md-nav__link">
+  <a href="#recent-articles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About the author
+        Recent articles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About this site
       
     </span>
   </a>
@@ -1483,154 +1586,111 @@
 
 
 
-<p class="kicker">Blogs on IT architecture</p>
+<p class="kicker">2 Minute IT Architecture</p>
 
-<h1 id="2-minute-it-architecture">2 Minute IT Architecture</h1>
-<p class="lead">Short essays on the craft of the architect: on making decisions, on working with the business, on services and APIs, and on what A.I. is doing to our work. Each article takes about two minutes to read.</p>
+<h1 id="clear-writing-on-it-architecture-readable-in-a-couple-of-minutes">Clear writing on IT architecture, readable in a couple of minutes</h1>
+<p class="lead">Short essays on the craft of the architect: on services and integration, on making decisions, on working with the business, and on what A.I. is doing to our work. Written by Hans Blok, IT architect.</p>
 
-<h2 id="articles">Articles</h2>
-<ol class="post-list">
-<li class="post">
-<div class="post__date"><time datetime="2026-09-18">Sep 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/116-which-type-of-service-do-we-actually-mean/">Which type of service do we actually mean?</a></h3>
-<p class="post__text">Architects aim for a Ubiquitous Language, yet call services all sorts of things. Four categories as a shared language.</p>
-<p class="post__meta"><span class="post__topic">Services and APIs</span><span>4 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2026-07-08">Jul 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/115-the-vibe-architect/">The Vibe Architect: speed with clear boundaries</a></h3>
-<p class="post__text">A.I. makes exploration faster than ever. How does the architect stay responsible for what is decided next?</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2026-01-04">Jan 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/114-post-deterministic-it/">Post-deterministic IT</a></h3>
-<p class="post__text">Thirty years in IT, and still the paradigm shifts. What changes when the computer is no longer always right.</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-12-19">Dec 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/113-silence-please/">Silence please</a></h3>
-<p class="post__text">A discussion that gets close to the heart of it and then derails. On the power of silence and the right question.</p>
-<p class="post__meta"><span class="post__topic">Collaboration</span><span>1 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-10-17">Oct 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/112-what-can-i-do-to-become-a-good-it-architect/">What can I do to become a good IT architect?</a></h3>
-<p class="post__text">Engineers who want to become architects ask for advice. Which skills really count, and is it meetings all day?</p>
-<p class="post__meta"><span class="post__topic">Craft and role</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-19">Sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/111-does-your-business-also-not-understand-much-of-this/">Does your business also not understand much of this?</a></h3>
-<p class="post__text">Involving the business rarely works when things get hard. What Amazon shows about who should be making the decisions.</p>
-<p class="post__meta"><span class="post__topic">Collaboration</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-06">Sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/110-do-you-also-prevent-yourself-from-being-double-insured/">Do you also prevent yourself from being double insured?</a></h3>
-<p class="post__text">Skiing without double insurance. On formalising API management once the number of APIs starts to grow.</p>
-<p class="post__meta"><span class="post__topic">Services and APIs</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-05">Sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/109-please-lets-deploy/">Please let's deploy!</a></h3>
-<p class="post__text">A screen nobody uses yet, and still deployed to production. What DORA says about small steps and frequent deployment.</p>
-<p class="post__meta"><span class="post__topic">Delivery</span><span>4 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-07-04">Jul 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/108-when-do-i-decide-to-document-the-decision/">When do I decide to document the decision?</a></h3>
-<p class="post__text">Excessive complexity is the punishment for organisations unable to make decisions. On when to record a decision.</p>
-<p class="post__meta"><span class="post__topic">Decision making</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-06-21">Jun 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/107-is-artificial-intelligence-a-hype/">Is Artificial Intelligence a hype?</a></h3>
-<p class="post__text">Nvidia, LinkedIn and inflated claims. Is AI a hype, and how do you tell marketing from actual technology?</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-16">May 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/106-do-you-manage-the-limitations-or-do-the-limitations-manage-you/">Do you manage the limitations or do the limitations manage you?</a></h3>
-<p class="post__text">Six teams working hard and a dashboard that disappoints. What a scout camp from The Goal teaches about constraints.</p>
-<p class="post__meta"><span class="post__topic">Organisation</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-10">May 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/105-do-you-also-feel-like-a-slave-to-your-agenda/">Do you also feel like a slave to your agenda?</a></h3>
-<p class="post__text">From meeting to meeting, and nothing achieved by the end of the day. On steering your agenda instead of the other way round.</p>
-<p class="post__meta"><span class="post__topic">Collaboration</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-06">May 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/104-who-gets-the-role-of-transformer/">Who gets the role of transformer?</a></h3>
-<p class="post__text">Renovating an old farmhouse shows who makes the difference in a transformation, and which role that takes.</p>
-<p class="post__meta"><span class="post__topic">Organisation</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-04-25">Apr 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/103-agility-maximization/">Agility maximization</a></h3>
-<p class="post__text">Companies aim to maximise profit, I was once taught. Why agility has become an equally hard objective.</p>
-<p class="post__meta"><span class="post__topic">Organisation</span><span>2 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-04-18">Apr 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/102-the-social-contribution-of-an-it-architect/">The social contribution of an IT architect</a></h3>
-<p class="post__text">A question over coffee after swimming practice: what does an IT architect actually do, and what does society get out of it?</p>
-<p class="post__meta"><span class="post__topic">Craft and role</span><span>3 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-03-22">Mar 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/101-with-a-pattern-the-almost-impossible-becomes-possible/">With a pattern the almost impossible becomes possible</a></h3>
-<p class="post__text">A puzzle with 33 marbles shows what a pattern does: it makes a proven solution reusable.</p>
-<p class="post__meta"><span class="post__topic">Patterns</span><span>4 min read</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-02-29">Feb 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="../en/100-the-it-architect-who-doesnt-wobble/">The IT architect who doesn't wobble</a></h3>
-<p class="post__text">A team full of knowledge and methods, and still it did not work. Why technical leadership is the third leg under the stool.</p>
-<p class="post__meta"><span class="post__topic">Craft and role</span><span>3 min read</span></p>
-</div>
-</li>
-</ol>
+<article class="featured">
+<p class="featured__label">Latest article</p>
+<h3 class="featured__title"><a href="../en/116-which-type-of-service-do-we-actually-mean/">Which type of service do we actually mean?</a></h3>
+<p class="featured__text">Architects aim for a Ubiquitous Language, yet call services all sorts of things. Four categories as a shared language.</p>
+<p class="featured__meta"><span class="meta__topic">Applications and services</span><time datetime="2026-09-18">September 18, 2026</time><span>4 min read</span><span class="featured__more">Read the article &rsaquo;</span></p>
+</article>
 
-<h2 id="about-the-author">About the author</h2>
-<p>Hans Blok is an IT architect who guides organisations through transformations toward service-oriented IT landscapes. To him the IT architect is a crossbreed between engineer, diplomat and philosopher: someone who speaks both the language of complex technology and that of the boardroom, and who brings structure where things are messy.</p>
-<p><a class="more" href="../over-de-auteur/">More about Hans Blok</a></p>
+<h2 id="architecture-domains">Architecture domains</h2>
+<p class="lead">Seven domains the articles are grouped by. Pick one to read on.</p>
+
+<ul class="domain-grid">
+<li class="domain">
+<a class="domain__link" href="topics/#the-architects-role">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 14l9 5 9-5"/></svg>
+<h3 class="domain__name">The architect's role</h3>
+<p class="domain__text">What the craft involves, which skills count and where the architect makes the difference.</p>
+<p class="domain__count">3 articles</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#strategy-and-organisation">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1"/><rect x="14" y="4" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/><path d="M6.5 11v3h11v-3"/></svg>
+<h3 class="domain__name">Strategy and organisation</h3>
+<p class="domain__text">Agility, transformation and the constraints that govern the flow of work.</p>
+<p class="domain__count">3 articles</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#working-with-the-business">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3.2"/><circle cx="16" cy="16" r="3.2"/><path d="M10.5 10.5 13.5 13.5"/></svg>
+<h3 class="domain__name">Working with the business</h3>
+<p class="domain__text">The conversation between IT and the rest of the organisation, and where it breaks down.</p>
+<p class="domain__count">3 articles</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#applications-and-services">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M8 10v4M16 10v4"/></svg>
+<h3 class="domain__name">Applications and services</h3>
+<p class="domain__text">Service types, responsibilities and the management of APIs.</p>
+<p class="domain__count">2 articles</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#integration-and-patterns">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 12h10M12 7v10"/></svg>
+<h3 class="domain__name">Integration and patterns</h3>
+<p class="domain__text">Proven solutions for recurring integration problems.</p>
+<p class="domain__count">1 article</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#practices-and-decisions">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 11h8M8 15h5"/></svg>
+<h3 class="domain__name">Practices and decisions</h3>
+<p class="domain__text">Making and recording decisions, and delivering smaller and more often.</p>
+<p class="domain__count">2 articles</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="topics/#technology-and-ai">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+<h3 class="domain__name">Technology and A.I.</h3>
+<p class="domain__text">What new technology really changes about our work, and what it does not.</p>
+<p class="domain__count">3 articles</p>
+</a></li>
+</ul>
+
+<h2 id="recent-articles">Recent articles</h2>
+<ul class="card-grid">
+<li class="card"><a class="card__link" href="../en/115-the-vibe-architect/">
+<h3 class="card__title">The Vibe Architect: speed with clear boundaries</h3>
+<p class="card__text">A.I. makes exploration faster than ever. How does the architect stay responsible for what is decided next?</p>
+<p class="card__meta"><span class="meta__topic">Technology and A.I.</span><time datetime="2026-07-08">Jul 2026</time><span>2 min read</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="../en/114-post-deterministic-it/">
+<h3 class="card__title">Post-deterministic IT</h3>
+<p class="card__text">Thirty years in IT, and still the paradigm shifts. What changes when the computer is no longer always right.</p>
+<p class="card__meta"><span class="meta__topic">Technology and A.I.</span><time datetime="2026-01-04">Jan 2026</time><span>2 min read</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="../en/113-silence-please/">
+<h3 class="card__title">Silence please</h3>
+<p class="card__text">A discussion that gets close to the heart of it and then derails. On the power of silence and the right question.</p>
+<p class="card__meta"><span class="meta__topic">Working with the business</span><time datetime="2024-12-19">Dec 2024</time><span>1 min read</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="../en/112-what-can-i-do-to-become-a-good-it-architect/">
+<h3 class="card__title">What can I do to become a good IT architect?</h3>
+<p class="card__text">Engineers who want to become architects ask for advice. Which skills really count, and is it meetings all day?</p>
+<p class="card__meta"><span class="meta__topic">The architect's role</span><time datetime="2024-10-17">Oct 2024</time><span>3 min read</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="../en/111-does-your-business-also-not-understand-much-of-this/">
+<h3 class="card__title">Does your business also not understand much of this?</h3>
+<p class="card__text">Involving the business rarely works when things get hard. What Amazon shows about who should be making the decisions.</p>
+<p class="card__meta"><span class="meta__topic">Working with the business</span><time datetime="2024-09-19">Sep 2024</time><span>2 min read</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="../en/110-do-you-also-prevent-yourself-from-being-double-insured/">
+<h3 class="card__title">Do you also prevent yourself from being double insured?</h3>
+<p class="card__text">Skiing without double insurance. On formalising API management once the number of APIs starts to grow.</p>
+<p class="card__meta"><span class="meta__topic">Applications and services</span><time datetime="2024-09-06">Sep 2024</time><span>3 min read</span></p>
+</a></li>
+</ul>
+
+<p><a class="more" href="topics/">All articles by domain</a></p>
+<h2 id="about-this-site">About this site</h2>
+<p>This site collects short pieces on IT architecture as it looks in practice: at municipalities and other organisations, between technology and governance. No methodology and no product story, but observations from thirty years in IT, in pieces you can read between two meetings.</p>
+<p><a class="more" href="../over-de-auteur/">More about the author</a></p>
 
 
 
@@ -1690,13 +1750,13 @@
         
         
           
-          <a href="100-the-it-architect-who-doesnt-wobble/" class="md-footer__link md-footer__link--next" aria-label="Next: The IT architect who doesn&#39;t wobble">
+          <a href="topics/" class="md-footer__link md-footer__link--next" aria-label="Next: Topics">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                The IT architect who doesn't wobble
+                Topics
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +57,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -90,18 +90,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Menu openen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="../.." class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link"
+           href="../..">Artikelen</a>
+      
+        <a class="site-nav__link"
+           href="../../onderwerpen/">Onderwerpen</a>
+      
+        <a class="site-nav__link"
+           href="../../over-de-auteur/">Over de auteur</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -189,6 +205,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="../..">Artikelen</a>
+      
+        <a href="../../onderwerpen/">Onderwerpen</a>
+      
+        <a href="../../over-de-auteur/">Over de auteur</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -204,7 +230,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -228,6 +256,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -241,10 +296,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -262,8 +317,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -783,10 +838,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -804,8 +859,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -830,6 +885,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     
@@ -1361,6 +1444,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1385,16 +1470,24 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
 
 <h1 id="stilte-graag">Stilte graag</h1>
-<p class="article-meta"><time datetime="2024-12-19">19 december 2024</time><span class="article-meta__topic">Samenwerking</span><span>1 min lezen</span></p>
+<p class="article-meta"><time datetime="2024-12-19">19 december 2024</time><span class="article-meta__topic">Samenwerking met de business</span><span>1 min lezen</span></p>
 
 <p>Herken je dit? Je zit in een overleg. De discussie is complex, maar je voelt aan alles: we zijn heel dichtbij het vinden van de oplossing. En dan gebeurt het. Iemand roeptoetert een vraag die totaal uit de lucht komt vallen, en plotseling neemt de discussie een compleet andere wending. Op zo'n moment denk ik vaak: ‘Heeft die persoon wel geluisterd? Of vindt hij het gewoon leuk om de boel in de war te schoppen?’ Maar soms vraag ik me ook af: ligt het aan mij? Ben ik onvoldoende in staat om de discussie te sturen?</p>
 <p>Een prachtig voorbeeld van hoe we tot echt goede antwoorden kunnen komen, zie je in het filmpje <a href="https://www.youtube.com/shorts/anP--XSAVKs" title="https://mail.google.com/mail/u/0/#inbox?projector=1">Steve Jobs - Art of pausing</a>. Hierin laat Jobs zien hoe krachtig het kan zijn om even stil te staan, goed te luisteren en de juiste vragen te stellen. Een andere aanrader is het boek <em>Socrates op Sneakers</em> van Elke Wiss. Sandra Stroeve heeft de essentie hiervan prachtig visueel weergegeven: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7126835494755131392/">Sandra Stroeve on LinkedIn: #socratischgesprek #vragen #visual #visuelecommunicatie #leiderschap | 159 comments</a></p>
 <p>Ik moet toegeven: ook ik luister soms niet goed genoeg. Of ik neem te weinig tijd en moeite om die ene echt goede vraag te stellen die het verschil maakt. Misschien is dat wel een mooi voornemen voor 2025: beter luisteren en vragen stellen die echt ergens toe leiden.</p>
 <p>Hoe ga jij hiermee om? Laten we elkaar inspireren om samen beter te worden in luisteren en leiden.</p>
+<nav class="related" aria-label="Meer over dit onderwerp">
+<p class="related__title">Meer over dit onderwerp</p>
+<ul class="related__list">
+<li><a href="../111-snapt-de-business-bij-jou-er-ook-weinig-zo-van/">Snapt de business bij jou er ook weinig zo van?<span class="related__meta">3 min lezen</span></a></li>
+<li><a href="../105-voel-je-je-ook-een-slaaf-van-je-agenda/">Voel je je ook een slaaf van je agenda?<span class="related__meta">2 min lezen</span></a></li>
+</ul></nav>
 
 
 
@@ -1407,6 +1500,8 @@
 
 
 
+
+  
 
 
 
@@ -1429,6 +1524,8 @@
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

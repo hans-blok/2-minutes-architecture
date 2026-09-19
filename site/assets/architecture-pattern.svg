@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" fill="none" role="presentation" aria-hidden="true">
+  <!-- Decoratieve architectuurstructuur: dunne verbindingen, knooppunten en
+       open blokken die lagen en services suggereren. Geen diagram, geen labels. -->
+  <g stroke="rgba(23,63,79,0.07)" stroke-width="1" fill="none">
+    <!-- onderliggend raster -->
+    <path d="M60 0V720M180 0V720M300 0V720" stroke="rgba(23,63,79,0.04)"/>
+    <path d="M0 120H360M0 360H360M0 600H360" stroke="rgba(23,63,79,0.04)"/>
+
+    <!-- verbindingen tussen lagen -->
+    <path d="M60 96L180 168L300 120"/>
+    <path d="M180 168V300"/>
+    <path d="M60 96V300L180 396"/>
+    <path d="M300 120V264L180 396"/>
+    <path d="M180 396V516"/>
+    <path d="M60 300L60 552L180 516"/>
+    <path d="M300 264V492L180 516"/>
+    <path d="M180 516L240 624"/>
+    <path d="M120 636L180 516"/>
+  </g>
+
+  <!-- open blokken: componenten en services -->
+  <g stroke="rgba(23,63,79,0.09)" stroke-width="1" fill="none">
+    <rect x="132" y="252" width="96" height="48" rx="4"/>
+    <rect x="24" y="516" width="72" height="36" rx="4"/>
+    <rect x="264" y="216" width="72" height="48" rx="4"/>
+    <rect x="144" y="600" width="84" height="40" rx="4"/>
+  </g>
+
+  <!-- knooppunten -->
+  <g fill="none" stroke="rgba(23,63,79,0.12)" stroke-width="1">
+    <circle cx="180" cy="168" r="9"/>
+    <circle cx="60" cy="96" r="6"/>
+    <circle cx="300" cy="120" r="6"/>
+    <circle cx="180" cy="396" r="11"/>
+    <circle cx="60" cy="300" r="5"/>
+    <circle cx="300" cy="264" r="5"/>
+    <circle cx="180" cy="516" r="8"/>
+    <circle cx="60" cy="552" r="5"/>
+    <circle cx="300" cy="492" r="5"/>
+    <circle cx="240" cy="624" r="4"/>
+    <circle cx="120" cy="636" r="4"/>
+  </g>
+
+  <!-- gevulde punten, iets nadrukkelijker -->
+  <g fill="rgba(23,63,79,0.12)">
+    <circle cx="180" cy="168" r="2"/>
+    <circle cx="180" cy="396" r="2"/>
+    <circle cx="180" cy="516" r="2"/>
+  </g>
+
+  <!-- enkel goudkleurig detail -->
+  <g stroke="rgba(201,154,61,0.10)" stroke-width="1" fill="none">
+    <circle cx="300" cy="264" r="12"/>
+    <path d="M132 276H108"/>
+  </g>
+</svg>

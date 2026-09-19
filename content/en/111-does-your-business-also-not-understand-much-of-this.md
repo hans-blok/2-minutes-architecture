@@ -1,6 +1,6 @@
 ---
 date: 2024-09-19
-topic: "Collaboration"
+topic: "Working with the business"
 description: "Involving the business rarely works when things get hard. What Amazon shows about who should be making the decisions."
 ---
 

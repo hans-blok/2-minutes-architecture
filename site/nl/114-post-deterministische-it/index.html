@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +57,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -90,18 +90,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Menu openen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="../.." class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="../../assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link"
+           href="../..">Artikelen</a>
+      
+        <a class="site-nav__link"
+           href="../../onderwerpen/">Onderwerpen</a>
+      
+        <a class="site-nav__link"
+           href="../../over-de-auteur/">Over de auteur</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -189,6 +205,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href="../..">Artikelen</a>
+      
+        <a href="../../onderwerpen/">Onderwerpen</a>
+      
+        <a href="../../over-de-auteur/">Over de auteur</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -204,7 +230,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -228,6 +256,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -241,10 +296,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -262,8 +317,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -886,10 +941,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -907,8 +962,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -933,6 +988,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     
@@ -1464,6 +1547,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1562,11 +1647,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
 
 <h1 id="post-deterministische-it">Post-deterministische IT</h1>
-<p class="article-meta"><time datetime="2026-01-04">4 januari 2026</time><span class="article-meta__topic">Artificial Intelligence</span><span>2 min lezen</span></p>
+<p class="article-meta"><time datetime="2026-01-04">4 januari 2026</time><span class="article-meta__topic">Technologie en A.I.</span><span>2 min lezen</span></p>
 
 <h2 id="dertig-jaar-it-kennis-en-onwetendheid">Dertig Jaar IT: Kennis en Onwetendheid</h2>
 <p>Ik werk inmiddels dertig jaar in de IT. Ik heb zo ongeveer alle gangbare opleidingen en stromingen voorbij zien komen: van ITIL tot SAFe for Architects, van SQL tot systeemarchitectuur. Maar een berg aan kennis gaat inmiddels vergezeld met een zee aan onwetendheid. Voor mijn ogen verschuift een paradigma. Ik merk dat ik me ineens in een andere wereld bevind, waarvoor nog nauwelijks boeken of artikelen bestaan die houvast bieden. Waar ik tegenwoordig mijn vrije uurtjes aan besteed? Het bouwen van een agent-ecosysteem.</p>
@@ -1602,6 +1689,12 @@ Maar doen alsof alles deterministisch blijft, is geen optie meer.</p>
 <h2 id="taal-geven-aan-verandering">Taal Geven aan Verandering</h2>
 <p>Wat hier op architecten afkomt, is nieuw. Ik heb dit niet uit een boek, artikel of gezien in een webinar. Ik zie het voor mijn ogen gebeuren. Deze post is een eerste, voorzichtige poging om taal te geven aan die verandering, zodat we erover kunnen spreken met de stakeholders met wie we strategische keuzes maken.</p>
 <p>https://www.linkedin.com/pulse/post-deterministic-why-architects-need-embrace-systems-hans-blok-ii4ae</p>
+<nav class="related" aria-label="Meer over dit onderwerp">
+<p class="related__title">Meer over dit onderwerp</p>
+<ul class="related__list">
+<li><a href="../115-de-vibe-architect/">De Vibe Architect: snelheid met duidelijke grenzen<span class="related__meta">2 min lezen</span></a></li>
+<li><a href="../107-is-artificial-intelligence-een-hype/">Is Artificial Intelligence een hype?<span class="related__meta">3 min lezen</span></a></li>
+</ul></nav>
 
 
 
@@ -1614,6 +1707,8 @@ Maar doen alsof alles deterministisch blijft, is geen optie meer.</p>
 
 
 
+
+  
 
 
 
@@ -1636,6 +1731,8 @@ Maar doen alsof alles deterministisch blijft, is geen optie meer.</p>
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

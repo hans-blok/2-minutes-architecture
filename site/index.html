@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Korte essays over IT-architectuur in de praktijk, door Hans Blok. Elk artikel leest u in ongeveer twee minuten.">
+        <meta name="description" content="Heldere uitleg over IT-architectuur, leesbaar in enkele minuten. Korte essays door Hans Blok.">
       
       
         <meta name="author" content="Hans Blok">
@@ -45,7 +45,7 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css?h=8401ed3f">
+      <link rel="stylesheet" href="stylesheets/extra.css?h=94d5a9ac">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -53,7 +53,7 @@
 
     
     
-  </head>
+  <style>:root{--tfa-pattern:url("/assets/architecture-pattern.svg?h=235561d4")}</style></head>
   
   
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-minuten-it-architectuur" class="md-skip">
+        <a href="#heldere-uitleg-over-it-architectuur-leesbaar-in-enkele-minuten" class="md-skip">
           Ga naar inhoud
         </a>
       
@@ -86,18 +86,34 @@
 
 
 
+
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    <input class="menu-toggle" type="checkbox" id="__menu" autocomplete="off">
+    <label class="menu-button" for="__menu" tabindex="0"
+           aria-label="Menu openen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
 
     <a href="." class="brand" aria-label="2 Minuten IT-Architectuur">
-      <img loading="lazy" decoding="async" class="brand__mark" src="assets/logo-mark.png" alt="" width="32" height="32">
+      <img loading="lazy" decoding="async" class="brand__mark" src="assets/logo-mark.png" alt="" width="26" height="26">
       <span class="brand__name brand__name--full">2 Minuten IT-Architectuur</span>
       <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
     </a>
+
+    <div class="site-nav">
+      
+        <a class="site-nav__link site-nav__link--active"
+           href=".">Artikelen</a>
+      
+        <a class="site-nav__link"
+           href="onderwerpen/">Onderwerpen</a>
+      
+        <a class="site-nav__link"
+           href="over-de-auteur/">Over de auteur</a>
+      
+    </div>
 
     <div class="md-header__spacer"></div>
 
@@ -185,6 +201,16 @@
 </div>
       
     
+
+    <div class="menu-panel">
+      
+        <a href=".">Artikelen</a>
+      
+        <a href="onderwerpen/">Onderwerpen</a>
+      
+        <a href="over-de-auteur/">Over de auteur</a>
+      
+    </div>
   </nav>
 </header>
     
@@ -228,6 +254,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="onderwerpen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onderwerpen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -239,10 +292,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -260,8 +313,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -771,10 +824,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -792,8 +845,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -818,6 +871,34 @@
     
   
     Blogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
   
 
     
@@ -1370,10 +1451,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#artikelen" class="md-nav__link">
+  <a href="#architectuurdomeinen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Artikelen
+        Architectuurdomeinen
       
     </span>
   </a>
@@ -1381,10 +1462,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#over-de-auteur" class="md-nav__link">
+  <a href="#recente-artikelen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Over de auteur
+        Recente artikelen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#over-deze-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Over deze site
       
     </span>
   </a>
@@ -1410,154 +1502,111 @@
 
 
 
-<p class="kicker">Blogs over IT-architectuur</p>
+<p class="kicker">2 Minuten IT-Architectuur</p>
 
-<h1 id="2-minuten-it-architectuur">2 Minuten IT-Architectuur</h1>
-<p class="lead">Korte essays over het vak van de architect: over besluiten nemen, over samenwerken met de business, over services en API's, en over wat A.I. met ons werk doet. Elk artikel leest u in ongeveer twee minuten.</p>
+<h1 id="heldere-uitleg-over-it-architectuur-leesbaar-in-enkele-minuten">Heldere uitleg over IT-architectuur, leesbaar in enkele minuten</h1>
+<p class="lead">Korte essays over het vak van de architect: over services en integratie, over besluiten nemen, over samenwerken met de business en over wat A.I. met ons werk doet. Geschreven door Hans Blok, IT-architect.</p>
 
-<h2 id="artikelen">Artikelen</h2>
-<ol class="post-list">
-<li class="post">
-<div class="post__date"><time datetime="2026-09-18">sep 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/116-welk-type-service-bedoelen-we-eigenlijk/">Welk type service bedoelen we eigenlijk?</a></h3>
-<p class="post__text">Architecten streven naar een Ubiquitous Language, maar noemen services van alles. Vier categorieën als gedeelde taal.</p>
-<p class="post__meta"><span class="post__topic">Services en API's</span><span>4 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2026-07-08">jul 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/115-de-vibe-architect/">De Vibe Architect: snelheid met duidelijke grenzen</a></h3>
-<p class="post__text">A.I. maakt verkennen sneller dan ooit. Hoe blijft de architect verantwoordelijk voor wat er daarna wordt besloten?</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>2 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2026-01-04">jan 2026</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/114-post-deterministische-it/">Post-deterministische IT</a></h3>
-<p class="post__text">Dertig jaar IT, en toch schuift het paradigma. Wat er verandert als de computer niet langer altijd gelijk heeft.</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>2 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-12-19">dec 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/113-stilte-graag/">Stilte graag</a></h3>
-<p class="post__text">Een discussie die net bij de kern komt en dan ontspoort. Over de kracht van stilte en de juiste vraag.</p>
-<p class="post__meta"><span class="post__topic">Samenwerking</span><span>1 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-10-17">okt 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/112-wat-kan-ik-doen-om-een-goede-it-architect-te-worden/">Wat kan ik doen om een goede IT-architect te worden?</a></h3>
-<p class="post__text">Engineers die architect willen worden vragen om advies. Welke vaardigheden tellen echt, en vergader je dan de hele dag?</p>
-<p class="post__meta"><span class="post__topic">Vak en rol</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-19">sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/111-snapt-de-business-bij-jou-er-ook-weinig-zo-van/">Snapt de business bij jou er ook weinig zo van?</a></h3>
-<p class="post__text">De business betrekken lukt zelden als het moeilijk wordt. Wat Amazon laat zien over wie de besluiten hoort te nemen.</p>
-<p class="post__meta"><span class="post__topic">Samenwerking</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-06">sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/110-voorkom-jij-ook-dat-je-dubbel-bent-verzekerd/">Voorkom jij ook dat je dubbel bent verzekerd?</a></h3>
-<p class="post__text">Skiën zonder dubbel verzekerd te zijn. Over het formeel inrichten van API-beheer zodra het aantal API's groeit.</p>
-<p class="post__meta"><span class="post__topic">Services en API's</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-09-05">sep 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/109-laten-we-alsjeblieft-deployen/">Laten we alsjeblieft deployen!</a></h3>
-<p class="post__text">Een scherm dat nog niemand gebruikt en toch naar productie. Wat DORA zegt over kleine stappen en vaak deployen.</p>
-<p class="post__meta"><span class="post__topic">Levering</span><span>4 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-07-04">jul 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/108-wanneer-besluit-ik-het-besluit-te-documenteren/">Wanneer besluit ik het besluit te documenteren?</a></h3>
-<p class="post__text">Overmatige complexiteit is de straf voor organisaties die geen besluiten nemen. Over het moment waarop je een besluit vastlegt.</p>
-<p class="post__meta"><span class="post__topic">Besluitvorming</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-06-21">jun 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/107-is-artificial-intelligence-een-hype/">Is Artificial Intelligence een hype?</a></h3>
-<p class="post__text">Nvidia, LinkedIn en overspannen claims. Is AI een hype, en hoe onderscheid je marketing van werkelijke technologie?</p>
-<p class="post__meta"><span class="post__topic">Artificial Intelligence</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-16">mei 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/106-manage-jij-de-beperkingen-of-managen-de-beperkingen-jou/">Manage jij de beperkingen of managen de beperkingen jou?</a></h3>
-<p class="post__text">Zes teams die hard werken en een dashboard dat tegenvalt. Wat een padvinderskamp uit Het doel leert over beperkingen.</p>
-<p class="post__meta"><span class="post__topic">Organisatie</span><span>2 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-10">mei 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/105-voel-je-je-ook-een-slaaf-van-je-agenda/">Voel je je ook een slaaf van je agenda?</a></h3>
-<p class="post__text">Van vergadering naar vergadering, en aan het eind van de dag toch niets bereikt. Over sturen op je agenda in plaats van andersom.</p>
-<p class="post__meta"><span class="post__topic">Samenwerking</span><span>2 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-05-06">mei 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/104-wie-krijgt-de-rol-van-transformer/">Wie krijgt de rol van transformer?</a></h3>
-<p class="post__text">Een verbouwing van een oude boerderij laat zien wie in een transformatie het verschil maakt, en welke rol daarbij hoort.</p>
-<p class="post__meta"><span class="post__topic">Organisatie</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-04-25">apr 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/103-agility-maximalisatie/">Agility maximalisatie</a></h3>
-<p class="post__text">Bedrijven streven naar winstmaximalisatie, leerde ik ooit. Waarom wendbaarheid inmiddels een net zo harde doelstelling is.</p>
-<p class="post__meta"><span class="post__topic">Organisatie</span><span>2 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-04-18">apr 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/102-de-maatschappelijke-bijdrage-van-een-it-architect/">De maatschappelijke bijdrage van een IT-architect</a></h3>
-<p class="post__text">Een vraag bij de koffie na de zwemtraining: wat doet een IT-architect eigenlijk, en wat levert dat de samenleving op?</p>
-<p class="post__meta"><span class="post__topic">Vak en rol</span><span>3 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-03-22">mrt 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/101-met-een-pattern-wordt-het-bijna-onmogelijke-mogelijk/">Met een pattern wordt het bijna onmogelijke mogelijk</a></h3>
-<p class="post__text">Een puzzel met 33 knikkers laat zien wat een pattern doet: een beproefde oplossing herbruikbaar maken.</p>
-<p class="post__meta"><span class="post__topic">Patterns</span><span>4 min lezen</span></p>
-</div>
-</li>
-<li class="post">
-<div class="post__date"><time datetime="2024-02-29">feb 2024</time></div>
-<div class="post__body">
-<h3 class="post__title"><a href="nl/100-de-it-architect-die-niet-wiebelt/">De IT-architect die niet wiebelt</a></h3>
-<p class="post__text">Een team vol kennis en methoden, en toch werkte het niet. Waarom technisch leiderschap de derde poot onder de kruk is.</p>
-<p class="post__meta"><span class="post__topic">Vak en rol</span><span>3 min lezen</span></p>
-</div>
-</li>
-</ol>
+<article class="featured">
+<p class="featured__label">Nieuwste artikel</p>
+<h3 class="featured__title"><a href="nl/116-welk-type-service-bedoelen-we-eigenlijk/">Welk type service bedoelen we eigenlijk?</a></h3>
+<p class="featured__text">Architecten streven naar een Ubiquitous Language, maar noemen services van alles. Vier categorieën als gedeelde taal.</p>
+<p class="featured__meta"><span class="meta__topic">Applicaties en services</span><time datetime="2026-09-18">18 september 2026</time><span>4 min lezen</span><span class="featured__more">Lees het artikel &rsaquo;</span></p>
+</article>
 
-<h2 id="over-de-auteur">Over de auteur</h2>
-<p>Hans Blok is IT-architect en begeleidt organisaties bij transformaties naar service-georiënteerde IT-landschappen. De IT-architect is wat hem betreft een kruising tussen techneut, diplomaat en filosoof: iemand die zowel de taal van complexe technologie spreekt als die van de bestuurskamer, en die structuur aanbrengt waar het rommelig is.</p>
-<p><a class="more" href="over-de-auteur/">Meer over Hans Blok</a></p>
+<h2 id="architectuurdomeinen">Architectuurdomeinen</h2>
+<p class="lead">Zeven domeinen waarlangs de artikelen zijn geordend. Kies er een om verder te lezen.</p>
+
+<ul class="domain-grid">
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#rol-van-de-architect">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 14l9 5 9-5"/></svg>
+<h3 class="domain__name">Rol van de architect</h3>
+<p class="domain__text">Wat het vak inhoudt, welke vaardigheden tellen en waar de architect het verschil maakt.</p>
+<p class="domain__count">3 artikelen</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#strategie-en-organisatie">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1"/><rect x="14" y="4" width="7" height="7" rx="1"/><rect x="8.5" y="14" width="7" height="7" rx="1"/><path d="M6.5 11v3h11v-3"/></svg>
+<h3 class="domain__name">Strategie en organisatie</h3>
+<p class="domain__text">Wendbaarheid, transformatie en de beperkingen die de doorstroom van werk bepalen.</p>
+<p class="domain__count">3 artikelen</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#samenwerking-met-de-business">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3.2"/><circle cx="16" cy="16" r="3.2"/><path d="M10.5 10.5 13.5 13.5"/></svg>
+<h3 class="domain__name">Samenwerking met de business</h3>
+<p class="domain__text">Het gesprek tussen IT en de rest van de organisatie, en wat daar misgaat.</p>
+<p class="domain__count">3 artikelen</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#applicaties-en-services">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M8 10v4M16 10v4"/></svg>
+<h3 class="domain__name">Applicaties en services</h3>
+<p class="domain__text">Servicetypen, verantwoordelijkheden en het beheer van API's.</p>
+<p class="domain__count">2 artikelen</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#integratie-en-patterns">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 12h10M12 7v10"/></svg>
+<h3 class="domain__name">Integratie en patterns</h3>
+<p class="domain__text">Beproefde oplossingen voor terugkerende integratievraagstukken.</p>
+<p class="domain__count">1 artikel</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#werkwijzen-en-besluitvorming">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 11h8M8 15h5"/></svg>
+<h3 class="domain__name">Werkwijzen en besluitvorming</h3>
+<p class="domain__text">Besluiten nemen en vastleggen, en vaker en kleiner opleveren.</p>
+<p class="domain__count">2 artikelen</p>
+</a></li>
+<li class="domain">
+<a class="domain__link" href="onderwerpen/#technologie-en-ai">
+<svg class="domain__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+<h3 class="domain__name">Technologie en A.I.</h3>
+<p class="domain__text">Wat nieuwe technologie werkelijk verandert aan ons werk, en wat niet.</p>
+<p class="domain__count">3 artikelen</p>
+</a></li>
+</ul>
+
+<h2 id="recente-artikelen">Recente artikelen</h2>
+<ul class="card-grid">
+<li class="card"><a class="card__link" href="nl/115-de-vibe-architect/">
+<h3 class="card__title">De Vibe Architect: snelheid met duidelijke grenzen</h3>
+<p class="card__text">A.I. maakt verkennen sneller dan ooit. Hoe blijft de architect verantwoordelijk voor wat er daarna wordt besloten?</p>
+<p class="card__meta"><span class="meta__topic">Technologie en A.I.</span><time datetime="2026-07-08">jul 2026</time><span>2 min lezen</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="nl/114-post-deterministische-it/">
+<h3 class="card__title">Post-deterministische IT</h3>
+<p class="card__text">Dertig jaar IT, en toch schuift het paradigma. Wat er verandert als de computer niet langer altijd gelijk heeft.</p>
+<p class="card__meta"><span class="meta__topic">Technologie en A.I.</span><time datetime="2026-01-04">jan 2026</time><span>2 min lezen</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="nl/113-stilte-graag/">
+<h3 class="card__title">Stilte graag</h3>
+<p class="card__text">Een discussie die net bij de kern komt en dan ontspoort. Over de kracht van stilte en de juiste vraag.</p>
+<p class="card__meta"><span class="meta__topic">Samenwerking met de business</span><time datetime="2024-12-19">dec 2024</time><span>1 min lezen</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="nl/112-wat-kan-ik-doen-om-een-goede-it-architect-te-worden/">
+<h3 class="card__title">Wat kan ik doen om een goede IT-architect te worden?</h3>
+<p class="card__text">Engineers die architect willen worden vragen om advies. Welke vaardigheden tellen echt, en vergader je dan de hele dag?</p>
+<p class="card__meta"><span class="meta__topic">Rol van de architect</span><time datetime="2024-10-17">okt 2024</time><span>3 min lezen</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="nl/111-snapt-de-business-bij-jou-er-ook-weinig-zo-van/">
+<h3 class="card__title">Snapt de business bij jou er ook weinig zo van?</h3>
+<p class="card__text">De business betrekken lukt zelden als het moeilijk wordt. Wat Amazon laat zien over wie de besluiten hoort te nemen.</p>
+<p class="card__meta"><span class="meta__topic">Samenwerking met de business</span><time datetime="2024-09-19">sep 2024</time><span>3 min lezen</span></p>
+</a></li>
+<li class="card"><a class="card__link" href="nl/110-voorkom-jij-ook-dat-je-dubbel-bent-verzekerd/">
+<h3 class="card__title">Voorkom jij ook dat je dubbel bent verzekerd?</h3>
+<p class="card__text">Skiën zonder dubbel verzekerd te zijn. Over het formeel inrichten van API-beheer zodra het aantal API's groeit.</p>
+<p class="card__meta"><span class="meta__topic">Applicaties en services</span><time datetime="2024-09-06">sep 2024</time><span>3 min lezen</span></p>
+</a></li>
+</ul>
+
+<p><a class="more" href="onderwerpen/">Alle artikelen per domein</a></p>
+<h2 id="over-deze-site">Over deze site</h2>
+<p>Deze site verzamelt korte stukken over IT-architectuur zoals die er in de praktijk uitziet: bij gemeenten en andere organisaties, tussen techniek en bestuur. Geen methodiek en geen productverhaal, maar observaties uit dertig jaar werken in de IT, in stukken die u tussen twee vergaderingen door leest.</p>
+<p><a class="more" href="over-de-auteur/">Meer over de auteur</a></p>
 
 
 
