@@ -1,0 +1,54 @@
+{#-
+  Eigen kopbalk: merkteken en naam vormen samen de weg terug naar de homepage.
+  Rechts staan drie even zware bedieningselementen: taal, weergave en zoeken.
+-#}
+{% set is_english = page and page.file.src_uri.startswith("en/") %}
+{% set home = ("en/" if is_english else ".") | url %}
+{% set other = ("." if is_english else "en/") | url %}
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon" for="__drawer">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+
+    <a href="{{ home }}" class="brand" aria-label="{{ config.site_name }}">
+      <img class="brand__mark" src="{{ 'assets/logo-mark.png' | url }}" alt="" width="32" height="32">
+      <span class="brand__name brand__name--full">{{ config.site_name }}</span>
+      <span class="brand__name brand__name--short" aria-hidden="true">2 Minuten</span>
+    </a>
+
+    <div class="md-header__spacer"></div>
+
+    <a class="md-header__button lang-switch"
+       href="{{ other }}"
+       lang="{{ 'nl' if is_english else 'en' }}"
+       hreflang="{{ 'nl' if is_english else 'en' }}"
+       title="{{ 'Nederlandse versie' if is_english else 'English version' }}">
+      <img src="{{ ('assets/lang-nl.png' if is_english else 'assets/lang-en.png') | url }}"
+           alt="{{ 'Ga naar de Nederlandse versie' if is_english else 'Switch to the English version' }}"
+           width="20" height="20" loading="lazy" decoding="async">
+    </a>
+
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    {% endif %}
+    {% if not config.theme.palette is mapping %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+
+    {% if "material/search" in config.plugins %}
+      {% set search = config.plugins["material/search"] | attr("config") %}
+      {% if search.enabled %}
+        <label class="md-header__button md-icon" for="__search">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+      {% endif %}
+    {% endif %}
+  </nav>
+</header>

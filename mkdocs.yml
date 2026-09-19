@@ -7,7 +7,7 @@ theme:
   name: material
   language: nl
   font: false
-  favicon: assets/logo.PNG
+  favicon: assets/logo-mark.png
   custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -25,11 +25,9 @@ theme:
         icon: material/weather-sunny
         name: Lichte weergave
   features:
-    - navigation.tabs
+    - navigation.expand
     - navigation.top
     - navigation.footer
-    - navigation.instant
-    - navigation.instant.progress
     - toc.follow
     - content.code.copy
     - search.highlight
@@ -46,9 +44,7 @@ extra:
   cname: www.2-minuten-it-architectuur.nl
 
 nav:
-  - Home: index.md
   - Nederlands:
-    - Overzicht: nl/index.md
     - De IT-architect die niet wiebelt: nl/100-de-it-architect-die-niet-wiebelt.md
     - Met een pattern wordt het bijna onmogelijke mogelijk: nl/101-met-een-pattern-wordt-het-bijna-onmogelijke-mogelijk.md
     - De maatschappelijke bijdrage van een IT-architect: nl/102-de-maatschappelijke-bijdrage-van-een-it-architect.md
@@ -67,7 +63,7 @@ nav:
     - "De Vibe Architect: snelheid met duidelijke grenzen": nl/115-de-vibe-architect.md
     - Welk type service bedoelen we eigenlijk?: nl/116-welk-type-service-bedoelen-we-eigenlijk.md
   - English:
-    - Overview: en/index.md
+    - Blogs: en/index.md
     - The IT architect who doesn't wobble: en/100-the-it-architect-who-doesnt-wobble.md
     - With a pattern the almost impossible becomes possible: en/101-with-a-pattern-the-almost-impossible-becomes-possible.md
     - The social contribution of an IT architect: en/102-the-social-contribution-of-an-it-architect.md
@@ -105,8 +101,7 @@ markdown_extensions:
   - md_in_html
   - tables
   - toc:
-      permalink: true
-      permalink_title: Link naar deze sectie
+      permalink: false
       toc_depth: 3
   - pymdownx.details
   - pymdownx.highlight:

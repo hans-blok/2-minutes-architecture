@@ -18,6 +18,7 @@
   --tfa-line: #e3ded4;
   --tfa-line-soft: #ece7dd;
   --tfa-paper: #faf7f1;
+  --tfa-header: #f2eee4;
   --tfa-surface: #faf7f1;
   --tfa-surface-alt: #f3efe6;
 
@@ -56,6 +57,7 @@
   --tfa-line: #3a3f3c;
   --tfa-line-soft: #323734;
   --tfa-paper: #1c1f1d;
+  --tfa-header: #232725;
   --tfa-surface: #1c1f1d;
   --tfa-surface-alt: #24282a;
 
@@ -112,8 +114,7 @@ html {
   text-wrap: balance;
 }
 
-/* Na de feitenregel of een lijst staat al een lijn; geen tweede erbij. */
-.md-typeset .facts + h2,
+/* Staat er al een lijn boven de kop, dan komt er geen tweede bij. */
 .md-typeset .post-list + h2,
 .md-typeset .kicker + h1 + .lead + h2 {
   border-top: none;
@@ -234,38 +235,6 @@ html {
 .md-typeset .lead--small {
   font-size: var(--tfa-step-0);
   margin-bottom: var(--tfa-space-3);
-}
-
-/* Feitenregel: informatie gegroepeerd door ruimte, niet door kaders */
-.md-typeset .facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--tfa-space-3) var(--tfa-space-2);
-  margin: 0 0 var(--tfa-space-4);
-  padding: var(--tfa-space-3) 0;
-  border-top: 1px solid var(--tfa-line);
-  border-bottom: 1px solid var(--tfa-line);
-}
-
-@media screen and (min-width: 40em) {
-  .md-typeset .facts {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-.md-typeset .facts dt {
-  font-size: var(--tfa-step--1);
-  font-weight: 650;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--tfa-ink-faint);
-  margin: 0 0 0.35rem;
-}
-
-.md-typeset .facts dd {
-  font-size: var(--tfa-step-0);
-  color: var(--tfa-ink);
-  margin: 0;
 }
 
 /* Artikellijst: datum links, inhoud rechts, één doorlopende lijn */
@@ -519,29 +488,120 @@ html {
 
 /* ---------- 6. Header, navigatie en footer ---------- */
 
-/* Header en tabbalk staan op hetzelfde papier als de pagina:
-   een dunne lijn scheidt ze, het groen is alleen accent. */
+/* Kopbalk: een halve tint dieper dan het papier, zonder lijnen. Het verschil
+   in vlak geeft genoeg structuur; de merkregel staat links, de bediening rechts. */
 .md-header {
-  background-color: var(--tfa-paper);
+  background-color: var(--tfa-header);
   color: var(--tfa-ink);
   box-shadow: none;
-  border-bottom: 1px solid var(--tfa-line);
+  border-bottom: none;
 }
 
-.md-header__title {
-  font-weight: 650;
-  font-size: var(--tfa-step-0);
-  letter-spacing: -0.01em;
+.md-header__inner {
+  padding: 0 var(--tfa-space-2);
+  height: 3.25rem;
+  gap: 0.25rem;
+}
+
+.md-header__spacer {
+  flex: 1;
+}
+
+/* Merkteken en naam vormen samen de weg terug naar de homepage */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0 0.25rem;
+  text-decoration: none;
   color: var(--tfa-ink);
 }
 
+.brand__mark {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.brand__name {
+  font-size: var(--tfa-step-0);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.brand:hover .brand__name {
+  color: var(--tfa-sage-700);
+}
+
+.brand__name--short {
+  display: none;
+}
+
+/* Onder deze breedte past de volledige naam niet naast de bediening.
+   Het merkteken plus "2 Minuten" blijft herkenbaar; de volledige naam
+   staat nog in het aria-label van de link. */
+@media screen and (max-width: 26em) {
+  .brand__name--full {
+    display: none;
+  }
+
+  .brand__name--short {
+    display: inline;
+  }
+
+  .md-header__inner {
+    padding: 0 0.25rem;
+    gap: 0;
+  }
+
+  .md-header__button {
+    padding: 0.4rem;
+  }
+
+  .lang-switch {
+    width: 38px;
+  }
+}
+
+/* Taal, weergave en zoeken wegen even zwaar */
 .md-header__button {
   color: var(--tfa-ink-soft);
+  margin: 0;
+  padding: 0.5rem;
+  opacity: 1;
+}
+
+.md-header__button:hover {
+  color: var(--tfa-sage-700);
+  opacity: 1;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.lang-switch img {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: block;
+}
+
+.lang-switch:hover {
+  background: var(--tfa-line-soft);
 }
 
 .md-search__form {
   background-color: var(--tfa-surface-alt);
   box-shadow: none;
+  border-radius: var(--tfa-radius);
 }
 
 .md-search__form:hover {
@@ -554,36 +614,30 @@ html {
   color: var(--tfa-ink-soft);
 }
 
-.md-tabs {
-  background-color: var(--tfa-paper);
-  color: var(--tfa-ink-soft);
-  border-bottom: 1px solid var(--tfa-line);
-}
-
-.md-tabs__link {
-  font-size: var(--tfa-step--1);
-  font-weight: 500;
-  color: var(--tfa-ink-soft);
-  opacity: 1;
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.4rem;
-  border-bottom: 2px solid transparent;
-}
-
-.md-tabs__link--active,
-.md-tabs__link:hover,
-.md-tabs__link:focus {
-  color: var(--tfa-ink);
-}
-
-.md-tabs__link--active {
-  font-weight: 650;
-  border-bottom-color: var(--tfa-sage-600);
-}
-
 .md-nav {
   font-size: var(--tfa-step--1);
+}
+
+/* De zijbalk toont alleen de artikelen van de taal die iemand leest.
+   De taalknop in de kopbalk is de enige plek waar je van taal wisselt,
+   zodat dezelfde keuze niet op twee plaatsen wordt aangeboden. */
+[data-lang="nl"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2),
+[data-lang="en"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) {
+  display: none;
+}
+
+/* De sitenaam staat al in de kopbalk en hoeft niet boven de zijbalk */
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+  font-size: var(--tfa-step--1);
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tfa-ink-faint);
+  pointer-events: none;
 }
 
 .md-nav__title {
@@ -675,7 +729,7 @@ html {
 
 /* ---------- 7. Toegankelijkheid ---------- */
 
-:where(a, button, input, summary, .md-nav__link, .md-tabs__link):focus-visible {
+:where(a, button, input, summary, .md-nav__link, .brand, .lang-switch):focus-visible {
   outline: 3px solid var(--tfa-sage-700);
   outline-offset: 2px;
   border-radius: 2px;
@@ -683,11 +737,6 @@ html {
 
 [data-md-color-scheme="slate"] :where(a, button, input, summary):focus-visible {
   outline-color: var(--tfa-sage-600);
-}
-
-[data-md-color-scheme="slate"] .md-header,
-[data-md-color-scheme="slate"] .md-tabs {
-  background-color: var(--tfa-paper);
 }
 
 .md-skip:focus {

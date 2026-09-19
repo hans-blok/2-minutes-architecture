@@ -1,13 +1,15 @@
 ---
-description: "Korte essays over IT-architectuur in de praktijk. Elk artikel leest u in ongeveer twee minuten."
+description: "Het Nederlandse overzicht staat nu op de homepage."
+hide:
+  - navigation
+
 ---
 
-<p class="kicker">Alle artikelen</p>
+<meta http-equiv="refresh" content="0; url=../">
+<link rel="canonical" href="https://www.2-minuten-it-architectuur.nl/">
 
 # Blogs
 
-<p class="lead">Korte essays over IT-architectuur in de praktijk. Over het vak, over samenwerken met de business, over services en over de vraag wat A.I. met ons werk doet. Elk artikel leest u in ongeveer twee minuten.</p>
+Het overzicht van alle Nederlandse artikelen staat op de homepage.
 
-{{ kerncijfers }}
-
-{{ artikellijst }}
+[Naar de homepage](../index.md){ .more }

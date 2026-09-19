@@ -20,7 +20,9 @@ mkdocs build --strict
 | `content/index.md` | homepage |
 | `content/stylesheets/extra.css` | alle vormgeving: design tokens, typografie en componenten |
 | `hooks/site_hooks.py` | buildhooks voor metaregel, artikellijst, kerncijfers, lazy loading en cache busting |
-| `overrides/` | themasjablonen boven op Material for MkDocs |
+| `overrides/partials/header.html` | eigen kopbalk met merkteken, sitenaam en taalknop |
+| `docs/assets/` | bronbestanden van logo en taalvlaggen (niet meegebouwd) |
+| `content/assets/` | de versies die de site gebruikt, afgeleid van `docs/assets/` |
 | `site/` | gegenereerde site, wordt meegecommit |
 
 ## Een artikel toevoegen
@@ -44,7 +46,7 @@ De publicatiedatum, het onderwerp en de geschatte leestijd komen automatisch ond
 Op een overzichtspagina roepen twee placeholders die opbouw aan:
 
 - `{{ artikellijst }}` voor de lijst, met `{{ artikellijst:nl:4 }}` voor een taal en een maximum;
-- `{{ kerncijfers }}` voor de feitenregel met aantal artikelen, onderwerpen en gemiddelde leestijd.
+Talen: de homepage op `/` is Nederlands, die op `/en/` Engels. De taalknop in de kopbalk verwijst naar de andere versie; de zijbalk toont alleen de artikelen van de taal die de bezoeker leest. Het thema draait in het Nederlands, dus de themalabels op Engelse pagina's worden in `hooks/site_hooks.py` vertaald.
 
 ## Caching
 

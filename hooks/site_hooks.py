@@ -3,7 +3,7 @@
 Verzorgt vier dingen, zonder extra afhankelijkheden:
 
 1. metaregel onder de artikeltitel: publicatiedatum, onderwerp en leestijd;
-2. artikellijsten en kerncijfers via {{ artikellijst }} en {{ kerncijfers }};
+2. de artikellijst op de overzichtspagina's via {{ artikellijst }};
 3. lazy loading en async decoding voor afbeeldingen in de artikelen;
 4. cache busting: aan extra_css en extra_javascript wordt een content hash
    gehangen, zodat een nieuwe deployment nooit oude CSS bij nieuwe HTML serveert.
@@ -31,7 +31,6 @@ _FRONTMATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.S)
 _TITLE = re.compile(r"^#\s+(.+)$", re.M)
 _IMG = re.compile(r"<img(?![^>]*\bloading=)")
 _LIST = re.compile(r"\{\{\s*artikellijst(?::(nl|en))?(?::(\d+))?\s*\}\}")
-_FACTS = re.compile(r"\{\{\s*kerncijfers(?::(nl|en))?\s*\}\}")
 
 
 def _lang(page):
@@ -131,36 +130,6 @@ def _post_list(docs_dir, lang, limit=None, prefix=""):
     return "\n".join(out)
 
 
-def _facts(docs_dir, lang):
-    """Feitenregel onder de introductie: de omvang van de verzameling."""
-    articles = _articles(docs_dir, lang)
-    topics = sorted({a["topic"] for a in articles if a.get("topic")})
-    minutes = [int(_reading_time(a["body"], lang).split()[0]) for a in articles]
-    average = int(round(sum(minutes) / float(len(minutes)))) if minutes else 0
-    latest = _format_date(articles[0]["date"], lang, short=True) if articles else ""
-
-    if lang == "en":
-        rows = [
-            ("Articles", str(len(articles))),
-            ("Topics", str(len(topics))),
-            ("Reading time", "%d min on average" % average),
-            ("Most recent", latest),
-        ]
-    else:
-        rows = [
-            ("Artikelen", str(len(articles))),
-            ("Onderwerpen", str(len(topics))),
-            ("Leestijd", "gemiddeld %d min" % average),
-            ("Laatste artikel", latest),
-        ]
-
-    out = ['<dl class="facts">']
-    for label, value in rows:
-        out.append('<div class="facts__item"><dt>%s</dt><dd>%s</dd></div>' % (label, value))
-    out.append("</dl>")
-    return "\n".join(out)
-
-
 def on_config(config):
     """Hang een content hash aan de eigen CSS en JavaScript."""
     docs_dir = config["docs_dir"]
@@ -195,11 +164,6 @@ def on_page_markdown(markdown, page, config, files):
 
     markdown = _LIST.sub(expand_list, markdown)
 
-    def expand_facts(match):
-        return _facts(config["docs_dir"], match.group(1) or lang)
-
-    markdown = _FACTS.sub(expand_facts, markdown)
-
     if _ARTICLE.match(os.path.basename(page.file.src_uri)):
         bits = []
         if page.meta.get("date"):
@@ -216,6 +180,48 @@ def on_page_markdown(markdown, page, config, files):
     return _IMG.sub('<img loading="lazy" decoding="async"', markdown)
 
 
+# Het thema draait in het Nederlands. Op de Engelse pagina's vertalen we de
+# labels die een bezoeker ziet; de artikelinhoud blijft ongemoeid.
+UI_EN = [
+    ("Ga naar inhoud", "Skip to content"),
+    ("Zoeken initialiseren", "Initializing search"),
+    ("Inhoudsopgave", "Contents"),
+    ("Zoeken", "Search"),
+    ("Leegmaken", "Clear"),
+    ("Donkere weergave", "Dark mode"),
+    ("Lichte weergave", "Light mode"),
+    ("Terug naar boven", "Back to top"),
+    ("Navigatie", "Navigation"),
+    ("Vorige", "Previous"),
+    ("Volgende", "Next"),
+]
+
+
+def _translate_ui(output):
+    """Vervangt themalabels buiten het artikel, zodat teksten intact blijven."""
+    start = output.find("<article")
+    end = output.find("</article>")
+    if start == -1 or end == -1:
+        head, article, tail = output, "", ""
+    else:
+        end += len("</article>")
+        head, article, tail = output[:start], output[start:end], output[end:]
+    for nl, en in UI_EN:
+        head = head.replace(nl, en)
+        tail = tail.replace(nl, en)
+    # Ook de taal van het document zelf, voor schermlezers en zoekmachines.
+    head = head.replace('<html lang="nl"', '<html lang="en"', 1)
+    return head + article + tail
+
+
 def on_post_page(output, page, config):
-    """Afbeeldingen uit Markdown krijgen dezelfde lazy loading als losse img-tags."""
-    return _IMG.sub('<img loading="lazy" decoding="async"', output)
+    """Lazy loading voor losse img-tags, plus de taal van de pagina op <body>.
+
+    Met die taal laat de stylesheet in de zijbalk alleen de artikelen van de
+    taal zien die de bezoeker leest; de taalknop in de kopbalk regelt de rest.
+    """
+    output = _IMG.sub('<img loading="lazy" decoding="async"', output)
+    lang = _lang(page)
+    if lang == "en":
+        output = _translate_ui(output)
+    return output.replace("<body", '<body data-lang="%s"' % lang, 1)
